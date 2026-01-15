@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo-bocaboca.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,13 +23,16 @@ const Header = () => {
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground py-2">
         <div className="container-wide flex justify-between items-center text-sm">
-          <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4" />
-            <span>Málaga, España</span>
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4" />
+              <span className="hidden sm:inline">3 Clínicas en Málaga</span>
+              <span className="sm:hidden">Málaga</span>
+            </div>
           </div>
-          <a href="tel:+34952000000" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <a href="tel:+34952929360" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Phone className="w-4 h-4" />
-            <span className="font-medium">952 000 000</span>
+            <span className="font-medium">952 929 360</span>
           </a>
         </div>
       </div>
@@ -37,14 +41,12 @@ const Header = () => {
       <nav className="container-wide py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display text-xl font-bold">ID</span>
-            </div>
-            <div className="hidden sm:block">
-              <p className="font-display text-xl font-semibold text-foreground">Implantes Dentales</p>
-              <p className="text-sm text-muted-foreground">Málaga</p>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={logo} 
+              alt="Clínica Dental Bocaboca" 
+              className="h-12 md:h-14 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,7 +56,7 @@ const Header = () => {
                 key={link.href}
                 to={link.href}
                 className={`nav-link font-medium ${
-                  isActive(link.href) ? 'text-primary' : ''
+                  isActive(link.href) ? 'text-secondary' : ''
                 }`}
               >
                 {link.label}
@@ -64,7 +66,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button asChild className="cta-gold rounded-full px-6">
+            <Button asChild className="cta-accent rounded-full px-6">
               <Link to="/contacto">Pedir Cita</Link>
             </Button>
           </div>
@@ -89,13 +91,13 @@ const Header = () => {
                   to={link.href}
                   onClick={() => setIsMenuOpen(false)}
                   className={`font-medium py-2 ${
-                    isActive(link.href) ? 'text-primary' : 'text-foreground'
+                    isActive(link.href) ? 'text-secondary' : 'text-foreground'
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <Button asChild className="cta-gold rounded-full mt-2">
+              <Button asChild className="cta-accent rounded-full mt-2">
                 <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>
                   Pedir Cita
                 </Link>
