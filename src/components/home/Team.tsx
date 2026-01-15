@@ -1,21 +1,21 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import doctor1 from '@/assets/doctor-1.jpg';
-import doctor2 from '@/assets/doctor-2.jpg';
+import teamBocaboca from '@/assets/team-bocaboca.png';
 
 const Team = () => {
   const team = [
     {
-      name: 'Dr. Carlos Martínez',
+      name: 'Dr. Alfonso Moreno Sánchez',
       role: 'Director Médico - Implantólogo',
       image: doctor1,
-      description: 'Más de 20 años de experiencia en implantología oral. Formación en las universidades de Barcelona y Nueva York.',
+      description: 'Especialista en implantología avanzada con técnicas All-on-4™, Trefoil y implantes cigomáticos. Más de 20 años devolviendo sonrisas en Málaga.',
     },
     {
-      name: 'Dra. María García',
-      role: 'Especialista en Periodoncia',
-      image: doctor2,
-      description: 'Especializada en salud de encías y mantenimiento de implantes. Doctora por la Universidad de Málaga.',
+      name: 'Equipo Bocaboca',
+      role: 'Especialistas Multidisciplinares',
+      image: teamBocaboca,
+      description: 'Un equipo completo de profesionales especializados en ortodoncia invisible, periodoncia, odontopediatría y estética dental.',
     },
   ];
 
@@ -68,7 +68,7 @@ const Team = () => {
         <div className="text-center">
           <Link
             to="/sobre-nosotros"
-            className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-secondary font-semibold hover:gap-3 transition-all"
           >
             Conocer a todo el equipo
             <ArrowRight className="w-5 h-5" />

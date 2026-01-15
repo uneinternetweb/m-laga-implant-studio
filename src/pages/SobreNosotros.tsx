@@ -3,24 +3,24 @@ import { ArrowRight, Award, GraduationCap, Heart, Users } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import doctor1 from '@/assets/doctor-1.jpg';
-import doctor2 from '@/assets/doctor-2.jpg';
+import teamBocaboca from '@/assets/team-bocaboca.png';
 import clinicInterior from '@/assets/clinic-interior.jpg';
 
 const SobreNosotros = () => {
   const team = [
     {
-      name: 'Dr. Carlos Martínez García',
+      name: 'Dr. Alfonso Moreno Sánchez',
       role: 'Director Médico - Implantólogo',
       image: doctor1,
-      bio: 'Licenciado en Odontología por la Universidad de Barcelona. Máster en Implantología Oral Avanzada por NYU. Más de 20 años de experiencia y más de 5.000 implantes colocados con éxito.',
-      specialties: ['Implantología', 'Cirugía Oral', 'All-on-4'],
+      bio: 'Especialista en implantología oral avanzada con más de 20 años de experiencia. Experto en técnicas All-on-4™, Trefoil e implantes cigomáticos. Formación en las mejores universidades y congresos internacionales.',
+      specialties: ['Implantología', 'All-on-4™', 'Cigomáticos', 'Cirugía Oral'],
     },
     {
-      name: 'Dra. María García López',
-      role: 'Especialista en Periodoncia',
-      image: doctor2,
-      bio: 'Doctora por la Universidad de Málaga. Especialista en periodoncia e implantología. Experta en tratamiento de encías y mantenimiento de implantes dentales.',
-      specialties: ['Periodoncia', 'Implantes', 'Regeneración ósea'],
+      name: 'Equipo Clínico Bocaboca',
+      role: 'Especialistas Multidisciplinares',
+      image: teamBocaboca,
+      bio: 'Un equipo completo de profesionales altamente cualificados que cubren todas las especialidades odontológicas. Desde ortodoncia invisible hasta odontopediatría, pasando por estética dental y periodoncia.',
+      specialties: ['Ortodoncia', 'Periodoncia', 'Odontopediatría', 'Estética'],
     },
   ];
 
@@ -61,7 +61,7 @@ const SobreNosotros = () => {
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed">
               Más de 15 años dedicados a la salud bucodental de Málaga y la Costa del Sol. 
-              Un equipo de especialistas comprometidos con tu sonrisa.
+              3 clínicas con un equipo de especialistas comprometidos con tu sonrisa.
             </p>
           </div>
         </div>
@@ -76,12 +76,12 @@ const SobreNosotros = () => {
                 Nuestra Historia
               </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-6">
-                Desde 2009 Cuidando Sonrisas en Málaga
+                Clínica Dental Bocaboca
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Nuestra clínica nació con una visión clara: ofrecer tratamientos de implantología 
-                de la máxima calidad con un trato cercano y humano. Lo que comenzó como un pequeño 
-                gabinete dental se ha convertido en una clínica de referencia en Málaga.
+                Bocaboca nació con una visión clara: ofrecer tratamientos de implantología 
+                de la máxima calidad con un trato cercano y humano. Lo que comenzó como una 
+                clínica dental se ha convertido en un referente en Málaga con 3 centros.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Hoy contamos con instalaciones de última generación, tecnología 3D y un equipo 
@@ -92,10 +92,10 @@ const SobreNosotros = () => {
                 {[
                   { number: '+15', label: 'Años' },
                   { number: '+5.000', label: 'Implantes' },
-                  { number: '98%', label: 'Éxito' },
+                  { number: '3', label: 'Clínicas' },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <p className="font-display text-3xl font-bold text-primary">{stat.number}</p>
+                    <p className="font-display text-3xl font-bold text-secondary">{stat.number}</p>
                     <p className="text-sm text-muted-foreground">{stat.label}</p>
                   </div>
                 ))}
@@ -104,7 +104,7 @@ const SobreNosotros = () => {
             <div className="rounded-3xl overflow-hidden card-hover">
               <img
                 src={clinicInterior}
-                alt="Interior de nuestra clínica dental en Málaga"
+                alt="Interior de Clínica Dental Bocaboca en Málaga"
                 className="w-full h-auto"
               />
             </div>
@@ -136,7 +136,7 @@ const SobreNosotros = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="w-16 h-16 rounded-2xl bg-accent flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="w-8 h-8 text-primary" />
+                  <value.icon className="w-8 h-8 text-secondary" />
                 </div>
                 <h3 className="font-display text-xl font-bold text-foreground mb-3">
                   {value.title}
@@ -254,10 +254,10 @@ const SobreNosotros = () => {
             Ven a Conocernos
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-            Visita nuestras instalaciones en Málaga Centro y conoce a nuestro equipo. 
+            Visita cualquiera de nuestras 3 clínicas en Málaga y conoce a nuestro equipo. 
             Primera consulta gratuita y sin compromiso.
           </p>
-          <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
+          <Button asChild size="lg" className="cta-accent rounded-full px-8 h-14 text-lg">
             <Link to="/contacto">
               Solicitar Visita
               <ArrowRight className="w-5 h-5 ml-2" />
