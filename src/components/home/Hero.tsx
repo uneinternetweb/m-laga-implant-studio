@@ -68,7 +68,7 @@ const Hero = () => {
               variant="outline" 
               className="rounded-full px-8 text-lg h-14 bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20"
             >
-              <a href="tel:+34951 178 110" className="flex items-center gap-2">
+              <a href="tel:951 178 110" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 Llamar: +34951 178 110
               </a>
