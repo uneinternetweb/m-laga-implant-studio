@@ -91,7 +91,7 @@ const ImplantesDentales = () => {
                   variant="outline" 
                   className="rounded-full px-8 h-14 text-lg bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
                 >
-                  <a href="tel:+34 951 178 110">
+                  <a href="tel:951 178 110">
                     <Phone className="w-5 h-5 mr-2" />
                     952 000 000
                   </a>
@@ -314,7 +314,7 @@ const ImplantesDentales = () => {
               variant="outline" 
               className="rounded-full px-8 h-14 text-lg bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
             >
-              <a href="tel:+34 951 178 110">
+              <a href="tel:951 178 110">
                 <Phone className="w-5 h-5 mr-2" />
                 952 000 000
               </a>
