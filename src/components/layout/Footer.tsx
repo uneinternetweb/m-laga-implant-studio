@@ -42,7 +42,7 @@ const Footer = () => {
               Solicitar Cita
             </Link>
             <a
-              href="tel:+34952929360"
+              href="tel:+34951178110"
               className="inline-flex items-center justify-center bg-secondary-foreground text-secondary px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity gap-2"
             >
               <Phone className="w-5 h-5" />
@@ -66,7 +66,7 @@ const Footer = () => {
                 />
               </div>
               <p className="text-primary-foreground/80 leading-relaxed">
-                Clínica dental especializada en implantes dentales en Málaga. Más de 15 años 
+                Clínica dental especializada en implantes dentales en Málaga. Más de 20 años 
                 devolviendo sonrisas con la última tecnología y los mejores profesionales.
               </p>
               {/* Social */}
@@ -98,8 +98,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                    Blog y Noticias
+                  <Link to="/noticias" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Noticias
                   </Link>
                 </li>
                 <li>
@@ -133,8 +133,8 @@ const Footer = () => {
               <ul className="space-y-4">
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 flex-shrink-0 text-secondary" />
-                  <a href="tel:+34952929360" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                    952 929 360
+                  <a href="tel:+34951178110" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    951 178 110
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -148,7 +148,7 @@ const Footer = () => {
                   <div className="text-primary-foreground/80">
                     <p className="font-medium text-primary-foreground">Horario</p>
                     <p className="text-sm">Lunes - Viernes: 09:00 - 21:00</p>
-                    <p className="text-sm">Sábados: 09:00 - 14:00</p>
+                    <p className="text-sm">Sábados: 10:00 - 14:00</p>
                   </div>
                 </li>
               </ul>
@@ -160,7 +160,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10 py-6">
         <div className="container-wide flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-          <p>© {currentYear} Clínica Dental Bocaboca. Todos los derechos reservados.</p>
+          <p>© {currentYear} Clínicas Dentales Bocaboca. Todos los derechos reservados.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary-foreground transition-colors">Política de Privacidad</a>
             <a href="#" className="hover:text-primary-foreground transition-colors">Aviso Legal</a>

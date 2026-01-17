@@ -12,7 +12,7 @@ const Header = () => {
     { href: '/', label: 'Inicio' },
     { href: '/implantes-dentales', label: 'Implantes Dentales' },
     { href: '/sobre-nosotros', label: 'Sobre Nosotros' },
-    { href: '/blog', label: 'Blog' },
+    { href: '/noticias', label: 'Noticias' },
     { href: '/contacto', label: 'Contacto' },
   ];
 
@@ -30,9 +30,9 @@ const Header = () => {
               <span className="sm:hidden">Málaga</span>
             </div>
           </div>
-          <a href="tel:+34952929360" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <a href="tel:+34951178110" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Phone className="w-4 h-4" />
-            <span className="font-medium">952 929 360</span>
+            <span className="font-medium">951 178 110</span>
           </a>
         </div>
       </div>
@@ -56,7 +56,7 @@ const Header = () => {
                 key={link.href}
                 to={link.href}
                 className={`nav-link font-medium ${
-                  isActive(link.href) ? 'text-secondary' : ''
+                  isActive(link.href) ? 'text-primary' : ''
                 }`}
               >
                 {link.label}
@@ -66,7 +66,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button asChild className="cta-accent rounded-full px-6">
+            <Button asChild className="cta-primary rounded-full px-6">
               <Link to="/contacto">Pedir Cita</Link>
             </Button>
           </div>
@@ -91,13 +91,13 @@ const Header = () => {
                   to={link.href}
                   onClick={() => setIsMenuOpen(false)}
                   className={`font-medium py-2 ${
-                    isActive(link.href) ? 'text-secondary' : 'text-foreground'
+                    isActive(link.href) ? 'text-primary' : 'text-foreground'
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <Button asChild className="cta-accent rounded-full mt-2">
+              <Button asChild className="cta-primary rounded-full mt-2">
                 <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>
                   Pedir Cita
                 </Link>

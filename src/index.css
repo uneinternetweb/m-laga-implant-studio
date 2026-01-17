@@ -2,52 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Primary - Deep Teal (Medical Trust) */
-    --primary: 187 65% 28%;
+    /* Primary - Azul Marino Bocaboca */
+    --primary: 225 57% 24%;
     --primary-foreground: 0 0% 100%;
     
-    /* Secondary - Warm Gold (Premium Feel) */
-    --secondary: 38 70% 50%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary - Azul Cian / Eléctrico */
+    --secondary: 195 70% 60%;
+    --secondary-foreground: 225 57% 20%;
     
-    /* Background & Surfaces */
-    --background: 40 25% 97%;
-    --foreground: 210 25% 15%;
+    /* Background - Crema suave Bocaboca */
+    --background: 40 71% 96%;
+    --foreground: 225 57% 20%;
     
     --card: 0 0% 100%;
-    --card-foreground: 210 25% 15%;
+    --card-foreground: 225 57% 20%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 210 25% 15%;
+    --popover-foreground: 225 57% 20%;
     
     /* Muted & Accent */
-    --muted: 40 15% 92%;
-    --muted-foreground: 210 10% 45%;
+    --muted: 40 30% 92%;
+    --muted-foreground: 225 20% 45%;
     
-    --accent: 187 45% 95%;
-    --accent-foreground: 187 65% 25%;
+    --accent: 195 50% 95%;
+    --accent-foreground: 225 57% 24%;
     
     /* Destructive */
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
     
     /* Borders & Inputs */
-    --border: 40 15% 88%;
-    --input: 40 15% 88%;
-    --ring: 187 65% 28%;
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 225 57% 24%;
     
     --radius: 0.75rem;
     
-    /* Custom Tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(187 65% 28%) 0%, hsl(187 55% 35%) 50%, hsl(190 45% 42%) 100%);
-    --gold-gradient: linear-gradient(135deg, hsl(38 70% 50%) 0%, hsl(42 75% 55%) 100%);
-    --card-shadow: 0 4px 20px -4px hsl(210 25% 15% / 0.08);
-    --card-shadow-hover: 0 12px 40px -8px hsl(210 25% 15% / 0.15);
-    --hero-overlay: linear-gradient(180deg, hsl(187 65% 15% / 0.7) 0%, hsl(187 65% 20% / 0.85) 100%);
+    /* Custom Tokens - Bocaboca */
+    --hero-gradient: linear-gradient(135deg, hsl(225 57% 24%) 0%, hsl(225 50% 30%) 50%, hsl(220 45% 35%) 100%);
+    --cta-gradient: linear-gradient(135deg, hsl(195 70% 55%) 0%, hsl(195 75% 50%) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(225 57% 20% / 0.08);
+    --card-shadow-hover: 0 12px 40px -8px hsl(225 57% 20% / 0.15);
+    --hero-overlay: linear-gradient(180deg, hsl(225 57% 15% / 0.75) 0%, hsl(225 57% 20% / 0.85) 100%);
 
     /* Sidebar */
     --sidebar-background: 0 0% 98%;
@@ -61,35 +61,35 @@
   }
 
   .dark {
-    --primary: 187 55% 45%;
+    --primary: 225 50% 40%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 38 70% 55%;
+    --secondary: 195 65% 55%;
     --secondary-foreground: 0 0% 10%;
     
-    --background: 210 25% 8%;
-    --foreground: 40 15% 95%;
+    --background: 225 30% 8%;
+    --foreground: 40 20% 95%;
     
-    --card: 210 20% 12%;
-    --card-foreground: 40 15% 95%;
+    --card: 225 25% 12%;
+    --card-foreground: 40 20% 95%;
     
-    --popover: 210 20% 12%;
-    --popover-foreground: 40 15% 95%;
+    --popover: 225 25% 12%;
+    --popover-foreground: 40 20% 95%;
     
-    --muted: 210 15% 18%;
-    --muted-foreground: 210 10% 65%;
+    --muted: 225 20% 18%;
+    --muted-foreground: 225 15% 65%;
     
-    --accent: 187 35% 18%;
-    --accent-foreground: 187 55% 75%;
+    --accent: 195 35% 18%;
+    --accent-foreground: 195 55% 75%;
     
     --destructive: 0 62% 45%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 210 15% 22%;
-    --input: 210 15% 22%;
-    --ring: 187 55% 45%;
+    --border: 225 20% 22%;
+    --input: 225 20% 22%;
+    --ring: 225 50% 45%;
     
-    --hero-overlay: linear-gradient(180deg, hsl(187 65% 8% / 0.85) 0%, hsl(187 65% 12% / 0.9) 100%);
+    --hero-overlay: linear-gradient(180deg, hsl(225 57% 8% / 0.85) 0%, hsl(225 57% 12% / 0.9) 100%);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -130,7 +130,7 @@
 
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: var(--gold-gradient);
+    background-image: var(--cta-gradient);
   }
 
   .card-hover {
@@ -151,8 +151,8 @@
     background: var(--hero-overlay);
   }
 
-  .cta-gold {
-    background: var(--gold-gradient);
+  .cta-primary {
+    background: var(--cta-gradient);
     @apply text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
   }
 
@@ -162,7 +162,7 @@
 
   .nav-link::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300;
   }
 
   .nav-link:hover::after {
