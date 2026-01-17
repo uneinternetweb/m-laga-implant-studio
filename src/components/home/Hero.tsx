@@ -70,7 +70,7 @@ const Hero = () => {
             >
               <a href="tel:951 178 110" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                Llamar: +34951 178 110
+                Llamar: 951 178 110
               </a>
             </Button>
           </div>
