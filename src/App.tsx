@@ -7,9 +7,10 @@ import Index from "./pages/Index";
 import ImplantesDentales from "./pages/ImplantesDentales";
 import SobreNosotros from "./pages/SobreNosotros";
 import Contacto from "./pages/Contacto";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
+import Noticias from "./pages/Noticias";
+import NoticiaDetalle from "./pages/NoticiaDetalle";
 import NotFound from "./pages/NotFound";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const queryClient = new QueryClient();
 
@@ -24,10 +25,11 @@ const App = () => (
           <Route path="/implantes-dentales" element={<ImplantesDentales />} />
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
           <Route path="/contacto" element={<Contacto />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/noticias" element={<Noticias />} />
+          <Route path="/noticias/:slug" element={<NoticiaDetalle />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <WhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
