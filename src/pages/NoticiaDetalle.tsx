@@ -150,9 +150,9 @@ const BlogPost = () => {
                 variant="outline" 
                 className="rounded-full px-8 h-12"
               >
-                <a href="tel:+34952000000">
+                <a href="tel: +34951 178 110">
                   <Phone className="w-5 h-5 mr-2" />
-                  952 000 000
+                  951 178 110
                 </a>
               </Button>
             </div>
