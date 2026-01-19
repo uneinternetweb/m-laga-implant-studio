@@ -9,11 +9,11 @@ const Team = () => {
       name: 'Dr. Alfonso Moreno Sánchez',
       role: 'Director Médico',
       image: doctorAlfonso,
-      description: 'Director médico de Clínicas Bocaboca. Más de 20 años de experiencia en cirugía oral, implantología y periodoncia. Miembro de SECIB, SEPA y SEI.',
+      description: 'El doctor Alfonso Moreno es el director médico de las Clínicas Bocaboca. Gracias a su esfuerzo y dedicación en el campo de la odontología y la cirugía oral, ha conseguido ser miembro de SECIB, SEPA y SEI.',
       credentials: [
         'Licenciado en Odontología - Universidad de Granada (1997)',
         'Máster en Cirugía Oral, Implantología y Periodoncia - UMA',
-        'Miembro SECIB, SEPA y SEI',
+        'Colaborador en el Máster de Cirugía Oral, Implantología y Periodoncia - UMA',
       ],
     },
     {

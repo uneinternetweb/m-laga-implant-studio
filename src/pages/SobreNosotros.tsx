@@ -2,28 +2,11 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Award, GraduationCap, Heart, Users } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
-import doctor1 from '@/assets/doctor-1.jpg';
-import teamBocaboca from '@/assets/team-bocaboca.png';
-import clinicInterior from '@/assets/clinic-interior.jpg';
+import doctorAlfonso from '@/assets/doctor-alfonso.jpg';
+import clinicaGabinete from '@/assets/clinica-gabinete.png';
+import clinicaRecepcion from '@/assets/clinica-recepcion.png';
 
 const SobreNosotros = () => {
-  const team = [
-    {
-      name: 'Dr. Alfonso Moreno Sánchez',
-      role: 'Director Médico - Implantólogo',
-      image: doctor1,
-      bio: 'Especialista en implantología oral avanzada con más de 20 años de experiencia. Experto en técnicas All-on-4™, Trefoil e implantes cigomáticos. Formación en las mejores universidades y congresos internacionales.',
-      specialties: ['Implantología', 'All-on-4™', 'Cigomáticos', 'Cirugía Oral'],
-    },
-    {
-      name: 'Equipo Clínico Bocaboca',
-      role: 'Especialistas Multidisciplinares',
-      image: teamBocaboca,
-      bio: 'Un equipo completo de profesionales altamente cualificados que cubren todas las especialidades odontológicas. Desde ortodoncia invisible hasta odontopediatría, pasando por estética dental y periodoncia.',
-      specialties: ['Ortodoncia', 'Periodoncia', 'Odontopediatría', 'Estética'],
-    },
-  ];
-
   const values = [
     {
       icon: Heart,
@@ -47,6 +30,15 @@ const SobreNosotros = () => {
     },
   ];
 
+  const drMorenoCredentials = [
+    'Licenciado en Odontología en 1997 por la Universidad de Granada',
+    'Máster Propio Universitario en Cirugía Oral, Implantología y Periodoncia por la Universidad de Málaga',
+    'Colaborador en el Máster Propio Universitario en Cirugía Oral, Implantología y Periodoncia de la Universidad de Málaga',
+    'Miembro de la Sociedad Española de Cirugía Bucal (SECIB)',
+    'Miembro de la Sociedad Española de Periodoncia y Osteointegración (SEPA)',
+    'Miembro de la Sociedad Española de Implantes (SEI)',
+  ];
+
   return (
     <Layout>
       {/* Hero */}
@@ -60,8 +52,8 @@ const SobreNosotros = () => {
               Tu Clínica de Confianza en Málaga
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed">
-              Más de 15 años dedicados a la salud bucodental de Málaga y la Costa del Sol. 
-              3 clínicas con un equipo de especialistas comprometidos con tu sonrisa.
+              Más de 20 años dedicados a la salud bucodental de Málaga y la Costa del Sol. 
+              3 clínicas con un equipo de más de 10 especialistas comprometidos con tu sonrisa.
             </p>
           </div>
         </div>
@@ -76,7 +68,7 @@ const SobreNosotros = () => {
                 Nuestra Historia
               </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-6">
-                Clínica Dental Bocaboca
+                Clínicas Dentales Bocaboca
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 Bocaboca nació con una visión clara: ofrecer tratamientos de implantología 
@@ -85,13 +77,13 @@ const SobreNosotros = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Hoy contamos con instalaciones de última generación, tecnología 3D y un equipo 
-                multidisciplinar que ha devuelto la sonrisa a miles de pacientes de Málaga, 
+                multidisciplinar que ha devuelto la sonrisa a más de 13.000 pacientes de Málaga, 
                 la Costa del Sol y más allá.
               </p>
               <div className="grid grid-cols-3 gap-6">
                 {[
-                  { number: '+15', label: 'Años' },
-                  { number: '+5.000', label: 'Implantes' },
+                  { number: '+20', label: 'Años' },
+                  { number: '13.000+', label: 'Pacientes' },
                   { number: '3', label: 'Clínicas' },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
@@ -103,8 +95,8 @@ const SobreNosotros = () => {
             </div>
             <div className="rounded-3xl overflow-hidden card-hover">
               <img
-                src={clinicInterior}
-                alt="Interior de Clínica Dental Bocaboca en Málaga"
+                src={clinicaRecepcion}
+                alt="Recepción de Clínicas Dentales Bocaboca en Málaga"
                 className="w-full h-auto"
               />
             </div>
@@ -150,63 +142,114 @@ const SobreNosotros = () => {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Dr. Alfonso Moreno */}
       <section className="section-padding bg-background">
+        <div className="container-wide">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
+              Dirección Área Médica
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-6">
+              Dr. Alfonso Moreno Sánchez
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div className="rounded-3xl overflow-hidden card-hover">
+              <img
+                src={doctorAlfonso}
+                alt="Dr. Alfonso Moreno Sánchez - Director Médico de Clínicas Bocaboca"
+                className="w-full h-auto aspect-[4/5] object-cover object-top"
+              />
+            </div>
+            <div>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                El doctor Alfonso Moreno es el director médico de las Clínicas Bocaboca. 
+                Gracias a su esfuerzo y dedicación en el campo de la odontología y la cirugía oral, 
+                ha conseguido ser miembro de la Sociedad Española de Cirugía Bucal (SECIB), 
+                de la Sociedad Española de Periodoncia (SEPA) y de la Sociedad Española de Implantes (SEI).
+              </p>
+              
+              <div className="bg-accent rounded-2xl p-6 mb-6">
+                <p className="font-display text-xl font-bold text-foreground mb-2">
+                  Más de veinte años
+                </p>
+                <p className="text-secondary font-medium">de experiencia en el sector</p>
+              </div>
+
+              <ul className="space-y-3">
+                {drMorenoCredentials.map((credential, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <GraduationCap className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-muted-foreground">{credential}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="section-padding bg-muted">
         <div className="container-wide">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
               Nuestro Equipo
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-6">
-              Profesionales a tu Servicio
+              Profesionales Especializados en Todas las Áreas
             </h2>
             <p className="text-muted-foreground text-lg">
-              Conoce a los especialistas que harán posible tu nueva sonrisa. 
-              Formación de élite, experiencia contrastada y dedicación absoluta.
+              En Clínicas Dentales Bocaboca, contamos con un equipo de especialistas en todos 
+              los campos de la odontología, porque para nosotros, la salud bucodental no es un 
+              privilegio, sino un derecho al que toda la población tiene que tener acceso.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {team.map((member, index) => (
-              <div 
-                key={member.name}
-                className="bg-card rounded-3xl overflow-hidden card-hover animate-fade-up"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-8">
-                  <h3 className="font-display text-2xl font-bold text-foreground mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-secondary font-medium mb-4">{member.role}</p>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
-                    {member.bio}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {member.specialties.map((specialty) => (
-                      <span 
-                        key={specialty}
-                        className="px-3 py-1 bg-accent text-accent-foreground rounded-full text-sm"
-                      >
-                        {specialty}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                El equipo de clínicas dentales Bocaboca está constituido por profesionales con 
+                amplia experiencia, a través de la cual hemos podido adaptarnos a las innovaciones 
+                del sector, invirtiendo en I+D, formación continuada y siendo pioneros en muchos 
+                tratamientos vanguardistas y de última generación.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Todos nuestros profesionales realizan los tratamientos adaptándose a las necesidades 
+                de cada uno de nuestros pacientes, estudiando su caso de forma individualizada y 
+                consensuando, mediante sesiones clínicas, con los más de 10 doctores/as que forman 
+                parte de nuestras clínicas.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Una de las premisas que destacan en nuestras clínicas es la creencia en las 
+                especialidades dentro de la odontología. La boca puede tener diferentes problemas 
+                o patologías, y no todos deben tratarse por igual.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {['Implantología', 'Periodoncia', 'Ortodoncia', 'Estética Dental', 'Cirugía Maxilofacial', 'Odontopediatría', 'Odontología General'].map((specialty) => (
+                  <span 
+                    key={specialty}
+                    className="px-4 py-2 bg-card text-foreground rounded-full text-sm font-medium"
+                  >
+                    {specialty}
+                  </span>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className="rounded-3xl overflow-hidden card-hover">
+              <img
+                src={clinicaGabinete}
+                alt="Gabinete dental moderno en Clínicas Bocaboca"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Technology */}
-      <section className="section-padding bg-muted">
+      <section className="section-padding bg-background">
         <div className="container-wide">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
