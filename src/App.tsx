@@ -9,6 +9,7 @@ import SobreNosotros from "./pages/SobreNosotros";
 import Contacto from "./pages/Contacto";
 import Noticias from "./pages/Noticias";
 import NoticiaDetalle from "./pages/NoticiaDetalle";
+import Privacidad from "./pages/Privacidad";
 import NotFound from "./pages/NotFound";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/noticias/:slug" element={<NoticiaDetalle />} />
+          <Route path="/privacidad" element={<Privacidad />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <WhatsAppButton />

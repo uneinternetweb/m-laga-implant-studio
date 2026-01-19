@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Calendar, ArrowRight, User, Clock } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import { blogPosts } from '@/data/blogPosts';
+import { newsPosts } from '@/data/newsPosts';
 
-const Blog = () => {
+const Noticias = () => {
   return (
     <Layout>
       {/* Hero */}
@@ -11,7 +11,7 @@ const Blog = () => {
         <div className="container-wide">
           <div className="max-w-3xl">
             <span className="inline-block bg-secondary/90 text-secondary-foreground px-4 py-2 rounded-full text-sm font-medium mb-6">
-              Blog
+              Noticias
             </span>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground leading-tight mb-6">
               Noticias y Consejos sobre Implantes Dentales
@@ -24,7 +24,7 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Blog Posts */}
+      {/* News Posts */}
       <section className="section-padding bg-background">
         <div className="container-wide">
           {/* Featured Post */}
@@ -32,8 +32,8 @@ const Blog = () => {
             <div className="grid lg:grid-cols-2">
               <div className="aspect-video lg:aspect-auto overflow-hidden">
                 <img
-                  src={blogPosts[0].image}
-                  alt={blogPosts[0].title}
+                  src={newsPosts[0].image}
+                  alt={newsPosts[0].title}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -41,27 +41,27 @@ const Blog = () => {
                 <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-4">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <time dateTime={blogPosts[0].date}>{blogPosts[0].dateFormatted}</time>
+                    <time dateTime={newsPosts[0].date}>{newsPosts[0].dateFormatted}</time>
                   </div>
                   <div className="flex items-center gap-2">
                     <User className="w-4 h-4" />
-                    <span>{blogPosts[0].author}</span>
+                    <span>{newsPosts[0].author}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
-                    <span>{blogPosts[0].readTime}</span>
+                    <span>{newsPosts[0].readTime}</span>
                   </div>
                 </div>
                 <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  <Link to={`/blog/${blogPosts[0].slug}`} className="hover:text-primary transition-colors">
-                    {blogPosts[0].title}
+                  <Link to={`/noticias/${newsPosts[0].slug}`} className="hover:text-primary transition-colors">
+                    {newsPosts[0].title}
                   </Link>
                 </h2>
                 <p className="text-muted-foreground mb-6 line-clamp-3">
-                  {blogPosts[0].excerpt}
+                  {newsPosts[0].excerpt}
                 </p>
                 <Link
-                  to={`/blog/${blogPosts[0].slug}`}
+                  to={`/noticias/${newsPosts[0].slug}`}
                   className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
                 >
                   Leer artículo completo
@@ -73,7 +73,7 @@ const Blog = () => {
 
           {/* Other Posts */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.slice(1).map((post, index) => (
+            {newsPosts.slice(1).map((post, index) => (
               <article 
                 key={post.slug}
                 className="group bg-card rounded-2xl overflow-hidden card-hover animate-fade-up"
@@ -98,13 +98,13 @@ const Blog = () => {
                     </div>
                   </div>
                   <h3 className="font-display text-xl font-bold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
-                    <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                    <Link to={`/noticias/${post.slug}`}>{post.title}</Link>
                   </h3>
                   <p className="text-muted-foreground text-sm line-clamp-3 mb-4">
                     {post.excerpt}
                   </p>
                   <Link
-                    to={`/blog/${post.slug}`}
+                    to={`/noticias/${post.slug}`}
                     className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:gap-3 transition-all"
                   >
                     Leer más
@@ -140,4 +140,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Noticias;
