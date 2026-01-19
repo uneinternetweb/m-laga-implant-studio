@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Award, GraduationCap } from 'lucide-react';
 import doctorAlfonso from '@/assets/doctor-alfonso.jpg';
-import teamBocaboca from '@/assets/team-bocaboca.png';
+import clinicaGabinete from '@/assets/clinica-gabinete.png';
 
 const Team = () => {
   const team = [
@@ -19,7 +19,7 @@ const Team = () => {
     {
       name: 'Equipo Bocaboca',
       role: 'Especialistas Multidisciplinares',
-      image: teamBocaboca,
+      image: clinicaGabinete,
       description: 'Más de 10 doctores especializados en todas las áreas de la odontología: implantología, periodoncia, ortodoncia, estética dental, cirugía maxilofacial y odontopediatría.',
       credentials: [
         'Formación continua y actualización permanente',

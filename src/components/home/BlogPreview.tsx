@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar } from 'lucide-react';
-import { blogPosts } from '@/data/blogPosts';
+import { newsPosts } from '@/data/newsPosts';
 
 const BlogPreview = () => {
-  const latestPosts = blogPosts.slice(0, 3);
+  const latestPosts = newsPosts.slice(0, 3);
 
   return (
     <section className="section-padding bg-muted">
@@ -12,17 +12,17 @@ const BlogPreview = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
             <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
-              Blog
+              Noticias
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3">
               Noticias y Consejos sobre Implantes
             </h2>
           </div>
           <Link
-            to="/blog"
+            to="/noticias"
             className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
           >
-            Ver todos los artículos
+            Ver todas las noticias
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
@@ -48,13 +48,13 @@ const BlogPreview = () => {
                   <time dateTime={post.date}>{post.dateFormatted}</time>
                 </div>
                 <h3 className="font-display text-xl font-bold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
-                  <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                  <Link to={`/noticias/${post.slug}`}>{post.title}</Link>
                 </h3>
                 <p className="text-muted-foreground text-sm line-clamp-3 mb-4">
                   {post.excerpt}
                 </p>
                 <Link
-                  to={`/blog/${post.slug}`}
+                  to={`/noticias/${post.slug}`}
                   className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:gap-3 transition-all"
                 >
                   Leer más

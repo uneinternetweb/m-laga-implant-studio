@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle2, ArrowRight, Phone, Shield, Zap, Users, Clock } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Phone, Shield, Zap, Users, Clock, Award, ChevronDown } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
-import implantModel from '@/assets/implant-model.jpg';
-import clinicInterior from '@/assets/clinic-interior.jpg';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import clinicaSillon from '@/assets/clinica-sillon.png';
+import clinicaGabinete from '@/assets/clinica-gabinete.png';
 
 const ImplantesDentales = () => {
   const implantTypes = [
@@ -18,9 +19,9 @@ const ImplantesDentales = () => {
       features: ['Menor número de cirugías', 'Coste optimizado', 'Funcionalidad completa'],
     },
     {
-      title: 'All-on-4 / All-on-6',
-      description: 'Arcada completa sobre 4 o 6 implantes estratégicamente ubicados.',
-      features: ['Dientes fijos en el día', 'Solución definitiva', 'Ideal para edentulismo total'],
+      title: 'All-on-4™',
+      description: 'Arcada completa sobre 4 implantes estratégicamente ubicados. Dientes fijos en un solo día.',
+      features: ['Dientes fijos en el día', 'Sin injertos de hueso', 'Ideal para edentulismo total'],
     },
     {
       title: 'Carga Inmediata',
@@ -52,6 +53,37 @@ const ImplantesDentales = () => {
     },
   ];
 
+  const faqs = [
+    {
+      question: '¿Se puede masticar tras la cirugía de implantes?',
+      answer: 'Recomendamos una dieta blanda durante el primer mes tras la intervención. Después de este periodo, podrás hacer vida completamente normal y comer de todo sin restricciones.',
+    },
+    {
+      question: '¿Qué tipo de anestesia se utiliza?',
+      answer: 'Se utiliza la misma anestesia local que para empastes o extracciones. La cirugía es prácticamente indolora. Si lo prefieres, también ofrecemos la opción de sedación consciente para una experiencia más relajada.',
+    },
+    {
+      question: '¿La sedación consciente es obligatoria?',
+      answer: 'No, la sedación es totalmente opcional y una decisión del paciente. Muchos de nuestros pacientes realizan el tratamiento únicamente con anestesia local sin ningún problema.',
+    },
+    {
+      question: '¿Existe alguna contraindicación por edad?',
+      answer: 'No existe una contraindicación específica por edad para la colocación de implantes dentales. Cada caso se evalúa individualmente por nuestro equipo de cirujanos tras realizar el estudio completo.',
+    },
+    {
+      question: '¿Cuánto dura un implante dental?',
+      answer: 'Con los cuidados adecuados y revisiones periódicas, los implantes dentales pueden durar toda la vida. En Bocaboca trabajamos exclusivamente con implantes Nobel Biocare, que ofrecen garantía de por vida.',
+    },
+    {
+      question: '¿Qué pasa si no tengo suficiente hueso?',
+      answer: 'La técnica All-on-4™ está especialmente diseñada para aprovechar al máximo el hueso disponible, evitando injertos en la mayoría de los casos. En situaciones especiales, contamos con técnicas de regeneración ósea.',
+    },
+    {
+      question: '¿Cuánto tiempo estaré sin dientes?',
+      answer: 'Con la técnica de carga inmediata y All-on-4™, sales de la clínica el mismo día con dientes provisionales fijos. Nunca estarás sin dientes durante el proceso.',
+    },
+  ];
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -67,11 +99,10 @@ const ImplantesDentales = () => {
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed">
                 Recupera la funcionalidad y estética de tu sonrisa con implantes dentales de máxima 
-                calidad. Somos especialistas en implantología avanzada con más de 15 años de 
-                experiencia en Málaga.
+                calidad. Más de 20 años de experiencia y miles de pacientes satisfechos nos avalan.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                {['Garantía de por vida', 'Primera consulta gratis', '+5.000 implantes colocados'].map((item) => (
+                {['Garantía de por vida', 'Primera consulta gratis', 'Más de 13.000 casos de éxito'].map((item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-secondary" />
                     <span>{item}</span>
@@ -91,7 +122,7 @@ const ImplantesDentales = () => {
                   variant="outline" 
                   className="rounded-full px-8 h-14 text-lg bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
                 >
-                  <a href="tel:951 178 110">
+                  <a href="tel:951178110">
                     <Phone className="w-5 h-5 mr-2" />
                     951 178 110
                   </a>
@@ -101,10 +132,39 @@ const ImplantesDentales = () => {
             <div className="relative hidden lg:block">
               <div className="rounded-3xl overflow-hidden">
                 <img
-                  src={implantModel}
-                  alt="Implante dental de titanio con corona cerámica"
+                  src={clinicaSillon}
+                  alt="Gabinete dental moderno en Clínicas Bocaboca Málaga"
                   className="w-full h-auto"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Success Stats Banner */}
+      <section className="bg-secondary py-8">
+        <div className="container-wide">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-secondary-foreground">
+            <div className="flex items-center gap-3">
+              <Award className="w-8 h-8" />
+              <div>
+                <p className="font-display text-2xl md:text-3xl font-bold">13.000+</p>
+                <p className="text-sm opacity-90">Casos de Éxito</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Users className="w-8 h-8" />
+              <div>
+                <p className="font-display text-2xl md:text-3xl font-bold">20+</p>
+                <p className="text-sm opacity-90">Años de Experiencia</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Shield className="w-8 h-8" />
+              <div>
+                <p className="font-display text-2xl md:text-3xl font-bold">98%</p>
+                <p className="text-sm opacity-90">Tasa de Éxito</p>
               </div>
             </div>
           </div>
@@ -130,7 +190,8 @@ const ImplantesDentales = () => {
               <p className="text-muted-foreground leading-relaxed mb-8">
                 A diferencia de las prótesis removibles o los puentes tradicionales, los implantes 
                 no dañan los dientes adyacentes y ofrecen una solución definitiva que puede durar 
-                toda la vida con el cuidado adecuado.
+                toda la vida con el cuidado adecuado. En Clínicas Bocaboca trabajamos exclusivamente 
+                con implantes Nobel Biocare, líder mundial en implantología.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
@@ -153,8 +214,8 @@ const ImplantesDentales = () => {
             </div>
             <div className="rounded-3xl overflow-hidden card-hover">
               <img
-                src={clinicInterior}
-                alt="Interior de nuestra clínica dental en Málaga"
+                src={clinicaGabinete}
+                alt="Gabinete de tratamiento dental en Clínicas Bocaboca"
                 className="w-full h-auto"
               />
             </div>
@@ -173,7 +234,7 @@ const ImplantesDentales = () => {
               Soluciones de Implantes para Cada Caso
             </h2>
             <p className="text-muted-foreground text-lg">
-              En nuestra clínica de Málaga ofrecemos todas las técnicas de implantología moderna 
+              En nuestras clínicas de Málaga ofrecemos todas las técnicas de implantología moderna 
               para adaptarnos a las necesidades específicas de cada paciente.
             </p>
           </div>
@@ -256,38 +317,26 @@ const ImplantesDentales = () => {
               Preguntas Frecuentes
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3">
-              Dudas sobre Implantes Dentales en Málaga
+              Resolvemos Tus Dudas sobre Implantes
             </h2>
           </div>
 
-          <div className="space-y-6">
-            {[
-              {
-                q: '¿Duele ponerse un implante dental?',
-                a: 'El procedimiento se realiza con anestesia local, por lo que no sentirás dolor durante la cirugía. Las molestias posteriores son leves y se controlan fácilmente con analgésicos habituales.',
-              },
-              {
-                q: '¿Cuánto dura el tratamiento completo?',
-                a: 'Depende del caso. Con carga inmediata puedes salir el mismo día con dientes provisionales. El tratamiento convencional requiere 3-6 meses para la osteointegración antes de colocar la corona definitiva.',
-              },
-              {
-                q: '¿Cuánto cuesta un implante dental en Málaga?',
-                a: 'El precio varía según el tipo de implante y la complejidad del caso. Ofrecemos primera consulta gratuita con presupuesto detallado y financiación sin intereses hasta 24 meses.',
-              },
-              {
-                q: '¿Los implantes son para toda la vida?',
-                a: 'Con una correcta higiene oral y revisiones periódicas, los implantes pueden durar toda la vida. El titanio es un material biocompatible que se integra permanentemente con el hueso.',
-              },
-            ].map((faq, index) => (
-              <div 
-                key={index}
-                className="bg-card rounded-xl p-6"
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`}
+                className="bg-card rounded-xl px-6 border-none"
               >
-                <h3 className="font-semibold text-foreground text-lg mb-2">{faq.q}</h3>
-                <p className="text-muted-foreground">{faq.a}</p>
-              </div>
+                <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline py-6">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground pb-6">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
             ))}
-          </div>
+          </Accordion>
         </div>
       </section>
 
@@ -298,7 +347,7 @@ const ImplantesDentales = () => {
             ¿Preparado para Recuperar tu Sonrisa?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-            Solicita tu primera consulta gratuita en nuestra clínica de Málaga. 
+            Solicita tu primera consulta gratuita en nuestras clínicas de Málaga. 
             Estudiaremos tu caso y te ofreceremos la mejor solución personalizada.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -314,7 +363,7 @@ const ImplantesDentales = () => {
               variant="outline" 
               className="rounded-full px-8 h-14 text-lg bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
             >
-              <a href="tel:+34951 178 110">
+              <a href="tel:951178110">
                 <Phone className="w-5 h-5 mr-2" />
                 951 178 110
               </a>

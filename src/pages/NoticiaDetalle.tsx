@@ -2,19 +2,19 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { Calendar, User, Clock, ArrowLeft, ArrowRight, Phone } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
-import { blogPosts } from '@/data/blogPosts';
+import { newsPosts } from '@/data/newsPosts';
 
-const BlogPost = () => {
+const NoticiaDetalle = () => {
   const { slug } = useParams<{ slug: string }>();
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = newsPosts.find((p) => p.slug === slug);
 
   if (!post) {
-    return <Navigate to="/blog" replace />;
+    return <Navigate to="/noticias" replace />;
   }
 
-  const currentIndex = blogPosts.findIndex((p) => p.slug === slug);
-  const prevPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
-  const nextPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
+  const currentIndex = newsPosts.findIndex((p) => p.slug === slug);
+  const prevPost = currentIndex > 0 ? newsPosts[currentIndex - 1] : null;
+  const nextPost = currentIndex < newsPosts.length - 1 ? newsPosts[currentIndex + 1] : null;
 
   // Simple markdown-like rendering
   const renderContent = (content: string) => {
@@ -86,11 +86,11 @@ const BlogPost = () => {
       <section className="hero-section py-16 md:py-24">
         <div className="container-narrow">
           <Link 
-            to="/blog" 
+            to="/noticias" 
             className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Volver al blog
+            Volver a noticias
           </Link>
           <div className="flex flex-wrap items-center gap-4 text-sm text-primary-foreground/70 mb-6">
             <div className="flex items-center gap-2">
@@ -150,7 +150,7 @@ const BlogPost = () => {
                 variant="outline" 
                 className="rounded-full px-8 h-12"
               >
-                <a href="tel: +34951 178 110">
+                <a href="tel:951178110">
                   <Phone className="w-5 h-5 mr-2" />
                   951 178 110
                 </a>
@@ -163,12 +163,12 @@ const BlogPost = () => {
             <div className="flex flex-col md:flex-row justify-between gap-6">
               {prevPost ? (
                 <Link 
-                  to={`/blog/${prevPost.slug}`}
+                  to={`/noticias/${prevPost.slug}`}
                   className="group flex-1 bg-card rounded-xl p-6 card-hover"
                 >
                   <span className="text-sm text-muted-foreground flex items-center gap-2 mb-2">
                     <ArrowLeft className="w-4 h-4" />
-                    Artículo anterior
+                    Noticia anterior
                   </span>
                   <p className="font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
                     {prevPost.title}
@@ -178,11 +178,11 @@ const BlogPost = () => {
               
               {nextPost ? (
                 <Link 
-                  to={`/blog/${nextPost.slug}`}
+                  to={`/noticias/${nextPost.slug}`}
                   className="group flex-1 bg-card rounded-xl p-6 card-hover text-right"
                 >
                   <span className="text-sm text-muted-foreground flex items-center justify-end gap-2 mb-2">
-                    Artículo siguiente
+                    Noticia siguiente
                     <ArrowRight className="w-4 h-4" />
                   </span>
                   <p className="font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
@@ -198,4 +198,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default NoticiaDetalle;

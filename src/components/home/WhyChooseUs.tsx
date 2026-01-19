@@ -1,32 +1,32 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Users, GraduationCap, Microscope, CreditCard } from 'lucide-react';
-import clinicImage from '@/assets/clinic-interior.jpg';
+import { ArrowRight, Users, GraduationCap, Microscope, Award } from 'lucide-react';
+import clinicaRecepcion from '@/assets/clinica-recepcion.png';
 
 const WhyChooseUs = () => {
   const reasons = [
     {
       icon: Users,
-      number: '+15',
+      number: '+20',
       label: 'Años de Experiencia',
       description: 'Clínica dental consolidada en Málaga',
     },
     {
+      icon: Award,
+      number: '13.000+',
+      label: 'Casos de Éxito',
+      description: 'Implantes realizados con éxito',
+    },
+    {
       icon: GraduationCap,
-      number: '3',
-      label: 'Especialistas',
-      description: 'Implantólogos titulados',
+      number: '10+',
+      label: 'Doctores',
+      description: 'Especialistas en todas las áreas',
     },
     {
       icon: Microscope,
       number: '100%',
       label: 'Digital',
       description: 'Tecnología 3D y escáner intraoral',
-    },
-    {
-      icon: CreditCard,
-      number: '0%',
-      label: 'Financiación',
-      description: 'Sin intereses hasta 24 meses',
     },
   ];
 
@@ -102,8 +102,8 @@ const WhyChooseUs = () => {
           <div className="order-1 lg:order-2">
             <div className="rounded-3xl overflow-hidden card-hover">
               <img
-                src={clinicImage}
-                alt="Interior moderno de nuestra clínica dental en Málaga"
+                src={clinicaRecepcion}
+                alt="Recepción moderna de nuestra clínica dental en Málaga"
                 className="w-full h-auto aspect-[4/3] object-cover"
               />
             </div>
