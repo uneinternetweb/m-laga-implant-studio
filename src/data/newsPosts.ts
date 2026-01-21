@@ -2,6 +2,7 @@ import clinicaRecepcion from '@/assets/clinica-recepcion.png';
 import clinicaGabinete from '@/assets/clinica-gabinete.png';
 import clinicaSillon from '@/assets/clinica-sillon.png';
 import clinicaAyala from '@/assets/clinica-ayala.png';
+import newsImplantMaintenance from '@/assets/news-implant-maintenance.jpg';
 
 export interface NewsPost {
   slug: string;
@@ -16,6 +17,114 @@ export interface NewsPost {
 }
 
 export const newsPosts: NewsPost[] = [
+  {
+    slug: 'importancia-mantenimiento-implantes-dentales-malaga',
+    title: 'La Importancia del Mantenimiento de los Implantes Dentales en Málaga',
+    excerpt: 'Descubre por qué el mantenimiento profesional de tus implantes dentales es fundamental para garantizar su durabilidad y éxito a largo plazo. Consejos de expertos en implantología de Málaga.',
+    content: `
+## Por Qué el Mantenimiento de Implantes Dentales es Crucial
+
+Los implantes dentales son una de las mejores inversiones que puedes hacer para tu salud bucodental. Sin embargo, como cualquier tratamiento dental, requieren un **mantenimiento adecuado** para garantizar su éxito a largo plazo. En Clínicas Bocaboca, especialistas en implantes dentales en Málaga, te explicamos todo lo que necesitas saber.
+
+## ¿Pueden Fallar los Implantes Dentales?
+
+Aunque los implantes dentales tienen una tasa de éxito superior al 95%, la falta de mantenimiento puede provocar problemas como:
+
+- **Periimplantitis**: Infección de los tejidos alrededor del implante
+- **Pérdida ósea**: Reabsorción del hueso que sostiene el implante
+- **Aflojamiento**: El implante puede perder estabilidad
+- **Fractura de la corona**: Desgaste excesivo de la prótesis
+
+## Rutina de Mantenimiento Diario
+
+### Higiene en Casa
+
+Para mantener tus implantes dentales en perfecto estado, sigue estas recomendaciones:
+
+1. **Cepillado tres veces al día**: Utiliza un cepillo de cerdas suaves
+2. **Hilo dental o irrigador**: Limpia los espacios interdentales
+3. **Cepillos interproximales**: Ideales para limpiar alrededor del implante
+4. **Enjuague bucal**: Sin alcohol, para no irritar los tejidos
+
+### Productos Recomendados
+
+- Pasta dentífrica poco abrasiva
+- Cepillo eléctrico con cabezal suave
+- Irrigador bucal para eliminar restos de comida
+- Hilo dental especial para implantes (Super Floss)
+
+## Revisiones Profesionales: Clave del Éxito
+
+### ¿Cada Cuánto Tiempo Debo Ir al Dentista?
+
+En Clínicas Bocaboca recomendamos **revisiones cada 6 meses** para pacientes con implantes dentales. Durante estas visitas:
+
+- Evaluamos el estado de los tejidos periimplantarios
+- Realizamos radiografías de control
+- Limpieza profesional con instrumental específico
+- Comprobamos la oclusión y ajuste de la prótesis
+- Detectamos posibles problemas de forma temprana
+
+### Limpieza Profesional de Implantes
+
+La limpieza profesional de implantes es diferente a la limpieza dental convencional. Utilizamos:
+
+- **Curetas de titanio**: Para no rayar la superficie del implante
+- **Ultrasonidos específicos**: Con puntas de plástico o PEEK
+- **Air-Flow**: Pulido con partículas de glicina
+
+## Señales de Alarma: Cuándo Acudir al Especialista
+
+Contacta con tu implantólogo en Málaga si experimentas:
+
+- Sangrado al cepillarte alrededor del implante
+- Enrojecimiento o inflamación de las encías
+- Movilidad del implante o la corona
+- Dolor o molestias persistentes
+- Mal aliento que no desaparece con el cepillado
+
+## Factores que Afectan la Durabilidad del Implante
+
+### Hábitos que Debes Evitar
+
+- **Tabaquismo**: Multiplica por 3 el riesgo de periimplantitis
+- **Bruxismo no tratado**: Puede fracturar la corona
+- **Morderse las uñas o bolígrafos**: Daña la prótesis
+- **Alimentos muy duros**: Nueces enteras, hielo
+
+### Enfermedades que Requieren Atención Especial
+
+- Diabetes no controlada
+- Osteoporosis
+- Enfermedades autoinmunes
+- Tratamientos de quimioterapia o radioterapia
+
+## Más de 13.000 Casos de Éxito en Málaga
+
+En Clínicas Bocaboca, con más de 20 años de experiencia en implantología dental en Málaga, hemos tratado más de 13.000 casos con éxito. El Dr. Alfonso Moreno y su equipo están comprometidos con el seguimiento a largo plazo de todos nuestros pacientes.
+
+## Programa de Mantenimiento en Clínicas Bocaboca
+
+Ofrecemos un programa de mantenimiento personalizado que incluye:
+
+- Revisiones semestrales programadas
+- Limpiezas profesionales con protocolo específico para implantes
+- Radiografías digitales de control
+- Asesoramiento personalizado de higiene
+- Precio especial para pacientes de la clínica
+
+## Tu Primera Consulta Gratuita
+
+Si tienes implantes dentales y quieres asegurar su durabilidad, o si estás considerando ponerte implantes en Málaga, te invitamos a una **consulta gratuita** en nuestras clínicas del centro de Málaga. Evaluaremos tu caso y te daremos las recomendaciones personalizadas que necesitas.
+
+**Llámanos al 951 178 110** o escríbenos por WhatsApp al 679 49 02 16 para pedir tu cita.
+    `,
+    date: '2025-01-21',
+    dateFormatted: '21 Enero 2025',
+    image: newsImplantMaintenance,
+    author: 'Dr. Alfonso Moreno',
+    readTime: '7 min',
+  },
   {
     slug: 'avances-implantes-dentales-2024',
     title: 'Los Últimos Avances en Implantes Dentales: Tecnología 3D y Cirugía Guiada',
