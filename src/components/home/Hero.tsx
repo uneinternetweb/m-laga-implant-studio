@@ -32,7 +32,7 @@ const Hero = () => {
           {/* Heading */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
             Implantes Dentales en Málaga{' '}
-            <span className="text-gradient">con Garantía de Por Vida</span>
+            <span className="text-gradient">con garantía de por vida</span>
           </h1>
 
           {/* Subheading */}
