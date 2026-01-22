@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Calendar, ArrowRight, User, Clock } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { newsPosts } from '@/data/newsPosts';
 
@@ -38,20 +38,6 @@ const Noticias = () => {
                 />
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-4">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <time dateTime={newsPosts[0].date}>{newsPosts[0].dateFormatted}</time>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <User className="w-4 h-4" />
-                    <span>{newsPosts[0].author}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4" />
-                    <span>{newsPosts[0].readTime}</span>
-                  </div>
-                </div>
                 <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
                   <Link to={`/noticias/${newsPosts[0].slug}`} className="hover:text-primary transition-colors">
                     {newsPosts[0].title}
@@ -87,16 +73,6 @@ const Noticias = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground mb-3">
-                    <div className="flex items-center gap-1.5">
-                      <Calendar className="w-4 h-4" />
-                      <time dateTime={post.date}>{post.dateFormatted}</time>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <Clock className="w-4 h-4" />
-                      <span>{post.readTime}</span>
-                    </div>
-                  </div>
                   <h3 className="font-display text-xl font-bold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
                     <Link to={`/noticias/${post.slug}`}>{post.title}</Link>
                   </h3>

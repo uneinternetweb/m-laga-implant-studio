@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { newsPosts } from '@/data/newsPosts';
 
 const BlogPreview = () => {
@@ -43,10 +43,6 @@ const BlogPreview = () => {
                 />
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
-                  <Calendar className="w-4 h-4" />
-                  <time dateTime={post.date}>{post.dateFormatted}</time>
-                </div>
                 <h3 className="font-display text-xl font-bold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
                   <Link to={`/noticias/${post.slug}`}>{post.title}</Link>
                 </h3>

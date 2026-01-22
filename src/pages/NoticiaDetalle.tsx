@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { Calendar, User, Clock, ArrowLeft, ArrowRight, Phone } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Phone } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { newsPosts } from '@/data/newsPosts';
@@ -92,20 +92,6 @@ const NoticiaDetalle = () => {
             <ArrowLeft className="w-4 h-4" />
             Volver a noticias
           </Link>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-primary-foreground/70 mb-6">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4" />
-              <time dateTime={post.date}>{post.dateFormatted}</time>
-            </div>
-            <div className="flex items-center gap-2">
-              <User className="w-4 h-4" />
-              <span>{post.author}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4" />
-              <span>{post.readTime} de lectura</span>
-            </div>
-          </div>
           <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight">
             {post.title}
           </h1>
