@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-dental.jpg';
+import heroImage from '@/assets/hero-bocaboca-fachada.jpg';
 
 const Hero = () => {
   const benefits = [
