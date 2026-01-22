@@ -77,10 +77,10 @@ const Contacto = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Teléfono</h3>
                     <a 
-                      href="tel:+34952000000" 
+                      href="tel:+34951178110" 
                       className="text-2xl font-display font-bold text-primary hover:opacity-80 transition-opacity"
                     >
-                      952 000 000
+                      951 178 110
                     </a>
                     <p className="text-sm text-muted-foreground mt-1">
                       Llamada gratuita
