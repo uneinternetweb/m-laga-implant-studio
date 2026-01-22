@@ -98,7 +98,7 @@ const Contacto = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
                     <a 
-                      href="mailto:info@implantesmalaga.com" 
+                      href="mailto:info@clinicadentalbocaboca.com" 
                       className="text-primary hover:opacity-80 transition-opacity"
                     >
                       info@implantesmalaga.com
