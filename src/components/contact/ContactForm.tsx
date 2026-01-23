@@ -1,24 +1,78 @@
-import { useState } from 'react';
-import { Send, CheckCircle } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Send, CheckCircle, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
+import { Link } from 'react-router-dom';
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  
+  // CAPTCHA state
+  const [captchaNumbers, setCaptchaNumbers] = useState({ a: 0, b: 0 });
+  const [captchaAnswer, setCaptchaAnswer] = useState('');
+  const [captchaError, setCaptchaError] = useState(false);
+
+  // Generate random numbers for CAPTCHA
+  const generateCaptcha = () => {
+    const a = Math.floor(Math.random() * 10) + 1;
+    const b = Math.floor(Math.random() * 10) + 1;
+    setCaptchaNumbers({ a, b });
+    setCaptchaAnswer('');
+    setCaptchaError(false);
+  };
+
+  useEffect(() => {
+    generateCaptcha();
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    // Validate CAPTCHA
+    const correctAnswer = captchaNumbers.a + captchaNumbers.b;
+    if (parseInt(captchaAnswer) !== correctAnswer) {
+      setCaptchaError(true);
+      toast.error('La respuesta del captcha es incorrecta. Inténtalo de nuevo.');
+      generateCaptcha();
+      return;
+    }
+
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast.success('¡Mensaje enviado! Te contactaremos pronto.');
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name') as string,
+      phone: formData.get('phone') as string,
+      email: formData.get('email') as string,
+      treatment: formData.get('treatment') as string,
+      message: formData.get('message') as string,
+    };
+
+    try {
+      // Send email using mailto with multiple recipients
+      const recipients = 'marco@uneinternet.com,m.musso@celdas.com';
+      const subject = encodeURIComponent(`Nueva solicitud de cita - ${data.name}`);
+      const body = encodeURIComponent(
+        `Nombre: ${data.name}\n` +
+        `Teléfono: ${data.phone}\n` +
+        `Email: ${data.email}\n` +
+        `Tratamiento: ${data.treatment || 'No especificado'}\n` +
+        `Mensaje: ${data.message || 'Sin mensaje adicional'}`
+      );
+      
+      // Open mailto link
+      window.location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
+      
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      toast.success('¡Gracias! Se abrirá tu cliente de correo para enviar la solicitud.');
+    } catch (error) {
+      setIsSubmitting(false);
+      toast.error('Error al procesar el formulario. Por favor, inténtalo de nuevo.');
+    }
   };
 
   if (isSubmitted) {
@@ -52,6 +106,7 @@ const ContactForm = () => {
             required
             placeholder="Tu nombre"
             className="h-12"
+            maxLength={100}
           />
         </div>
         <div>
@@ -65,6 +120,7 @@ const ContactForm = () => {
             required
             placeholder="Tu teléfono"
             className="h-12"
+            maxLength={20}
           />
         </div>
       </div>
@@ -80,6 +136,7 @@ const ContactForm = () => {
           required
           placeholder="tu@email.com"
           className="h-12"
+          maxLength={255}
         />
       </div>
 
@@ -97,6 +154,7 @@ const ContactForm = () => {
           <option value="implantes-multiples">Varios implantes</option>
           <option value="all-on-4">All-on-4 / All-on-6</option>
           <option value="regeneracion">Regeneración ósea</option>
+          <option value="protesis-dentales">Prótesis dentales</option>
           <option value="consulta">Primera consulta informativa</option>
         </select>
       </div>
@@ -111,7 +169,45 @@ const ContactForm = () => {
           rows={4}
           placeholder="Cuéntanos tu caso o cualquier duda que tengas..."
           className="resize-none"
+          maxLength={1000}
         />
+      </div>
+
+      {/* Math CAPTCHA */}
+      <div className="bg-muted rounded-lg p-4">
+        <label className="block text-sm font-medium text-foreground mb-3">
+          Verificación de seguridad *
+        </label>
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 text-lg font-medium text-foreground">
+            <span>{captchaNumbers.a}</span>
+            <span>+</span>
+            <span>{captchaNumbers.b}</span>
+            <span>=</span>
+          </div>
+          <Input
+            type="number"
+            value={captchaAnswer}
+            onChange={(e) => {
+              setCaptchaAnswer(e.target.value);
+              setCaptchaError(false);
+            }}
+            placeholder="?"
+            className={`w-20 h-10 text-center ${captchaError ? 'border-red-500' : ''}`}
+            required
+          />
+          <button
+            type="button"
+            onClick={generateCaptcha}
+            className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+            title="Generar nuevo captcha"
+          >
+            <RefreshCw className="w-5 h-5" />
+          </button>
+        </div>
+        {captchaError && (
+          <p className="text-destructive text-sm mt-2">Respuesta incorrecta. Inténtalo de nuevo.</p>
+        )}
       </div>
 
       <div className="flex items-start gap-3">
@@ -124,7 +220,7 @@ const ContactForm = () => {
         />
         <label htmlFor="privacy" className="text-sm text-muted-foreground">
           He leído y acepto la{' '}
-          <a href="#" className="text-primary underline">política de privacidad</a>.
+          <Link to="/privacidad" className="text-primary underline">política de privacidad</Link>.
         </label>
       </div>
 
