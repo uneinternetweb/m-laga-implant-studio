@@ -85,11 +85,16 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h3 className="font-display text-lg font-semibold mb-6">Enlaces Rápidos</h3>
+              <h3 className="font-display text-lg font-semibold mb-6">Tratamientos</h3>
               <ul className="space-y-3">
                 <li>
                   <Link to="/implantes-dentales" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                     Implantes Dentales
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/protesis-dentales" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Prótesis Dentales
                   </Link>
                 </li>
                 <li>
@@ -162,8 +167,8 @@ const Footer = () => {
         <div className="container-wide flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
           <p>© {currentYear} Clínicas Dentales Bocaboca. Todos los derechos reservados.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-primary-foreground transition-colors">Política de Privacidad</a>
-            <a href="#" className="hover:text-primary-foreground transition-colors">Aviso Legal</a>
+            <Link to="/privacidad" className="hover:text-primary-foreground transition-colors">Política de Privacidad</Link>
+            <Link to="/contacto" className="hover:text-primary-foreground transition-colors">Aviso Legal</Link>
           </div>
         </div>
       </div>

@@ -1,9 +1,30 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import ContactForm from '@/components/contact/ContactForm';
 
 const Contacto = () => {
+  const clinics = [
+    {
+      name: 'Clínica Ayala',
+      address: 'Calle Ayala, 80',
+      zip: '29002 Málaga',
+      mapsUrl: 'https://maps.app.goo.gl/8BCNqbJZ8gSE3FSEA',
+    },
+    {
+      name: 'Clínica Martínez Maldonado',
+      address: 'C/ Martínez Maldonado, 65',
+      zip: '29007 Málaga',
+      mapsUrl: 'https://maps.app.goo.gl/uCqWqoewm4MH5jrA9',
+    },
+    {
+      name: 'Clínica Velázquez',
+      address: 'Avda. de Velázquez, 73',
+      zip: '29004 Málaga',
+      mapsUrl: 'https://maps.app.goo.gl/Pv5b9hQgAKEfyCD77',
+    },
+  ];
+
   return (
     <Layout>
       {/* Hero */}
@@ -43,29 +64,34 @@ const Contacto = () => {
 
             {/* Contact Info */}
             <div className="lg:col-span-2 space-y-8">
-              {/* Address Card */}
+              {/* Clinics Card */}
               <div className="bg-card rounded-2xl p-8 card-hover">
-                <div className="flex items-start gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Dirección</h3>
-                    <p className="text-muted-foreground">
-                      Calle Principal, 123<br />
-                      29001 Málaga, España
-                    </p>
-                  </div>
+                  <h3 className="font-semibold text-foreground text-xl">Nuestras Clínicas</h3>
                 </div>
-                <a 
-                  href="https://maps.google.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all"
-                >
-                  Ver en Google Maps
-                  <ArrowRight className="w-4 h-4" />
-                </a>
+                <div className="space-y-6">
+                  {clinics.map((clinic) => (
+                    <div key={clinic.name} className="border-b border-border pb-4 last:border-0 last:pb-0">
+                      <h4 className="font-semibold text-foreground mb-1">{clinic.name}</h4>
+                      <p className="text-muted-foreground text-sm mb-2">
+                        {clinic.address}<br />
+                        {clinic.zip}
+                      </p>
+                      <a 
+                        href={clinic.mapsUrl}
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:gap-3 transition-all"
+                      >
+                        Ver en Google Maps
+                        <ArrowRight className="w-4 h-4" />
+                      </a>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* Phone Card */}
@@ -101,34 +127,8 @@ const Contacto = () => {
                       href="mailto:info@clinicadentalbocaboca.com" 
                       className="text-primary hover:opacity-80 transition-opacity"
                     >
-                      info@implantesmalaga.com
+                      info@clinicadentalbocaboca.com
                     </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Hours Card */}
-              <div className="bg-card rounded-2xl p-8 card-hover">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-3">Horario</h3>
-                    <div className="space-y-2 text-muted-foreground">
-                      <div className="flex justify-between">
-                        <span>Lunes - Viernes</span>
-                        <span className="font-medium text-foreground">09:00 - 20:00</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Sábados</span>
-                        <span className="font-medium text-foreground">09:00 - 14:00</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Domingos</span>
-                        <span className="text-muted-foreground">Cerrado</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -137,20 +137,8 @@ const Contacto = () => {
         </div>
       </section>
 
-      {/* Map */}
-      <section className="bg-muted">
-        <div className="h-96 bg-accent flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-            <p className="text-muted-foreground">
-              Mapa interactivo - Calle Principal, 123 - Málaga Centro
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container-narrow">
           <div className="text-center mb-12">
             <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
