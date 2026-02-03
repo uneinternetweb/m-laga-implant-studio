@@ -11,6 +11,7 @@ const Header = () => {
   const navLinks = [
     { href: '/', label: 'Inicio' },
     { href: '/implantes-dentales', label: 'Implantes Dentales' },
+    { href: '/protesis-dentales', label: 'Prótesis Dentales' },
     { href: '/sobre-nosotros', label: 'Sobre Nosotros' },
     { href: '/noticias', label: 'Noticias' },
     { href: '/contacto', label: 'Contacto' },
