@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import { Link } from 'react-router-dom';
+import { supabase } from '@/integrations/supabase/client';
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -52,26 +53,22 @@ const ContactForm = () => {
     };
 
     try {
-      // Send email using mailto with multiple recipients
-      const recipients = 'marco@uneinternet.com,m.musso@celdas.com';
-      const subject = encodeURIComponent(`Nueva solicitud de cita - ${data.name}`);
-      const body = encodeURIComponent(
-        `Nombre: ${data.name}\n` +
-        `Teléfono: ${data.phone}\n` +
-        `Email: ${data.email}\n` +
-        `Tratamiento: ${data.treatment || 'No especificado'}\n` +
-        `Mensaje: ${data.message || 'Sin mensaje adicional'}`
-      );
-      
-      // Open mailto link
-      window.location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
-      
-      setIsSubmitting(false);
+      const { data: response, error } = await supabase.functions.invoke('send-contact-email', {
+        body: data,
+      });
+
+      if (error) {
+        console.error('Error sending email:', error);
+        throw new Error(error.message || 'Error al enviar el formulario');
+      }
+
       setIsSubmitted(true);
-      toast.success('¡Gracias! Se abrirá tu cliente de correo para enviar la solicitud.');
+      toast.success('¡Gracias! Tu solicitud ha sido enviada correctamente.');
     } catch (error) {
+      console.error('Error:', error);
+      toast.error('Error al enviar el formulario. Por favor, inténtalo de nuevo.');
+    } finally {
       setIsSubmitting(false);
-      toast.error('Error al procesar el formulario. Por favor, inténtalo de nuevo.');
     }
   };
 
