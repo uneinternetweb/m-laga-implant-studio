@@ -51,7 +51,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     const emailResponse = await resend.emails.send({
       from: "Clínica Boca a Boca <onboarding@resend.dev>",
-      to: ["marco@uneinternet.com", "m.musso@celdas.com"],
+      to: ["eduardo.fatm@gmail.com"],
       subject: `Nueva solicitud de cita - ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
