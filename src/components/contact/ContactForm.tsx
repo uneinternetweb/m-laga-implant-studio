@@ -217,7 +217,7 @@ const ContactForm = () => {
         />
         <label htmlFor="privacy" className="text-sm text-muted-foreground">
           He leído y acepto la{' '}
-          <Link to="/privacidad" className="text-primary underline">política de privacidad</Link>.
+          <Link to="/privacidad" target="_blank" rel="noopener noreferrer" className="text-primary underline">política de privacidad</Link>.
         </label>
       </div>
 
