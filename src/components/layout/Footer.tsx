@@ -168,7 +168,6 @@ const Footer = () => {
           <p>© {currentYear} Clínicas Dentales Bocaboca. Todos los derechos reservados.</p>
           <div className="flex gap-6">
             <Link to="/privacidad" className="hover:text-primary-foreground transition-colors">Política de Privacidad</Link>
-            <Link to="/contacto" className="hover:text-primary-foreground transition-colors">Aviso Legal</Link>
           </div>
         </div>
       </div>
