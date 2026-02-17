@@ -51,12 +51,12 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-3 xl:gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className={`nav-link font-medium ${
+                className={`nav-link font-medium text-sm xl:text-base ${
                   isActive(link.href) ? 'text-primary' : ''
                 }`}
               >
@@ -67,7 +67,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button asChild className="cta-primary rounded-full px-6">
+            <Button asChild className="cta-primary rounded-full px-4 xl:px-6">
               <Link to="/contacto">Pedir Cita</Link>
             </Button>
           </div>
