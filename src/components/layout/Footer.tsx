@@ -24,7 +24,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-primary text-primary-foreground pb-14 sm:pb-0">
       {/* CTA Section */}
       <div className="py-12 bg-secondary">
         <div className="container-wide text-center">
@@ -166,8 +166,9 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10 py-6">
         <div className="container-wide flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
           <p>© {currentYear} Clínicas Dentales Bocaboca. Todos los derechos reservados.</p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-4 md:gap-6">
             <Link to="/privacidad" className="hover:text-primary-foreground transition-colors">Política de Privacidad</Link>
+            <Link to="/politica-de-cookies" className="hover:text-primary-foreground transition-colors">Política de Cookies</Link>
           </div>
         </div>
       </div>
