@@ -33,7 +33,11 @@ const Contacto = () => {
 
   return (
     <Layout>
-      {/* Hero */}
+      <SEOHead
+        title="Contacto | Clínicas Dentales Bocaboca en Málaga | Cómo Llegar"
+        description="Encuentra nuestras 3 clínicas dentales en Málaga: Ayala, Martínez Maldonado y Velázquez. Horarios, direcciones y cómo llegar. Primera consulta gratuita."
+        canonical="/contacto"
+      />
       <section className="hero-section py-20">
         <div className="container-wide">
           <div className="max-w-3xl">

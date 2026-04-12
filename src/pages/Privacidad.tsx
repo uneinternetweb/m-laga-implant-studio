@@ -1,9 +1,15 @@
 import Layout from '@/components/layout/Layout';
+import SEOHead from '@/components/SEOHead';
 
 const Privacidad = () => {
   return (
     <Layout>
-      {/* Hero */}
+      <SEOHead
+        title="Política de Privacidad | Clínica Dental Bocaboca"
+        description="Política de privacidad y protección de datos personales de Clínicas Dentales Bocaboca según el RGPD."
+        canonical="/privacidad"
+        noindex={true}
+      />
       <section className="hero-section py-16 md:py-20">
         <div className="container-narrow">
           <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight">

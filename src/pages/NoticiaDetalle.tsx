@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Phone } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
+import SEOHead from '@/components/SEOHead';
 import { newsPosts } from '@/data/newsPosts';
 
 const NoticiaDetalle = () => {
@@ -82,7 +83,28 @@ const NoticiaDetalle = () => {
 
   return (
     <Layout>
-      {/* Hero */}
+      <SEOHead
+        title={`${post.title} | Clínica Dental Bocaboca`}
+        description={post.excerpt}
+        canonical={`/noticias/${post.slug}`}
+        ogType="article"
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: post.title,
+          description: post.excerpt,
+          datePublished: post.date,
+          author: {
+            '@type': 'Organization',
+            name: 'Clínica Dental Bocaboca',
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Clínica Dental Bocaboca',
+            url: 'https://clinicadentalbocaboca.com',
+          },
+        }}
+      />
       <section className="hero-section py-16 md:py-24">
         <div className="container-narrow">
           <Link 
