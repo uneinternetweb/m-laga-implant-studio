@@ -3,6 +3,7 @@ import { CheckCircle2, ArrowRight, Phone, Shield, Zap, Heart, Sparkles } from 'l
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import SEOHead from '@/components/SEOHead';
 import clinicaGabinete from '@/assets/clinica-gabinete.png';
 
 const ProtesisDentales = () => {
