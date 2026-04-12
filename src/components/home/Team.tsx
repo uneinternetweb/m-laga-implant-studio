@@ -57,8 +57,9 @@ const Team = () => {
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src={member.image}
-                  alt={member.name}
+                  alt={`${member.name} - ${member.role} en Clínica Dental Bocaboca Málaga`}
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">
