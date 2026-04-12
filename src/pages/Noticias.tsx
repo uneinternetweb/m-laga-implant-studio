@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
+import SEOHead from '@/components/SEOHead';
 import { newsPosts } from '@/data/newsPosts';
 
 const Noticias = () => {
   return (
     <Layout>
-      {/* Hero */}
+      <SEOHead
+        title="Noticias sobre Implantes Dentales en Málaga | Blog Clínica Bocaboca"
+        description="Artículos y noticias sobre implantes dentales, prótesis, cuidados bucales y últimos avances en implantología. Información útil de nuestros especialistas en Málaga."
+        canonical="/noticias"
+      />
       <section className="hero-section py-20">
         <div className="container-wide">
           <div className="max-w-3xl">

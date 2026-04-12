@@ -1,9 +1,15 @@
 import Layout from '@/components/layout/Layout';
+import SEOHead from '@/components/SEOHead';
 
 const PoliticaCookies = () => {
   return (
     <Layout>
-      {/* Hero */}
+      <SEOHead
+        title="Política de Cookies | Clínica Dental Bocaboca"
+        description="Información sobre el uso de cookies técnicas en el sitio web de Clínicas Dentales Bocaboca."
+        canonical="/politica-de-cookies"
+        noindex={true}
+      />
       <section className="hero-section py-16 md:py-20">
         <div className="container-narrow">
           <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight">

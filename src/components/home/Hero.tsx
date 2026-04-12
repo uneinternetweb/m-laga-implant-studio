@@ -38,7 +38,7 @@ const Hero = () => {
           {/* Subheading */}
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl leading-relaxed">
             Recupera tu sonrisa y calidad de vida con nuestros implantes dentales de máxima calidad. 
-            Más de 15 años de experiencia y miles de pacientes satisfechos en Málaga y alrededores.
+            Más de 20 años de experiencia y más de 13.000 pacientes satisfechos en Málaga y la Costa del Sol.
           </p>
 
           {/* Benefits */}
