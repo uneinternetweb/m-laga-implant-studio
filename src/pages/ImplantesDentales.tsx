@@ -95,7 +95,33 @@ const ImplantesDentales = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
+      <SEOHead
+        title="Implantes Dentales en Málaga | Clínica Bocaboca | Desde 20 años de experiencia"
+        description="Especialistas en implantes dentales en Málaga. Técnicas All-on-4, carga inmediata y cirugía guiada 3D. Garantía de por vida, financiación sin intereses y primera consulta gratuita."
+        canonical="/implantes-dentales"
+        structuredData={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'MedicalWebPage',
+            name: 'Implantes Dentales en Málaga',
+            description: 'Información completa sobre implantes dentales en Clínica Dental Bocaboca, Málaga.',
+            url: 'https://clinicadentalbocaboca.com/implantes-dentales',
+            specialty: 'Implantology',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((faq) => ({
+              '@type': 'Question',
+              name: faq.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer,
+              },
+            })),
+          },
+        ]}
+      />
       <section className="hero-section py-20 md:py-28">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

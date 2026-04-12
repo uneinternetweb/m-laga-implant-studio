@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Award, GraduationCap, Heart, Users } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
+import SEOHead from '@/components/SEOHead';
 import doctorAlfonso from '@/assets/doctor-alfonso.jpg';
 import clinicaGabinete from '@/assets/clinica-gabinete.png';
 import clinicaRecepcion from '@/assets/clinica-recepcion.png';
@@ -41,7 +42,11 @@ const SobreNosotros = () => {
 
   return (
     <Layout>
-      {/* Hero */}
+      <SEOHead
+        title="Sobre Nosotros | Clínica Dental Bocaboca Málaga | +20 Años de Experiencia"
+        description="Conoce a nuestro equipo de especialistas en implantología dental en Málaga. Dr. Alfonso Moreno, 3 clínicas, tecnología 3D y más de 13.000 pacientes atendidos."
+        canonical="/sobre-nosotros"
+      />
       <section className="hero-section py-20 md:py-28">
         <div className="container-wide">
           <div className="max-w-3xl">

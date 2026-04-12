@@ -1,6 +1,7 @@
 import { Phone, MapPin, ArrowRight, Navigation, Mail, Clock } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
+import SEOHead from '@/components/SEOHead';
 
 const Contacto = () => {
   const clinics = [

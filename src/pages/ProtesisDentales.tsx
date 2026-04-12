@@ -105,7 +105,23 @@ const ProtesisDentales = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
+      <SEOHead
+        title="Prótesis Dentales en Málaga | Fijas, Removibles y sobre Implantes | Bocaboca"
+        description="Prótesis dentales en Málaga: fijas, removibles, mixtas y sobre implantes. Materiales de primera calidad, aspecto natural y funcionalidad completa. Consulta gratuita."
+        canonical="/protesis-dentales"
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.answer,
+            },
+          })),
+        }}
+      />
       <section className="hero-section py-20 md:py-28">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
