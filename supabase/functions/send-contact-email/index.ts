@@ -3,11 +3,23 @@ import { Resend } from "https://esm.sh/resend@2.0.0";
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers":
-    "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
-};
+const ALLOWED_ORIGINS = [
+  "https://www.implantesdentalesenmalaga.com",
+  "https://implantesdentalesenmalaga.com",
+  "https://implantesdentalesmalaga.lovable.app",
+  "https://id-preview--819e4137-544f-413e-b0d8-db018f977268.lovable.app",
+];
+
+function getCorsHeaders(req: Request) {
+  const origin = req.headers.get("origin") ?? "";
+  const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  return {
+    "Access-Control-Allow-Origin": allowedOrigin,
+    "Access-Control-Allow-Headers":
+      "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
+    "Vary": "Origin",
+  };
+}
 
 interface ContactFormRequest {
   name: string;
@@ -15,6 +27,9 @@ interface ContactFormRequest {
   email: string;
   treatment?: string;
   message?: string;
+  captcha_a?: number;
+  captcha_b?: number;
+  captcha_answer?: number;
 }
 
 // Simple in-memory rate limiter (per instance)
@@ -68,6 +83,8 @@ function validateInput(data: ContactFormRequest): string | null {
 }
 
 const handler = async (req: Request): Promise<Response> => {
+  const corsHeaders = getCorsHeaders(req);
+
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
@@ -90,6 +107,19 @@ const handler = async (req: Request): Promise<Response> => {
     if (validationError) {
       return new Response(
         JSON.stringify({ error: validationError }),
+        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Server-side CAPTCHA validation
+    if (
+      typeof data.captcha_a !== "number" || typeof data.captcha_b !== "number" ||
+      typeof data.captcha_answer !== "number" ||
+      data.captcha_a < 1 || data.captcha_a > 10 || data.captcha_b < 1 || data.captcha_b > 10 ||
+      data.captcha_answer !== data.captcha_a + data.captcha_b
+    ) {
+      return new Response(
+        JSON.stringify({ error: "Verificación de seguridad incorrecta" }),
         { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
       );
     }
