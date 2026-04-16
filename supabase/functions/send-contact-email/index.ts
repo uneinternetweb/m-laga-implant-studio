@@ -111,6 +111,19 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
+    // Server-side CAPTCHA validation
+    if (
+      typeof data.captcha_a !== "number" || typeof data.captcha_b !== "number" ||
+      typeof data.captcha_answer !== "number" ||
+      data.captcha_a < 1 || data.captcha_a > 10 || data.captcha_b < 1 || data.captcha_b > 10 ||
+      data.captcha_answer !== data.captcha_a + data.captcha_b
+    ) {
+      return new Response(
+        JSON.stringify({ error: "Verificación de seguridad incorrecta" }),
+        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
     const { name, phone, email, treatment, message } = data;
 
     console.log("Sending contact form email for:", escapeHtml(name));
