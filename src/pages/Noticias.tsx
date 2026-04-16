@@ -8,7 +8,7 @@ const Noticias = () => {
   return (
     <Layout>
       <SEOHead
-        title="Noticias sobre Implantes Dentales en Málaga | Blog Clínica Bocaboca"
+        title="Noticias sobre Implantes Dentales en Málaga | Blog Bocaboca"
         description="Artículos y noticias sobre implantes dentales, prótesis, cuidados bucales y últimos avances en implantología. Información útil de nuestros especialistas en Málaga."
         canonical="/noticias"
       />

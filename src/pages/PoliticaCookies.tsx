@@ -5,8 +5,8 @@ const PoliticaCookies = () => {
   return (
     <Layout>
       <SEOHead
-        title="Política de Cookies | Clínica Dental Bocaboca"
-        description="Información sobre el uso de cookies técnicas en el sitio web de Clínicas Dentales Bocaboca."
+        title="Política de Cookies | Bocaboca Clínicas Dentales"
+        description="Información sobre el uso de cookies técnicas en el sitio web de Bocaboca Clínicas Dentales."
         canonical="/politica-de-cookies"
         noindex={true}
       />

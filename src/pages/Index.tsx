@@ -10,24 +10,20 @@ import SEOHead from '@/components/SEOHead';
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Clínica Dental Bocaboca',
-  url: 'https://clinicadentalbocaboca.com',
-  description: 'Clínica dental especializada en implantes dentales en Málaga con más de 20 años de experiencia.',
+  name: 'Bocaboca Clínicas Dentales',
+  url: 'https://www.implantesdentalesenmalaga.com',
+  description: 'Clínicas dentales especializadas en implantes dentales en Málaga. Primera consulta gratis.',
 };
 
 const dentistSchema = {
   '@context': 'https://schema.org',
   '@type': 'Dentist',
-  name: 'Clínica Dental Bocaboca',
-  description: 'Clínica dental especializada en implantes dentales en Málaga. Más de 20 años de experiencia, tecnología 3D y cirugía guiada.',
-  telephone: '+34951178110',
-  email: 'info@clinicadentalbocaboca.com',
-  url: 'https://clinicadentalbocaboca.com',
-  image: 'https://clinicadentalbocaboca.com/og-image.jpg',
+  name: 'Bocaboca Clínicas Dentales',
+  url: 'https://www.implantesdentalesenmalaga.com',
+  logo: 'https://clinicadentalbocaboca.com/wp-content/uploads/2026/04/Logo_bocaboca.jpg',
+  description: 'Clínicas dentales especializadas en implantes dentales en Málaga. Primera consulta gratis.',
   priceRange: '€€',
-  medicalSpecialty: 'Implantology',
-  currenciesAccepted: 'EUR',
-  paymentAccepted: 'Cash, Credit Card, Bank Transfer',
+  telephone: '+34951178110',
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
@@ -37,81 +33,69 @@ const dentistSchema = {
     },
     {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: 'Saturday',
+      dayOfWeek: ['Saturday'],
       opens: '10:00',
       closes: '14:00',
     },
   ],
-  address: [
+  location: [
     {
-      '@type': 'PostalAddress',
-      streetAddress: 'Calle Ayala, 80',
-      addressLocality: 'Málaga',
-      postalCode: '29002',
-      addressRegion: 'Málaga',
-      addressCountry: 'ES',
+      '@type': 'Dentist',
+      name: 'Bocaboca Clínica Ayala',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Calle Ayala, 80',
+        addressLocality: 'Málaga',
+        postalCode: '29002',
+        addressCountry: 'ES',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.7',
+        reviewCount: '451',
+      },
     },
     {
-      '@type': 'PostalAddress',
-      streetAddress: 'C/ Martínez Maldonado, 65',
-      addressLocality: 'Málaga',
-      postalCode: '29007',
-      addressRegion: 'Málaga',
-      addressCountry: 'ES',
+      '@type': 'Dentist',
+      name: 'Bocaboca Clínica Martínez Maldonado',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'C/ Martínez Maldonado, 65',
+        addressLocality: 'Málaga',
+        postalCode: '29007',
+        addressCountry: 'ES',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        reviewCount: '328',
+      },
     },
     {
-      '@type': 'PostalAddress',
-      streetAddress: 'Avda. de Velázquez, 73',
-      addressLocality: 'Málaga',
-      postalCode: '29004',
-      addressRegion: 'Málaga',
-      addressCountry: 'ES',
+      '@type': 'Dentist',
+      name: 'Bocaboca Clínica Velázquez',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Avda. de Velázquez, 73',
+        addressLocality: 'Málaga',
+        postalCode: '29004',
+        addressCountry: 'ES',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.8',
+        reviewCount: '225',
+      },
     },
   ],
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 36.7213,
-    longitude: -4.4214,
-  },
-  areaServed: {
-    '@type': 'City',
-    name: 'Málaga',
-  },
-  sameAs: [
-    'https://www.facebook.com/clinicadentalbocaboca',
-    'https://www.instagram.com/clinicadentalbocaboca',
-    'https://www.youtube.com/@clinicadentalbocaboca',
-  ],
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Tratamientos Dentales',
-    itemListElement: [
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'MedicalProcedure',
-          name: 'Implantes Dentales',
-          description: 'Implantes dentales de titanio con garantía de por vida',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'MedicalProcedure',
-          name: 'Prótesis Dentales',
-          description: 'Prótesis dentales fijas, removibles y sobre implantes',
-        },
-      },
-    ],
-  },
 };
 
 const Index = () => {
   return (
     <Layout>
       <SEOHead
-        title="Implantes Dentales en Málaga | Clínica Dental Bocaboca | Primera Consulta Gratis"
-        description="Clínica Dental Bocaboca: especialistas en implantes dentales en Málaga. 3 clínicas, más de 20 años de experiencia, tecnología 3D y financiación sin intereses. Primera consulta gratuita."
+        title="Implantes Dentales en Málaga | Bocaboca Clínicas Dentales"
+        description="Especialistas en implantes dentales en Málaga. 3 clínicas en Málaga, más de 1.000 reseñas verificadas. Primera consulta gratuita. Llama al 951 178 110."
         canonical="/"
         structuredData={[websiteSchema, dentistSchema]}
       />

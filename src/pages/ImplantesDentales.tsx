@@ -96,8 +96,8 @@ const ImplantesDentales = () => {
   return (
     <Layout>
       <SEOHead
-        title="Implantes Dentales en Málaga | Clínica Bocaboca | Desde 20 años de experiencia"
-        description="Especialistas en implantes dentales en Málaga. Técnicas All-on-4, carga inmediata y cirugía guiada 3D. Garantía de por vida, financiación sin intereses y primera consulta gratuita."
+        title="Implantes Dentales en Málaga | Precio y Garantía | Bocaboca"
+        description="Implantes dentales en Málaga desde diagnóstico hasta colocación. Técnicas sin dolor, materiales de primera. Pide presupuesto sin compromiso."
         canonical="/implantes-dentales"
         structuredData={[
           {

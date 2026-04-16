@@ -43,7 +43,7 @@ const SobreNosotros = () => {
   return (
     <Layout>
       <SEOHead
-        title="Sobre Nosotros | Clínica Dental Bocaboca Málaga | +20 Años de Experiencia"
+        title="Sobre Nosotros | Bocaboca Clínicas Dentales Málaga | +20 Años de Experiencia"
         description="Conoce a nuestro equipo de especialistas en implantología dental en Málaga. Dr. Alfonso Moreno, 3 clínicas, tecnología 3D y más de 13.000 pacientes atendidos."
         canonical="/sobre-nosotros"
       />

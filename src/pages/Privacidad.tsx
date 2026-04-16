@@ -5,7 +5,7 @@ const Privacidad = () => {
   return (
     <Layout>
       <SEOHead
-        title="Política de Privacidad | Clínica Dental Bocaboca"
+        title="Política de Privacidad | Bocaboca Clínicas Dentales"
         description="Política de privacidad y protección de datos personales de Clínicas Dentales Bocaboca según el RGPD."
         canonical="/privacidad"
         noindex={true}

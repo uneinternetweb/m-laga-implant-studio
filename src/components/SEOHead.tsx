@@ -11,7 +11,7 @@ interface SEOHeadProps {
   structuredData?: object | object[];
 }
 
-const BASE_URL = 'https://clinicadentalbocaboca.com';
+const BASE_URL = 'https://www.implantesdentalesenmalaga.com';
 
 const SEOHead = ({
   title,
