@@ -84,7 +84,7 @@ const NoticiaDetalle = () => {
   return (
     <Layout>
       <SEOHead
-        title={`${post.title} | Clínica Dental Bocaboca`}
+        title={`${post.title} | Bocaboca Clínicas Dentales`}
         description={post.excerpt}
         canonical={`/noticias/${post.slug}`}
         ogType="article"

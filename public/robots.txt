@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-
-Disallow: /404
-
-Sitemap: https://clinicadentalbocaboca.com/sitemap.xml
+Sitemap: https://www.implantesdentalesenmalaga.com/sitemap.xml

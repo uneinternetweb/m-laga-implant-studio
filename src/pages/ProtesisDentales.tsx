@@ -106,8 +106,8 @@ const ProtesisDentales = () => {
   return (
     <Layout>
       <SEOHead
-        title="Prótesis Dentales en Málaga | Fijas, Removibles y sobre Implantes | Bocaboca"
-        description="Prótesis dentales en Málaga: fijas, removibles, mixtas y sobre implantes. Materiales de primera calidad, aspecto natural y funcionalidad completa. Consulta gratuita."
+        title="Prótesis Dentales en Málaga | Bocaboca Clínicas Dentales"
+        description="Prótesis dentales fijas y removibles en Málaga. Soluciones personalizadas para recuperar tu sonrisa. Primera consulta gratis."
         canonical="/protesis-dentales"
         structuredData={{
           '@context': 'https://schema.org',
