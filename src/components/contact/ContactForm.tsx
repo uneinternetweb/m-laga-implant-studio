@@ -50,6 +50,9 @@ const ContactForm = () => {
       email: formData.get('email') as string,
       treatment: formData.get('treatment') as string,
       message: formData.get('message') as string,
+      captcha_a: captchaNumbers.a,
+      captcha_b: captchaNumbers.b,
+      captcha_answer: parseInt(captchaAnswer),
     };
 
     try {

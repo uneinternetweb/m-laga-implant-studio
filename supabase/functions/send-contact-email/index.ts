@@ -27,6 +27,9 @@ interface ContactFormRequest {
   email: string;
   treatment?: string;
   message?: string;
+  captcha_a?: number;
+  captcha_b?: number;
+  captcha_answer?: number;
 }
 
 // Simple in-memory rate limiter (per instance)
