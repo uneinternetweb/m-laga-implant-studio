@@ -10,39 +10,57 @@ import { supabase } from '@/integrations/supabase/client';
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  
-  // CAPTCHA state
-  const [captchaNumbers, setCaptchaNumbers] = useState({ a: 0, b: 0 });
+
+  // Server-issued CAPTCHA challenge
+  const [captcha, setCaptcha] = useState<{ a: number; b: number; token: string } | null>(null);
+  const [captchaLoading, setCaptchaLoading] = useState(false);
   const [captchaAnswer, setCaptchaAnswer] = useState('');
   const [captchaError, setCaptchaError] = useState(false);
 
-  // Generate random numbers for CAPTCHA
-  const generateCaptcha = () => {
-    const a = Math.floor(Math.random() * 10) + 1;
-    const b = Math.floor(Math.random() * 10) + 1;
-    setCaptchaNumbers({ a, b });
+  const loadCaptcha = async () => {
+    setCaptchaLoading(true);
     setCaptchaAnswer('');
     setCaptchaError(false);
+    try {
+      const { data, error } = await supabase.functions.invoke('captcha-challenge', {
+        body: {},
+      });
+      if (error) throw error;
+      if (data && typeof data.a === 'number' && typeof data.b === 'number' && typeof data.token === 'string') {
+        setCaptcha({ a: data.a, b: data.b, token: data.token });
+      } else {
+        throw new Error('Invalid captcha response');
+      }
+    } catch (err) {
+      console.error('Error loading captcha:', err);
+      toast.error('No se pudo cargar la verificación de seguridad. Recarga la página.');
+    } finally {
+      setCaptchaLoading(false);
+    }
   };
 
   useEffect(() => {
-    generateCaptcha();
+    loadCaptcha();
   }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
-    // Validate CAPTCHA
-    const correctAnswer = captchaNumbers.a + captchaNumbers.b;
-    if (parseInt(captchaAnswer) !== correctAnswer) {
+
+    if (!captcha) {
+      toast.error('La verificación de seguridad no está lista. Inténtalo de nuevo.');
+      loadCaptcha();
+      return;
+    }
+
+    const answerNum = parseInt(captchaAnswer, 10);
+    if (!Number.isFinite(answerNum)) {
       setCaptchaError(true);
-      toast.error('La respuesta del captcha es incorrecta. Inténtalo de nuevo.');
-      generateCaptcha();
+      toast.error('Introduce la respuesta del captcha.');
       return;
     }
 
     setIsSubmitting(true);
-    
+
     const formData = new FormData(e.currentTarget);
     const data = {
       name: formData.get('name') as string,
@@ -50,13 +68,12 @@ const ContactForm = () => {
       email: formData.get('email') as string,
       treatment: formData.get('treatment') as string,
       message: formData.get('message') as string,
-      captcha_a: captchaNumbers.a,
-      captcha_b: captchaNumbers.b,
-      captcha_answer: parseInt(captchaAnswer),
+      captcha_token: captcha.token,
+      captcha_answer: answerNum,
     };
 
     try {
-      const { data: response, error } = await supabase.functions.invoke('send-contact-email', {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
         body: data,
       });
 
@@ -70,6 +87,8 @@ const ContactForm = () => {
     } catch (error) {
       console.error('Error:', error);
       toast.error('Error al enviar el formulario. Por favor, inténtalo de nuevo.');
+      // Refresh captcha after a failed attempt to prevent token reuse confusion
+      loadCaptcha();
     } finally {
       setIsSubmitting(false);
     }
@@ -173,17 +192,25 @@ const ContactForm = () => {
         />
       </div>
 
-      {/* Math CAPTCHA */}
+      {/* Math CAPTCHA (server-issued, signed) */}
       <div className="bg-muted rounded-lg p-4">
         <label className="block text-sm font-medium text-foreground mb-3">
           Verificación de seguridad *
         </label>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 text-lg font-medium text-foreground">
-            <span>{captchaNumbers.a}</span>
-            <span>+</span>
-            <span>{captchaNumbers.b}</span>
-            <span>=</span>
+            {captcha ? (
+              <>
+                <span>{captcha.a}</span>
+                <span>+</span>
+                <span>{captcha.b}</span>
+                <span>=</span>
+              </>
+            ) : (
+              <span className="text-muted-foreground text-sm">
+                {captchaLoading ? 'Cargando…' : '...'}
+              </span>
+            )}
           </div>
           <Input
             type="number"
@@ -195,14 +222,16 @@ const ContactForm = () => {
             placeholder="?"
             className={`w-20 h-10 text-center ${captchaError ? 'border-red-500' : ''}`}
             required
+            disabled={!captcha}
           />
           <button
             type="button"
-            onClick={generateCaptcha}
-            className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+            onClick={loadCaptcha}
+            disabled={captchaLoading}
+            className="p-2 text-muted-foreground hover:text-foreground transition-colors disabled:opacity-50"
             title="Generar nuevo captcha"
           >
-            <RefreshCw className="w-5 h-5" />
+            <RefreshCw className={`w-5 h-5 ${captchaLoading ? 'animate-spin' : ''}`} />
           </button>
         </div>
         {captchaError && (
@@ -226,7 +255,7 @@ const ContactForm = () => {
 
       <Button
         type="submit"
-        disabled={isSubmitting}
+        disabled={isSubmitting || !captcha}
         className="w-full cta-gold rounded-full h-14 text-lg"
       >
         {isSubmitting ? (
