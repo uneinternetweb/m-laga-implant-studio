@@ -27,8 +27,7 @@ interface ContactFormRequest {
   email: string;
   treatment?: string;
   message?: string;
-  captcha_a?: number;
-  captcha_b?: number;
+  captcha_token?: string;
   captcha_answer?: number;
 }
 
@@ -82,6 +81,41 @@ function validateInput(data: ContactFormRequest): string | null {
   return null;
 }
 
+// --- Server-side CAPTCHA verification (signed token) ---
+const SIGNING_SECRET =
+  Deno.env.get("CAPTCHA_SIGNING_SECRET") ||
+  Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ||
+  "fallback-dev-secret-change-me";
+
+async function hmacSha256(key: string, data: string): Promise<string> {
+  const enc = new TextEncoder();
+  const cryptoKey = await crypto.subtle.importKey(
+    "raw",
+    enc.encode(key),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign"],
+  );
+  const sig = await crypto.subtle.sign("HMAC", cryptoKey, enc.encode(data));
+  return btoa(String.fromCharCode(...new Uint8Array(sig)))
+    .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+async function verifyChallengeToken(token: unknown, answer: unknown): Promise<boolean> {
+  if (typeof token !== "string" || typeof answer !== "number") return false;
+  const parts = token.split(".");
+  if (parts.length !== 4) return false;
+  const [aStr, bStr, expStr, sig] = parts;
+  const a = parseInt(aStr, 10);
+  const b = parseInt(bStr, 10);
+  const exp = parseInt(expStr, 10);
+  if (!Number.isFinite(a) || !Number.isFinite(b) || !Number.isFinite(exp)) return false;
+  if (Date.now() > exp) return false;
+  const expectedSig = await hmacSha256(SIGNING_SECRET, `${a}.${b}.${exp}`);
+  if (expectedSig !== sig) return false;
+  return answer === a + b;
+}
+
 const handler = async (req: Request): Promise<Response> => {
   const corsHeaders = getCorsHeaders(req);
 
@@ -111,15 +145,11 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    // Server-side CAPTCHA validation
-    if (
-      typeof data.captcha_a !== "number" || typeof data.captcha_b !== "number" ||
-      typeof data.captcha_answer !== "number" ||
-      data.captcha_a < 1 || data.captcha_a > 10 || data.captcha_b < 1 || data.captcha_b > 10 ||
-      data.captcha_answer !== data.captcha_a + data.captcha_b
-    ) {
+    // Server-side CAPTCHA validation using signed token
+    const captchaOk = await verifyChallengeToken(data.captcha_token, data.captcha_answer);
+    if (!captchaOk) {
       return new Response(
-        JSON.stringify({ error: "Verificación de seguridad incorrecta" }),
+        JSON.stringify({ error: "Verificación de seguridad incorrecta o expirada" }),
         { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
       );
     }
