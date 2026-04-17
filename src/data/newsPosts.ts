@@ -3,6 +3,8 @@ import clinicaGabinete from '@/assets/clinica-gabinete.png';
 import clinicaSillon from '@/assets/clinica-sillon.png';
 import clinicaAyala from '@/assets/clinica-ayala.png';
 import newsImplantMaintenance from '@/assets/news-implant-maintenance.jpg';
+import newsDuracionImplantes from '@/assets/news-duracion-implantes-malaga.jpg';
+import newsProtesisFijaRemovible from '@/assets/news-protesis-fija-removible-malaga.jpg';
 
 export interface NewsPost {
   slug: string;
@@ -17,6 +19,251 @@ export interface NewsPost {
 }
 
 export const newsPosts: NewsPost[] = [
+  {
+    slug: 'cuanto-duran-implantes-dentales-malaga',
+    title: '¿Cuánto duran los implantes dentales? Consejos para cuidarlos en Málaga',
+    excerpt: 'Descubre cuántos años duran realmente los implantes dentales y qué hábitos diarios marcan la diferencia para conservarlos toda la vida. Guía práctica desde Málaga.',
+    content: `
+Cuando un paciente entra por primera vez en nuestra clínica preguntando por implantes, casi siempre aparece la misma duda: *"¿y esto cuánto me va a durar?"*. Es una pregunta totalmente lógica. Un implante dental es una inversión importante, tanto en salud como en dinero, y querer saber qué esperar a 10, 20 o 30 años vista no es ser desconfiado, es ser sensato.
+
+En este artículo vamos a contarte, sin medias verdades, cuánto duran los implantes dentales hoy en día, qué factores influyen en su vida útil y qué puedes hacer tú, desde casa y desde tu clínica de implantes en Málaga, para que duren el máximo tiempo posible.
+
+## ¿Cuánto duran los implantes dentales realmente?
+
+La respuesta corta es que **un implante dental bien colocado y bien cuidado puede durar toda la vida**. La respuesta larga es algo más matizada y conviene entenderla bien.
+
+Un implante tiene dos partes diferenciadas:
+
+- El **tornillo de titanio**, que se integra al hueso (osteointegración) y hace de raíz artificial.
+- La **corona o prótesis**, que es la parte visible, la que mastica y se ve al sonreír.
+
+El tornillo, si se integra correctamente y se mantiene la salud de la encía y el hueso, suele durar **más de 25 años en el 90-95% de los casos**, y en muchos pacientes acompaña al paciente el resto de su vida. La corona, en cambio, está sometida a la fuerza diaria de la masticación y a un cierto desgaste, por lo que su vida útil habitual está entre **10 y 20 años**, dependiendo del material y de los hábitos.
+
+Es importante entender esta diferencia porque, cuando alguien dice "se me ha roto el implante", muchas veces lo que se ha desgastado o fracturado es la corona, no el implante en sí. Y eso casi siempre tiene solución sin necesidad de retirar la raíz.
+
+## Qué factores influyen en la duración de un implante
+
+La durabilidad de los implantes dentales en Málaga no depende de un solo elemento, sino de una combinación de factores clínicos y personales. Estos son los que más peso tienen:
+
+### 1. La calidad del diagnóstico inicial
+
+Un buen implante empieza mucho antes de la cirugía. Un estudio con escáner 3D, una valoración del hueso disponible, del estado de las encías y de la mordida son la base. Saltarse esta fase, o hacerla de forma superficial, es la principal causa de fracasos a medio plazo.
+
+### 2. La técnica quirúrgica y el cirujano
+
+La experiencia del implantólogo marca la diferencia. La planificación digital, la cirugía guiada y un protocolo cuidadoso reducen al mínimo las complicaciones. Un implante colocado en la posición ideal, con la angulación correcta y respetando los tejidos blandos, parte con muchísima ventaja.
+
+### 3. La calidad de los materiales
+
+No todos los implantes son iguales. En clínicas serias se trabaja con marcas reconocidas, con estudios clínicos a largo plazo, garantía del fabricante y trazabilidad. Los implantes "low cost" sin respaldo científico son una de las causas habituales de problemas a los pocos años.
+
+### 4. La salud general del paciente
+
+Enfermedades como la diabetes mal controlada, el tabaquismo o ciertos tratamientos médicos pueden afectar a la cicatrización y a la salud del hueso. No son contraindicaciones absolutas, pero sí condicionan el plan de tratamiento y los cuidados posteriores.
+
+### 5. La higiene y el mantenimiento
+
+Aquí es donde el paciente tiene más poder. Un implante no se caría, pero **la encía y el hueso que lo rodean sí pueden infectarse**. La famosa periimplantitis, una de las principales causas de pérdida de implantes, está directamente relacionada con la higiene y con la falta de revisiones.
+
+## Qué puedes hacer tú para que tus implantes duren más
+
+La buena noticia es que gran parte de la durabilidad está en tus manos. Estos son los hábitos que recomendamos a nuestros pacientes en Málaga:
+
+- **Cepíllate al menos dos veces al día**, prestando atención a la zona donde la corona se une a la encía.
+- Usa **cepillos interdentales o irrigador bucal** para limpiar los espacios entre dientes e implantes.
+- Acude a **revisiones cada 6 meses** y a una **higiene profesional con técnica específica para implantes**.
+- Evita morder hielo, bolígrafos, abrir paquetes con los dientes o cualquier hábito que sobrecargue la prótesis.
+- Si rechinas los dientes por la noche, consulta por una **férula de descarga**. El bruxismo es uno de los grandes enemigos de las coronas sobre implantes.
+- **Deja de fumar o reduce el consumo**. El tabaco multiplica el riesgo de periimplantitis.
+
+Estos pequeños gestos, mantenidos en el tiempo, pueden suponer la diferencia entre un implante que dura 10 años y uno que te acompaña toda la vida.
+
+## La importancia de las revisiones periódicas
+
+Muchos pacientes piensan que, una vez colocado el implante, ya está todo hecho. Es justo lo contrario: el momento de cuidarlo es **a partir de ese día**. Las revisiones periódicas permiten:
+
+- Detectar de forma precoz cualquier signo de inflamación en la encía.
+- Comprobar el estado del hueso mediante radiografías de control.
+- Ajustar la mordida si hay sobrecargas.
+- Realizar una **higiene profesional específica para implantes**, con instrumental que no daña el titanio.
+
+En nuestras clínicas en Málaga (Ayala, Martínez Maldonado y Velázquez) ofrecemos un protocolo de mantenimiento adaptado a cada paciente, porque no es lo mismo cuidar un único implante unitario que una rehabilitación completa con prótesis fija sobre varios implantes.
+
+## Señales de alerta a las que prestar atención
+
+Aunque los implantes son muy estables, conviene estar atento a ciertas señales y consultar cuanto antes si aparecen:
+
+- Sangrado o enrojecimiento persistente alrededor del implante.
+- Sensación de que el diente "se mueve" ligeramente.
+- Mal sabor de boca o mal olor localizado.
+- Dolor al masticar en una zona concreta.
+- Pequeños chasquidos o roces que antes no notabas.
+
+Detectar estos síntomas a tiempo permite, en la inmensa mayoría de casos, **resolver el problema sin perder el implante**. Por eso insistimos tanto en no esperar.
+
+## ¿Y si llevo años con mis implantes y nunca los he revisado?
+
+Es una situación más común de lo que parece. Pacientes que se pusieron implantes hace 10 o 15 años, en otra ciudad o incluso en otro país, y que apenas han vuelto a una consulta. Si es tu caso, lo recomendable es acudir a una **revisión específica de implantes**: con una exploración y unas radiografías podemos saber en qué estado están y qué cuidados necesitan a partir de ahora.
+
+En nuestra [página de implantes dentales](/implantes-dentales) explicamos con detalle el tipo de tratamientos que realizamos y los protocolos de seguimiento. Y si lo prefieres, puedes [contactar con nosotros](/contacto) directamente para reservar una primera valoración sin compromiso.
+
+## Preguntas frecuentes sobre la duración de los implantes
+
+### ¿Los implantes dentales duran toda la vida?
+En condiciones óptimas, el implante (la parte de titanio) puede durar toda la vida. La corona suele renovarse cada 10-20 años por desgaste natural.
+
+### ¿Qué es lo que más reduce la vida de un implante?
+La periimplantitis, es decir, la infección crónica del tejido alrededor del implante. Está muy ligada a la higiene insuficiente y al tabaco.
+
+### ¿Cuándo debo hacerme la primera revisión después de colocar un implante?
+Lo habitual es revisar a los pocos días tras la cirugía, al colocar la corona definitiva y, después, cada 6 meses como mantenimiento.
+
+### ¿Puedo hacerme una resonancia magnética con implantes?
+Sí. Los implantes de titanio son compatibles con resonancia y no suponen ningún riesgo.
+
+### ¿Influye la marca del implante en su duración?
+Sí, y mucho. Trabajar con marcas con estudios clínicos a largo plazo y garantía del fabricante es una garantía añadida para el paciente.
+
+Cuidar un implante no es complicado, pero sí requiere constancia. Si tienes dudas sobre tu caso o quieres una valoración personalizada en Málaga, en [Bocaboca Clínicas Dentales](/) estaremos encantados de ayudarte.
+`,
+    date: '2025-01-20',
+    dateFormatted: '20 de enero de 2025',
+    image: newsDuracionImplantes,
+    author: 'Equipo Bocaboca',
+    readTime: '8 min',
+  },
+  {
+    slug: 'protesis-dentales-fijas-o-removibles-cual-elegir-malaga',
+    title: 'Prótesis dentales fijas o removibles: cuál elegir en Málaga',
+    excerpt: 'Comparativa real entre prótesis dentales fijas y removibles: ventajas, inconvenientes, precio orientativo y cuándo elige cada opción un paciente en Málaga.',
+    content: `
+Cuando se pierden varios dientes, o incluso toda la arcada, surge una decisión que condiciona el día a día durante muchos años: **¿prótesis fija o prótesis removible?**. No hay una respuesta única ni una opción "mejor" para todos. Hay opciones más adecuadas para cada paciente, según su salud bucodental, sus expectativas y su presupuesto.
+
+En este artículo te explicamos, sin tecnicismos innecesarios, las diferencias reales entre ambas soluciones, en qué casos suele recomendarse cada una y qué tener en cuenta antes de decidir tu **prótesis dental en Málaga**.
+
+## Qué es una prótesis dental y para qué sirve
+
+Una prótesis dental es cualquier dispositivo que reemplaza uno o varios dientes perdidos. Su objetivo no es solo estético: una boca con dientes ausentes pierde capacidad masticatoria, sufre desgaste irregular, puede provocar dolor en la articulación y, con el tiempo, **acelera la pérdida de hueso maxilar**.
+
+Recuperar esos dientes con una prótesis bien diseñada permite:
+
+- Volver a masticar con comodidad y disfrutar de la comida.
+- Hablar con normalidad, sin chasquidos ni inseguridad.
+- Mantener la altura facial y evitar el aspecto envejecido típico del paciente desdentado.
+- Proteger los dientes restantes de sobrecargas.
+
+A partir de ahí, la pregunta es cómo conseguirlo: **con dientes fijos en Málaga o con una prótesis removible**.
+
+## Prótesis dental fija: dientes que no se quitan
+
+Una prótesis fija es la que el paciente **no puede retirar de la boca**. Solo puede hacerlo el dentista en consulta. Puede apoyarse en dientes naturales (puentes) o, lo más habitual hoy en día, sobre **implantes dentales**.
+
+### Tipos principales de prótesis fija
+
+- **Corona unitaria sobre implante**: para reponer un solo diente.
+- **Puente sobre implantes**: para sustituir varios dientes seguidos apoyándose en 2 o más implantes.
+- **Prótesis fija completa sobre implantes**: para devolver toda una arcada con un número reducido de implantes (técnicas tipo *all-on-4*).
+
+### Ventajas de la prótesis fija
+
+- Sensación muy parecida a la de los dientes naturales.
+- **Gran capacidad masticatoria**, prácticamente como dientes propios.
+- Estética muy natural, sin ganchos ni paladar.
+- No hay que retirarla para limpiarla, lo que da mucha tranquilidad.
+- Frena la pérdida de hueso al estar anclada sobre implantes.
+
+### Aspectos a tener en cuenta
+
+- Requiere **cirugía de implantes**, con su correspondiente tiempo de osteointegración.
+- Necesita **suficiente hueso** o, en su defecto, técnicas regenerativas o de elevación de seno.
+- La inversión inicial es mayor que en una prótesis removible.
+- La higiene tiene que ser muy rigurosa (cepillo interdental, irrigador, revisiones).
+
+Para muchos pacientes, una vez probada la prótesis fija, **es difícil volver atrás**: la sensación de comodidad y seguridad es muy superior.
+
+## Prótesis dental removible: la opción que se quita y se pone
+
+La prótesis removible es la que el propio paciente **puede retirarse de la boca** para limpiarla o por la noche. Aquí entran varias opciones muy diferentes entre sí.
+
+### Tipos principales de prótesis removible
+
+- **Prótesis completa de resina**: la clásica "dentadura postiza" que reemplaza toda una arcada.
+- **Prótesis parcial removible (esquelética)**: con estructura metálica y ganchos que se apoya en los dientes que aún quedan.
+- **Sobredentadura sobre implantes**: prótesis removible anclada a 2 o más implantes mediante sistemas tipo botón o barra. Se quita para limpiar, pero queda muy estable al masticar.
+
+### Ventajas de la prótesis removible
+
+- Tratamiento **más asequible** en su versión clásica.
+- No siempre requiere cirugía (salvo la sobredentadura sobre implantes).
+- Permite reponer muchos dientes en poco tiempo.
+- Es una buena opción cuando hay poco hueso y no se quieren grandes injertos.
+- La sobredentadura sobre implantes ofrece **mucha más estabilidad** que una dentadura tradicional.
+
+### Aspectos a tener en cuenta
+
+- Sensación menos "natural", especialmente al principio.
+- Capacidad masticatoria menor que una prótesis fija.
+- Puede requerir **rebasados o ajustes periódicos** porque el hueso sigue cambiando con los años.
+- Las prótesis con paladar pueden alterar el gusto y el habla las primeras semanas.
+- Necesita rutina diaria de retirada y limpieza.
+
+## Prótesis fija o removible: ¿cuál se adapta mejor a tu caso?
+
+No existe una receta universal, pero sí algunas situaciones tipo donde solemos orientar hacia una u otra solución:
+
+- **Paciente joven o de mediana edad, con buen estado de hueso**, que ha perdido varios dientes y busca la mejor calidad de vida a largo plazo: suele ser candidato ideal a **prótesis fija sobre implantes**.
+- **Paciente con varios dientes ausentes pero conservando otros sanos**, que prefiere una solución menos invasiva: la **prótesis parcial removible** puede ser una buena opción intermedia.
+- **Paciente desdentado total que ya lleva una dentadura completa** y se siente inseguro con ella: la **sobredentadura sobre 2-4 implantes** mejora muchísimo la estabilidad sin necesidad de una rehabilitación fija completa.
+- **Paciente con muy poca disponibilidad ósea o contraindicaciones para cirugía extensa**: la **prótesis removible clásica** sigue siendo una solución válida y digna.
+
+En todos los casos, la decisión debe partir de un **diagnóstico individualizado**: radiografía panorámica, escáner 3D si es necesario, estudio periodontal y conversación honesta sobre expectativas y presupuesto.
+
+## ¿Cuánto cuesta una prótesis dental en Málaga?
+
+El precio depende de muchos factores: tipo de prótesis, número de dientes, materiales (resina, metal-cerámica, zirconio), si va sobre implantes y cuántos, y si requiere fases previas como extracciones o regeneración ósea.
+
+A modo orientativo, una prótesis removible parcial parte de cifras notablemente inferiores a una rehabilitación fija sobre implantes. Por eso es tan importante recibir un **presupuesto personalizado, detallado y por escrito**, sin sorpresas posteriores. En [Bocaboca](/) trabajamos siempre con presupuestos cerrados y financiación adaptada.
+
+## Cuidados y mantenimiento
+
+Tanto las prótesis fijas como las removibles necesitan cuidados, aunque distintos:
+
+- **Prótesis fija sobre implantes**: cepillado meticuloso, cepillo interdental o irrigador, revisiones cada 6 meses y mantenimiento profesional.
+- **Prótesis removible**: limpieza diaria fuera de la boca con cepillo específico, descansar la encía durante la noche y revisiones para ajustar el encaje a medida que cambia el hueso.
+
+En ambos casos, las **revisiones periódicas** son la mejor garantía de que tu prótesis dental dure muchos años en buenas condiciones.
+
+## Conclusión: la mejor prótesis es la que encaja con tu vida
+
+Elegir entre prótesis fija y prótesis removible no es solo una cuestión técnica, también lo es de estilo de vida, expectativas y presupuesto. Lo importante es que **alguien con experiencia te explique todas las opciones**, te enseñe casos similares al tuyo y te ayude a decidir con calma.
+
+Si quieres conocer más sobre los distintos tipos de [prótesis dentales](/protesis-dentales) que ofrecemos en Málaga o sobre nuestros tratamientos de [implantes dentales](/implantes-dentales), puedes consultar nuestras páginas específicas o [pedir una primera valoración gratuita](/contacto) en cualquiera de nuestras tres clínicas.
+
+## Preguntas frecuentes sobre prótesis dentales en Málaga
+
+### ¿Qué es mejor, prótesis fija o removible?
+Depende del caso. La prótesis fija sobre implantes ofrece más comodidad y mejor masticación; la removible es más económica y menos invasiva. La elección debe partir de un diagnóstico personalizado.
+
+### ¿Cuánto se tarda en colocar una prótesis fija sobre implantes?
+Desde la cirugía hasta la prótesis definitiva suelen pasar entre 3 y 6 meses, aunque en muchos casos se coloca una prótesis provisional el mismo día de la intervención.
+
+### ¿Las prótesis removibles modernas se mueven al hablar o comer?
+Las prótesis bien ajustadas se mueven mucho menos que las antiguas. Si se anclan a implantes (sobredentadura), la estabilidad mejora de forma notable.
+
+### ¿Se puede pasar de una prótesis removible a una fija más adelante?
+Sí. Muchos pacientes empiezan con una removible y, con el tiempo, deciden colocar implantes para una solución fija. El plan de tratamiento puede plantearse por fases.
+
+### ¿Las prótesis dentales se notan al sonreír?
+Una prótesis bien diseñada, con materiales actuales, resulta muy natural. La estética es uno de los aspectos que más cuidamos en cada caso.
+
+Si te queda alguna duda o quieres saber qué tipo de prótesis encaja mejor en tu situación, puedes [contactar con nuestras clínicas en Málaga](/contacto) y te orientaremos sin compromiso.
+`,
+    date: '2025-01-15',
+    dateFormatted: '15 de enero de 2025',
+    image: newsProtesisFijaRemovible,
+    author: 'Equipo Bocaboca',
+    readTime: '9 min',
+  },
   {
     slug: 'importancia-mantenimiento-implantes-dentales-malaga',
     title: 'La Importancia del Mantenimiento de los Implantes Dentales en Málaga',
