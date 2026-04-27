@@ -5,6 +5,7 @@ import clinicaAyala from '@/assets/clinica-ayala.png';
 import newsImplantMaintenance from '@/assets/news-implant-maintenance.jpg';
 import newsDuracionImplantes from '@/assets/news-duracion-implantes-malaga.jpg';
 import newsProtesisFijaRemovible from '@/assets/news-protesis-fija-removible-malaga.jpg';
+import newsPeriimplantitis from '@/assets/news-periimplantitis-malaga.jpg';
 
 export interface NewsPost {
   slug: string;
@@ -19,6 +20,112 @@ export interface NewsPost {
 }
 
 export const newsPosts: NewsPost[] = [
+  {
+    slug: 'periimplantitis-sintomas-prevencion-malaga',
+    title: 'Periimplantitis: síntomas, causas y cómo prevenirla en Málaga',
+    excerpt: 'Qué es la periimplantitis, cómo detectarla a tiempo y qué hábitos te ayudan a evitar perder un implante dental. Guía clara desde nuestras clínicas en Málaga.',
+    content: `
+La mayoría de los pacientes que se ponen un implante dental piensan, con razón, que ya tienen el problema resuelto para muchos años. Y en gran medida es así: hoy un implante bien colocado tiene tasas de éxito superiores al 95%. Pero hay una complicación que conviene conocer porque es silenciosa, lenta y, si no se detecta a tiempo, puede llevar a perder el implante. Se llama **periimplantitis**.
+
+En este artículo te explicamos, sin tecnicismos innecesarios, qué es la periimplantitis, por qué aparece, qué síntomas debes vigilar y, sobre todo, qué puedes hacer para prevenirla. Toda la información está pensada desde nuestra experiencia diaria en [implantes dentales en Málaga](/implantes-dentales).
+
+## Qué es la periimplantitis
+
+La periimplantitis es una **inflamación de los tejidos que rodean a un implante dental** (encía y hueso) provocada por la acumulación de bacterias en placa bacteriana. Cuando esta inflamación avanza, **destruye el hueso que sujeta el implante**, lo que puede acabar haciendo que el implante se afloje y termine perdiéndose.
+
+Es importante distinguirla de su "hermana menor", la **mucositis periimplantaria**:
+
+- **Mucositis periimplantaria:** la encía alrededor del implante está inflamada y sangra, pero el hueso todavía no se ha visto afectado. En esta fase, con un buen tratamiento, **es totalmente reversible**.
+- **Periimplantitis:** la infección ha progresado y ya hay **pérdida ósea alrededor del implante**. El daño en el hueso no se recupera por sí solo y requiere un tratamiento específico.
+
+Detectar la mucositis a tiempo es la mejor manera de evitar llegar a una periimplantitis.
+
+## Síntomas que debes vigilar
+
+La periimplantitis no suele doler en sus fases iniciales, y por eso muchos pacientes la descubren cuando ya está avanzada. Estos son los signos más habituales:
+
+- **Sangrado de la encía** alrededor del implante al cepillarte o al usar el cepillo interdental.
+- **Encía enrojecida, hinchada o más blanda** de lo normal en esa zona.
+- **Mal sabor de boca o mal aliento persistente** que no desaparece con la higiene habitual.
+- **Pequeñas secreciones de pus** al presionar la encía.
+- **Sensación de que la corona "se mueve"** o de que la mordida ha cambiado.
+- **Retracción de la encía**, que deja ver la parte metálica del implante.
+
+Si notas alguno de estos síntomas, **no esperes**. Pide cita con tu clínica de implantes para una revisión cuanto antes. Cuanto antes se detecte, más sencillo es frenar el problema.
+
+## Por qué aparece la periimplantitis
+
+La causa principal es la acumulación de placa bacteriana, pero hay varios factores que aumentan claramente el riesgo:
+
+### Higiene insuficiente
+Los implantes no se carían, pero **la encía sí se infecta**. Si la higiene diaria no llega bien a la zona donde la corona se une a la encía, las bacterias se acumulan y empiezan a inflamar los tejidos.
+
+### Tabaco
+Fumar es uno de los grandes enemigos de los implantes. El tabaco reduce el riego sanguíneo de la encía, dificulta la cicatrización y multiplica el riesgo de periimplantitis. En pacientes fumadores, las revisiones deben ser más frecuentes.
+
+### Falta de revisiones y mantenimiento profesional
+Una limpieza profesional con técnica específica para implantes detecta los primeros signos de inflamación antes de que el paciente note nada. Saltarse estas visitas es uno de los errores más habituales.
+
+### Bruxismo (rechinar los dientes)
+Apretar o rechinar los dientes por la noche somete al implante a fuerzas excesivas que pueden alterar el hueso de soporte y favorecer la inflamación. En estos casos, una férula de descarga es fundamental.
+
+### Enfermedades sistémicas
+La diabetes mal controlada, ciertos tratamientos médicos o enfermedades que afectan al sistema inmune pueden aumentar el riesgo. No son contraindicación absoluta, pero sí condicionan el seguimiento.
+
+### Antecedentes de periodontitis
+Los pacientes que han tenido enfermedad periodontal en sus dientes naturales tienen más riesgo de desarrollar periimplantitis. Por eso, antes de colocar un implante, es clave estabilizar primero la salud de las encías.
+
+## Cómo se diagnostica y se trata
+
+El diagnóstico se realiza en consulta combinando exploración clínica (sondaje de la encía, valoración del sangrado, movilidad) con **radiografías** que permiten ver el nivel de hueso alrededor del implante. En casos más complejos puede usarse un **escáner 3D** para evaluar la pérdida ósea con precisión.
+
+El tratamiento depende de la fase en la que se detecte:
+
+- En **mucositis**, suele bastar con una higiene profesional específica, instrucciones detalladas de cepillado e interdentales y un seguimiento cercano.
+- En **periimplantitis leve o moderada**, se realizan tratamientos de descontaminación de la superficie del implante, control de los factores de riesgo y revisiones más frecuentes.
+- En **periimplantitis avanzada**, puede ser necesaria una pequeña intervención para limpiar a fondo la zona y, en algunos casos, intentar regenerar parte del hueso perdido.
+
+Cada caso es distinto y requiere una valoración individual. Lo importante es que, cuanto antes se diagnostique, **más opciones hay de salvar el implante**.
+
+## Cómo prevenir la periimplantitis: lo que sí depende de ti
+
+La buena noticia es que la mayoría de los casos se pueden prevenir con hábitos sencillos y constantes:
+
+- **Cepíllate al menos dos veces al día**, prestando atención especial a la línea donde la corona se une a la encía.
+- Usa **cepillos interdentales o irrigador bucal** a diario para limpiar entre dientes e implantes.
+- Acude a **revisiones cada 6 meses** y a una **higiene profesional con técnica específica para implantes** (ultrasonidos con puntas adecuadas, no con instrumentos metálicos convencionales).
+- Si fumas, **plantéate dejarlo o reducir el consumo**. Es la medida con más impacto a largo plazo.
+- Si rechinas los dientes por la noche, consulta por una **férula de descarga**.
+- Mantén controladas tus enfermedades generales, especialmente la diabetes.
+
+Estos cuidados, sumados a un buen [mantenimiento de los implantes](/noticias/cuidado-implantes-dentales-guia-completa), son la mejor garantía de que tus implantes duren muchísimos años.
+
+## Preguntas frecuentes sobre la periimplantitis
+
+### ¿Si tengo periimplantitis voy a perder el implante?
+No necesariamente. Si se detecta en fases iniciales y se trata correctamente, en muchos casos se consigue estabilizar la zona y conservar el implante. La clave es no retrasar la consulta.
+
+### ¿Duele la periimplantitis?
+En las fases iniciales **no suele doler**, y ese es precisamente su mayor riesgo. Por eso es tan importante hacer revisiones periódicas aunque no notes molestias.
+
+### ¿Puedo usar el mismo cepillo y la misma pasta que para mis dientes naturales?
+Sí, pero conviene complementar con cepillos interdentales, irrigador o cepillos específicos para implantes. En tu revisión te indicaremos los más adecuados a tu caso.
+
+### ¿Cuánto tiempo después de colocar el implante puede aparecer?
+Puede aparecer en cualquier momento, pero es más frecuente a partir de los **5 años** desde la colocación, sobre todo si la higiene o las revisiones no han sido las adecuadas.
+
+## Cuida tus implantes con un equipo especializado
+
+En nuestras [clínicas de implantes dentales en Málaga](/contacto), el seguimiento posterior al tratamiento es tan importante para nosotros como la propia cirugía. El equipo dirigido por el [Dr. Alfonso Moreno Sánchez](/sobre-nosotros) realiza protocolos específicos de mantenimiento de implantes, con revisiones periódicas, higienes profesionales adaptadas y diagnóstico precoz de cualquier signo de periimplantitis.
+
+Si llevas implantes y notas algún síntoma, o simplemente hace tiempo que no haces una revisión, **pide una primera valoración gratuita**. Detectar a tiempo es, casi siempre, la diferencia entre solucionar y lamentar.
+`,
+    date: '2026-04-27',
+    dateFormatted: '27 de Abril, 2026',
+    image: newsPeriimplantitis,
+    author: 'Dr. Alfonso Moreno Sánchez',
+    readTime: '7 min',
+  },
   {
     slug: 'cuanto-duran-implantes-dentales-malaga',
     title: '¿Cuánto duran los implantes dentales? Consejos para cuidarlos en Málaga',
