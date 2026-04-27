@@ -22,25 +22,70 @@ const NoticiaDetalle = () => {
     const lines = content.trim().split('\n');
     const elements: JSX.Element[] = [];
     let listItems: string[] = [];
-    let inList = false;
+
+    // Inline parser: handles [text](url), **bold**, *italic*
+    const renderInline = (text: string): (string | JSX.Element)[] => {
+      const tokens: (string | JSX.Element)[] = [];
+      const regex = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+      let lastIndex = 0;
+      let match: RegExpExecArray | null;
+      let key = 0;
+
+      while ((match = regex.exec(text)) !== null) {
+        if (match.index > lastIndex) {
+          tokens.push(text.slice(lastIndex, match.index));
+        }
+        if (match[1] && match[2]) {
+          const url = match[2];
+          const label = match[1];
+          if (url.startsWith('/')) {
+            tokens.push(
+              <Link key={`l-${key++}`} to={url} className="text-primary font-medium underline-offset-4 hover:underline">
+                {label}
+              </Link>
+            );
+          } else {
+            tokens.push(
+              <a
+                key={`l-${key++}`}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-medium underline-offset-4 hover:underline"
+              >
+                {label}
+              </a>
+            );
+          }
+        } else if (match[3]) {
+          tokens.push(<strong key={`b-${key++}`} className="text-foreground font-semibold">{match[3]}</strong>);
+        } else if (match[4]) {
+          tokens.push(<em key={`i-${key++}`}>{match[4]}</em>);
+        }
+        lastIndex = match.index + match[0].length;
+      }
+      if (lastIndex < text.length) {
+        tokens.push(text.slice(lastIndex));
+      }
+      return tokens.length > 0 ? tokens : [text];
+    };
 
     const flushList = () => {
       if (listItems.length > 0) {
         elements.push(
           <ul key={`list-${elements.length}`} className="list-disc list-inside space-y-2 mb-6 text-muted-foreground">
             {listItems.map((item, i) => (
-              <li key={i}>{item}</li>
+              <li key={i}>{renderInline(item)}</li>
             ))}
           </ul>
         );
         listItems = [];
-        inList = false;
       }
     };
 
     lines.forEach((line, index) => {
       const trimmed = line.trim();
-      
+
       if (trimmed.startsWith('## ')) {
         flushList();
         elements.push(
@@ -56,9 +101,8 @@ const NoticiaDetalle = () => {
           </h3>
         );
       } else if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
-        inList = true;
         listItems.push(trimmed.substring(2));
-      } else if (trimmed.startsWith('**') && trimmed.endsWith('**')) {
+      } else if (/^\*\*[^*]+\*\*$/.test(trimmed)) {
         flushList();
         elements.push(
           <p key={index} className="font-semibold text-foreground mb-2">
@@ -71,7 +115,7 @@ const NoticiaDetalle = () => {
         flushList();
         elements.push(
           <p key={index} className="text-muted-foreground leading-relaxed mb-4">
-            {trimmed}
+            {renderInline(trimmed)}
           </p>
         );
       }
