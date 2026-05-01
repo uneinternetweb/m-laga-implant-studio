@@ -1,77 +1,117 @@
-## Objetivo
+## Análisis de noticias existentes
 
-Publicar **una nueva noticia** sobre implantes dentales en la web, real, con criterio clínico, optimizada para SEO local en Málaga, con imagen realista (que no parezca generada por IA) y enlaces internos a las páginas clave. **Sin hablar de precios** para no comprometer a la clínica.
+Las 8 noticias actuales cubren:
 
-## Tema recomendado
+1. Periimplantitis (síntomas y prevención)
+2. Duración de los implantes
+3. Prótesis fijas vs removibles
+4. Mantenimiento de implantes
+5. Avances tecnológicos (3D y cirugía guiada)
+6. All-on-4
+7. Guía completa de cuidados
+8. Implantes vs dentadura postiza
 
-**"Periimplantitis: qué es, síntomas y cómo evitar perder un implante dental"**
+**Huecos detectados** sin solapamiento, con búsqueda real en Málaga y rigor clínico:
 
-Por qué este tema:
+- Nada sobre **regeneración / injerto óseo** (búsqueda muy frecuente: pacientes con poco hueso).
+- Nada sobre **proceso completo paso a paso** desde la primera consulta hasta la corona definitiva (informacional puro, alta intención).
+- Nada sobre **diabetes / tabaco y otros factores médicos** que condicionan el éxito.
+- Nada sobre **carga inmediata real** (qué es y cuándo se puede).
 
-- **Clínico y serio**, sin compromisos comerciales (no hablamos de precios, ofertas ni plazos garantizados).
-- **Búsqueda real y creciente**: "periimplantitis", "implante se mueve", "encía inflamada implante", "por qué se cae un implante".
-- **Complementa** los artículos existentes sin solaparse (los actuales hablan de duración, cuidados generales y tipos de prótesis; ninguno aborda específicamente la periimplantitis como patología).
-- Refuerza la autoridad de la clínica y del Dr. Alfonso Moreno Sánchez como referentes serios en implantología.
-- Encaja perfectamente con la línea editorial: educar al paciente, no vender.
+## Propuesta: 2 nuevos artículos
 
-## Alternativas si prefieres otro enfoque
+### Artículo 1: Injerto óseo dental: cuándo se necesita antes de un implante
 
-- **A.** Injerto óseo dental: cuándo es necesario antes de un implante.
-- **B.** Carga inmediata: dientes fijos en 24 horas, requisitos clínicos reales.
-- **C.** Implantes dentales en pacientes mayores: mitos, realidad y cuándo sí están indicados.
+- **Slug:** `injerto-oseo-dental-cuando-necesario-malaga`
+- **Por qué:** Tema clínico serio y muy buscado. Resuelve la duda real de pacientes a los que les han dicho "no tienes hueso suficiente". Sin precios, sin promesas comerciales.
+- **Keywords:** injerto óseo dental Málaga, regeneración ósea implantes, no tengo hueso para implante, elevación de seno maxilar Málaga.
+- **Estructura (~1.100 palabras):**
+  - Introducción: por qué a veces no se puede colocar el implante directamente.
+  - Por qué se pierde hueso (extracciones antiguas, periodontitis, prótesis removible mal ajustada, traumatismos).
+  - Cuándo es necesario un injerto (criterios clínicos reales: volumen, altura, calidad ósea).
+  - Tipos de regeneración ósea: ROG, elevación de seno maxilar (lateral y atraumática), injertos en bloque. Explicados en lenguaje claro.
+  - Materiales utilizados (autólogo, heterólogo, sintético) con base científica, sin marcas comerciales.
+  - Tiempos reales de cicatrización (3–9 meses según técnica) y por qué la prisa es mala consejera.
+  - Cuidados postoperatorios (sin inventar protocolos: pautas estándar).
+  - FAQ corta (¿duele? ¿se puede hacer a cualquier edad? ¿qué pasa si no me hago el injerto?).
+  - Cierre con CTA suave a primera valoración.
+- **Enlaces internos naturales:**
+  - `/implantes-dentales`
+  - `/sobre-nosotros`
+  - `/contacto`
+  - Noticia relacionada: `avances-implantes-dentales-2024` (cirugía guiada)
+  - Noticia relacionada: `periimplantitis-sintomas-prevencion-malaga`
 
-(Avísame si prefieres una de estas en lugar de periimplantitis.)
+### Artículo 2: Implantes dentales paso a paso: todas las fases del tratamiento
 
-## Plan de ejecución
+- **Slug:** `implantes-dentales-paso-a-paso-fases-tratamiento-malaga`
+- **Por qué:** Búsqueda muy alta de pacientes en fase de investigación ("cómo se pone un implante", "cuántas fases tiene un implante"). Cero solapamiento con los artículos existentes (que hablan de cuidados, duración, comparativas). Aporta utilidad pura.
+- **Keywords:** implantes dentales paso a paso, fases implante dental, cómo se coloca un implante, primera consulta implantes Málaga.
+- **Estructura (~1.100 palabras):**
+  - Introducción: por qué entender el proceso reduce el miedo y mejora el resultado.
+  - Fase 1 — Diagnóstico: exploración, escáner CBCT 3D, planificación digital. Importancia de no saltarse esta fase.
+  - Fase 2 — Plan de tratamiento individualizado: por qué cada caso es distinto.
+  - Fase 3 — Preparación previa (limpieza profesional, tratamiento de caries o periodontitis, injerto óseo si procede).
+  - Fase 4 — Cirugía de colocación del implante: cómo es realmente, anestesia local, duración, sensaciones del paciente.
+  - Fase 5 — Osteointegración: el periodo de espera (2–6 meses) y por qué es clave.
+  - Fase 6 — Colocación del pilar y toma de medidas digitales.
+  - Fase 7 — Colocación de la corona/prótesis definitiva.
+  - Fase 8 — Revisiones y mantenimiento de por vida.
+  - Cuándo es posible la **carga inmediata** (sin prometerla como norma; explicando requisitos clínicos reales).
+  - FAQ corta (¿cuánto tiempo en total? ¿me quedaré sin dientes durante el proceso? ¿duele la cirugía?).
+  - Cierre con CTA a consulta.
+- **Enlaces internos naturales:**
+  - `/implantes-dentales`
+  - `/protesis-dentales`
+  - `/sobre-nosotros`
+  - `/contacto`
+  - Noticia relacionada: `avances-implantes-dentales-2024`
+  - Noticia relacionada: `cuidado-implantes-dentales-guia-completa`
 
-### 1. Crear el artículo en `src/data/newsPosts.ts`
+## Imágenes realistas (sin "sello IA")
 
-- **Slug:** `periimplantitis-sintomas-prevencion-malaga`
-- **Title:** "Periimplantitis: síntomas, causas y cómo prevenirla en Málaga" (≤60 chars)
-- **Excerpt:** ~155 chars optimizado para meta description
-- **Contenido:** ~1.000–1.200 palabras con jerarquía H2/H3 limpia y tono natural (estilo de los artículos existentes, no robótico):
-  - Introducción: por qué un implante puede fallar años después
-  - Qué es la periimplantitis (vs mucositis periimplantaria)
-  - Síntomas que debes vigilar (sangrado, inflamación, mal sabor, movilidad)
-  - Causas principales (higiene, tabaco, bruxismo, falta de revisiones, diabetes)
-  - Cómo se diagnostica y cómo se trata (sin entrar en precios ni protocolos comerciales)
-  - Prevención: rutina diaria + revisiones de mantenimiento
-  - FAQ corta (3–4 preguntas) para favorecer rich snippets
-  - Cierre con CTA suave a primera consulta gratuita
-- **Enlaces internos** integrados de forma natural:
-  - `/implantes-dentales` (servicio principal)
-  - `/sobre-nosotros` (Dr. Alfonso Moreno y equipo)
-  - `/contacto` (CTA consulta)
-  - 1–2 noticias relacionadas: `cuidado-implantes-dentales-guia-completa` e `importancia-mantenimiento-implantes-dentales-malaga`
-- **Insertar al inicio** del array `newsPosts` para que aparezca como la noticia más reciente.
-- **Fecha:** actual (abril 2026).
+Para que **no parezcan generadas por IA** y **sin inventar dentistas**:
 
-### 2. Imagen realista (no obvia de IA)
+- Modelo: **Nano Banana Pro** (`google/gemini-3-pro-image-preview`) por mayor realismo.
+- **Sin personas con caras visibles**, sin batas con "doctor falso", sin manos en primer plano (donde la IA suele fallar).
+- Encuadres documentales tipo stock editorial:
+  - **Artículo 1 (injerto óseo):** primer plano de un **escáner CBCT 3D en pantalla** mostrando un maxilar con planificación de implantes. Luz tenue de consulta, fondo desenfocado, lente 50mm. Sin texto legible, sin logos, sin marcas.
+  - **Artículo 2 (paso a paso):** **mesa de planificación dental** con modelo dental físico, radiografía panorámica sobre negatoscopio iluminado y herramientas de medición. Estética editorial, luz natural lateral, paleta neutra coherente con la marca.
+- **QA obligatorio** antes de aceptar: revisar que no haya manos deformadas, instrumental imposible o textos absurdos. Si se detecta, regenerar.
+- Guardado en:
+  - `src/assets/news-injerto-oseo-malaga.jpg`
+  - `src/assets/news-implantes-paso-a-paso-malaga.jpg`
 
-Estrategia para que no se note generada por IA:
+## SEO técnico (ya soportado)
 
-- Generar con **Nano Banana Pro** (`google/gemini-3-pro-image-preview`) usando prompt fotoperiodístico muy concreto: foto editorial de consulta dental real en Málaga, luz natural de ventana lateral, lente 50mm f/2.8, grano fílmico sutil, encuadre documental, sin manos deformadas, sin texto, sin logos, paleta neutra coherente con la marca.
-- Tema visual seguro: **detalle de revisión dental con espejo e instrumento sobre encía sana** (evita primeros planos de boca con patología que suelen verse falsos en IA).
-- **QA obligatorio**: convertir a imagen y revisar antes de aceptar. Si se nota artificial (manos raras, instrumental imposible, encía plástica), regenerar con prompt corregido o cambiar el encuadre a un plano más amplio (consulta, sillón, profesional con bata).
-- Guardar como `src/assets/news-periimplantitis-malaga.jpg` (formato JPG, ~1600px ancho).
-- Importar en `newsPosts.ts`.
+- `NoticiaDetalle.tsx` ya inyecta JSON-LD `Article`, canonical y OG → cero cambios.
+- `title` ≤ 60 caracteres, `excerpt` ≤ 160 caracteres.
+- Títulos H2/H3 jerárquicos, FAQ al final para favorecer rich snippets.
+- Tono natural (no robótico), frases variadas, sin keyword stuffing.
+- **Enlaces internos** integrados en el flujo del texto (no en bloques aislados).
 
-### 3. SEO técnico
+## Sitemap
 
-- `NoticiaDetalle.tsx` ya inyecta JSON-LD `Article`, canonical y OG mediante `SEOHead` → cero cambios necesarios.
-- Añadir la nueva URL a `public/sitemap.xml` con `changefreq=monthly`, `priority=0.6` y `lastmod` actualizado.
-- Title ≤60 chars, excerpt ≤160 chars, sin keyword stuffing.
+Tras tu OK, añadir las 2 nuevas URLs a `public/sitemap.xml` con `lastmod` actualizado, `changefreq=monthly` y `priority=0.6`:
 
-### 4. Sin cambios de diseño
+- `/noticias/injerto-oseo-dental-cuando-necesario-malaga`
+- `/noticias/implantes-dentales-paso-a-paso-fases-tratamiento-malaga`
 
-No se tocan componentes visuales, estilos, layout, header, footer ni la home. Solo se editan datos y se añade un asset.
+## Sin cambios de diseño
+
+No se toca ningún componente visual, layout, header, footer ni home. Solo se añaden datos y assets.
 
 ## Archivos afectados
 
-- `src/data/newsPosts.ts` (editado — nueva entry al inicio del array)
-- `src/assets/news-periimplantitis-malaga.jpg` (creado)
-- `public/sitemap.xml` (editado — nueva URL + lastmod)
+- `src/data/newsPosts.ts` (editado — 2 nuevas entradas al inicio del array)
+- `src/assets/news-injerto-oseo-malaga.jpg` (creado)
+- `src/assets/news-implantes-paso-a-paso-malaga.jpg` (creado)
+- `public/sitemap.xml` (editado — 2 URLs nuevas + lastmod)
 
-## Confirmación
+## ¿Confirmas?
 
-¿Te parece bien **periimplantitis** como tema, o prefieres una de las alternativas (A injerto óseo, B carga inmediata, C implantes en mayores)?
+¿Te parecen bien estos **2 temas** (injerto óseo + implantes paso a paso) o prefieres sustituir alguno por:
+
+- **A.** Implantes dentales en pacientes diabéticos: lo que dice la evidencia.
+- **B.** Implantes y tabaco: cómo afecta realmente al éxito del tratamiento.
+- **C.** Carga inmediata: qué es y cuándo es posible (artículo dedicado).
