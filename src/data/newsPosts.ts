@@ -6,6 +6,8 @@ import newsImplantMaintenance from '@/assets/news-implant-maintenance.jpg';
 import newsDuracionImplantes from '@/assets/news-duracion-implantes-malaga.jpg';
 import newsProtesisFijaRemovible from '@/assets/news-protesis-fija-removible-malaga.jpg';
 import newsPeriimplantitis from '@/assets/news-periimplantitis-malaga.jpg';
+import newsInjertoOseo from '@/assets/news-injerto-oseo-malaga.jpg';
+import newsImplantesPasoAPaso from '@/assets/news-implantes-paso-a-paso-malaga.jpg';
 
 export interface NewsPost {
   slug: string;
@@ -20,6 +22,241 @@ export interface NewsPost {
 }
 
 export const newsPosts: NewsPost[] = [
+  {
+    slug: 'implantes-dentales-paso-a-paso-fases-tratamiento-malaga',
+    title: 'Implantes dentales paso a paso: todas las fases del tratamiento',
+    excerpt: 'Te explicamos, fase por fase, cómo es realmente un tratamiento con implantes dentales: del diagnóstico 3D a la corona definitiva. Sin tecnicismos, desde Málaga.',
+    content: `
+Una de las preguntas que más escuchamos en consulta es muy sencilla: *"¿y cómo es exactamente todo el proceso?"*. Detrás de esa pregunta hay, casi siempre, algo de incertidumbre y un poco de miedo a lo desconocido. Por eso hemos preparado esta guía: para que entiendas, paso a paso, cómo es realmente un tratamiento con [implantes dentales en Málaga](/implantes-dentales) en una clínica seria.
+
+Verás que un implante no es "un día de cirugía y ya está", sino un proceso ordenado, con varias fases pensadas para que el resultado dure muchos años. Saber qué pasa en cada etapa ayuda a tomar mejores decisiones y a vivir el tratamiento con mucha más tranquilidad.
+
+## Fase 1 — Primera consulta y diagnóstico
+
+Todo empieza con una **valoración clínica completa**. No es un trámite: es la fase que más condiciona el éxito del implante. En esta primera visita revisamos el estado de las encías, los dientes vecinos, la mordida y, sobre todo, la **calidad y cantidad de hueso disponible**.
+
+Para poder planificar con precisión utilizamos un **escáner CBCT 3D**, que ofrece una imagen tridimensional del maxilar. Gracias a esta tecnología podemos:
+
+- Medir con exactitud la altura y anchura del hueso.
+- Localizar estructuras importantes como el seno maxilar o el nervio dentario inferior.
+- Anticipar si será necesario un [injerto óseo previo](/noticias/injerto-oseo-dental-cuando-necesario-malaga).
+
+Sin un buen diagnóstico, no hay buen implante. Por eso es una fase a la que dedicamos tiempo.
+
+## Fase 2 — Plan de tratamiento individualizado
+
+Con toda la información sobre la mesa, diseñamos un **plan de tratamiento a medida**. Aquí no hay protocolos cerrados: el plan depende de cuántos dientes faltan, del estado de los que quedan, del hueso disponible, de la salud general del paciente y de sus expectativas.
+
+En esta fase te explicamos:
+
+- Cuántos implantes son necesarios y dónde se colocarán.
+- Qué tipo de prótesis llevarás encima (corona individual, puente o prótesis completa tipo [All-on-4](/noticias/all-on-4-solucion-pacientes-sin-dientes)).
+- Qué fases hay, qué tiempos manejamos y qué cuidados implica cada una.
+
+Es el momento de preguntar todo lo que quieras. Un paciente bien informado colabora mejor y obtiene mejores resultados.
+
+## Fase 3 — Preparación previa
+
+Antes de colocar ningún implante hay que **dejar la boca en condiciones óptimas**. Si hay caries, periodontitis o infecciones activas, se tratan primero. Una boca con encías inflamadas no es un buen terreno para un implante.
+
+Esta fase puede incluir:
+
+- **Higiene profesional** y, si es necesario, tratamiento periodontal.
+- **Extracción** de dientes irrecuperables.
+- **Regeneración ósea o injerto** si el hueso disponible no es suficiente.
+
+Saltarse esta etapa es una de las causas más frecuentes de complicaciones a largo plazo, incluida la [periimplantitis](/noticias/periimplantitis-sintomas-prevencion-malaga).
+
+## Fase 4 — Cirugía de colocación del implante
+
+Es la fase que más respeto suele dar a los pacientes y, sin embargo, es **mucho más sencilla de lo que la mayoría imagina**. Se realiza con **anestesia local** (la misma que para empastar una muela) y, en la mayoría de casos, dura entre 30 y 60 minutos por implante.
+
+Durante la cirugía:
+
+- Se hace una pequeña apertura en la encía.
+- Se prepara el lecho en el hueso con una secuencia de fresas calibradas.
+- Se coloca el implante (un tornillo de titanio biocompatible).
+- Se sutura la encía.
+
+Cuando hay un buen diagnóstico previo y se utiliza **cirugía guiada por ordenador**, la intervención es aún más precisa y menos invasiva. La mayoría de pacientes nos dicen que fue mucho más llevadero de lo que esperaban.
+
+## Fase 5 — Osteointegración: el tiempo que el cuerpo necesita
+
+Tras la cirugía llega una fase silenciosa pero clave: la **osteointegración**. Es el periodo en el que el hueso se une biológicamente al titanio del implante, formando un anclaje estable que durará décadas.
+
+Este proceso no se puede acelerar. Habitualmente requiere:
+
+- **2 a 3 meses** en el maxilar inferior, donde el hueso es más denso.
+- **3 a 6 meses** en el maxilar superior.
+
+Durante este tiempo el paciente puede llevar una **prótesis provisional** para no estar sin dientes. Tener paciencia en esta fase es una de las mejores inversiones que puedes hacer en tu tratamiento.
+
+## Fase 6 — Pilar y toma de medidas digitales
+
+Una vez confirmada la osteointegración, se coloca un **pilar** (la pieza intermedia entre el implante y la corona) y se toman las medidas para fabricar la prótesis definitiva.
+
+Hoy estas medidas se hacen, casi siempre, con **escáner intraoral digital**: nada de pastas incómodas, mucha más precisión y mayor rapidez.
+
+## Fase 7 — Colocación de la corona o prótesis definitiva
+
+Con las medidas, el laboratorio fabrica tu prótesis definitiva ([corona, puente o prótesis completa](/protesis-dentales)). En cuanto está lista, se prueba, se ajusta milimétricamente la mordida y se fija sobre el implante.
+
+Es el momento que más esperan nuestros pacientes: ese día sales con tu nuevo diente, masticando, hablando y sonriendo con normalidad.
+
+## Fase 8 — Revisiones y mantenimiento de por vida
+
+Aquí es donde muchos tratamientos se ganan… o se pierden. Un implante necesita **revisiones periódicas** (normalmente una o dos al año) y una **higiene diaria meticulosa**. Es la mejor forma de prevenir problemas y de que el implante dure realmente toda la vida.
+
+Si quieres profundizar, tenemos una [guía completa de cuidado de implantes](/noticias/cuidado-implantes-dentales-guia-completa) con rutinas y errores frecuentes que conviene evitar.
+
+## ¿Y la carga inmediata?
+
+En algunos casos seleccionados es posible la **carga inmediata**: colocar una prótesis provisional fija el mismo día de la cirugía. No es para todos los pacientes. Requiere:
+
+- Estabilidad primaria suficiente del implante en el hueso.
+- Hueso de buena calidad y volumen adecuado.
+- Una mordida que no someta a fuerzas excesivas a los implantes.
+- Un planteamiento clínico riguroso, no una promesa comercial.
+
+En consulta valoramos si tu caso es candidato real a carga inmediata, sin generar expectativas que no podamos sostener clínicamente. Sobre [el equipo y cómo trabajamos](/sobre-nosotros) puedes conocernos mejor.
+
+## Preguntas frecuentes
+
+### ¿Cuánto dura todo el proceso de principio a fin?
+Lo habitual es entre **3 y 6 meses** en el maxilar inferior y entre **5 y 9 meses** en el maxilar superior, contando desde la cirugía hasta la corona definitiva. Si hay injerto óseo previo, el plazo puede alargarse algunos meses más.
+
+### ¿Voy a estar sin dientes durante el tratamiento?
+No. Salvo casos muy concretos, siempre se planifica una **prótesis provisional** para que puedas hacer vida normal mientras los implantes se integran.
+
+### ¿Duele la cirugía del implante?
+Durante la cirugía no, gracias a la anestesia local. En el postoperatorio puede haber ligeras molestias e inflamación durante 2–3 días, perfectamente controlables con analgésicos habituales.
+
+### ¿Y si soy una persona nerviosa o tengo miedo al dentista?
+Lo entendemos perfectamente. En estos casos planificamos sesiones más pausadas y, si hace falta, técnicas de **sedación consciente**. Coméntanoslo desde la primera visita.
+
+---
+
+Si estás valorando ponerte implantes y quieres saber exactamente qué pasos seguiríamos en tu caso, [pide una primera valoración gratuita](/contacto). Te explicaremos tu situación con honestidad y sin compromiso.
+`,
+    date: '2026-05-01',
+    dateFormatted: '1 de Mayo, 2026',
+    image: newsImplantesPasoAPaso,
+    author: 'Dr. Alfonso Moreno Sánchez',
+    readTime: '8 min',
+  },
+  {
+    slug: 'injerto-oseo-dental-cuando-necesario-malaga',
+    title: 'Injerto óseo dental: cuándo se necesita antes de un implante',
+    excerpt: 'Por qué a veces falta hueso para colocar un implante, qué tipos de injerto óseo existen y cómo es realmente el proceso. Información clara desde Málaga.',
+    content: `
+Una de las frases que más escuchamos en consulta es: *"En otra clínica me han dicho que no tengo hueso suficiente para ponerme implantes"*. Antes de asumir que no hay solución, conviene entender bien qué significa esto y qué opciones existen. En la mayoría de los casos, **sí se puede colocar el implante**, pero hay que preparar antes el terreno con un **injerto óseo**.
+
+En este artículo te explicamos, sin tecnicismos innecesarios, por qué se pierde hueso, cuándo es necesario un injerto, qué tipos existen y cómo es el proceso real desde nuestras [clínicas de implantes en Málaga](/implantes-dentales).
+
+## Por qué se pierde hueso en el maxilar
+
+El hueso maxilar y mandibular no es una estructura inmutable: se mantiene gracias al estímulo que recibe de los dientes al masticar. Cuando un diente se pierde y no se reemplaza, **el hueso de esa zona empieza a reabsorberse**. Es un proceso lento pero constante.
+
+Las causas más habituales de pérdida ósea son:
+
+- **Extracciones antiguas** sin colocación posterior de implante.
+- **Enfermedad periodontal** que ha destruido el hueso a lo largo de los años.
+- **Prótesis removibles mal ajustadas** que aceleran la reabsorción al apoyar sobre la encía.
+- **Traumatismos** o infecciones previas.
+- **Sinusitis crónicas** o neumatización del seno maxilar en el sector posterior superior.
+
+Cuanto más tiempo lleva un diente sin reponer, mayor suele ser la pérdida. De ahí la importancia de no posponer demasiado la decisión de ponerse un implante.
+
+## Cuándo es necesario un injerto óseo
+
+No todos los pacientes con poco hueso necesitan injerto. La decisión depende de tres parámetros que evaluamos con un **escáner 3D (CBCT)**:
+
+- **Altura ósea disponible**: si no hay altura suficiente, el implante no puede anclarse de forma estable.
+- **Anchura ósea (grosor de la cresta)**: un hueso demasiado fino puede no envolver el implante adecuadamente.
+- **Calidad del hueso**: hueso muy blando o muy reabsorbido puede requerir refuerzo previo.
+
+Cuando alguno de estos parámetros está por debajo de lo necesario, el injerto óseo permite **recuperar el volumen y la estabilidad** que el implante necesita para durar décadas.
+
+## Tipos de regeneración ósea
+
+No existe un único tipo de injerto: la técnica se elige en función del defecto óseo concreto.
+
+### Regeneración Ósea Guiada (ROG)
+Es la técnica más utilizada en defectos pequeños o moderados. Se coloca **material de injerto** sobre la zona deficitaria y se cubre con una **membrana** que protege el área para que el hueso se regenere ordenadamente. Suele realizarse a la vez que el implante o como paso previo.
+
+### Elevación de seno maxilar
+Cuando faltan los molares superiores, el seno maxilar tiende a "bajar", reduciendo la altura ósea disponible. La elevación de seno permite **ganar altura para colocar implantes** en esa zona. Existen dos variantes:
+
+- **Atraumática (vía crestal)**: para elevaciones pequeñas, a través del propio lecho del implante. Mínimamente invasiva.
+- **Lateral (ventana lateral)**: para elevaciones mayores, con un acceso lateral controlado. Permite regenerar volúmenes importantes.
+
+### Injertos en bloque
+Reservados para defectos óseos importantes en altura y anchura. Se utiliza un bloque de hueso que se fija con micro-tornillos para reconstruir la zona. Es una técnica más exigente, pero permite resolver casos muy reabsorbidos.
+
+### Preservación alveolar
+Cuando se realiza una extracción y se prevé colocar un implante meses después, se puede **rellenar el alveolo** con material de injerto para minimizar la pérdida de hueso futura. Es prevención pura: evita problemas mayores más adelante.
+
+## Materiales utilizados
+
+Los materiales de injerto que utilizamos están avalados por evidencia científica y se eligen según el caso:
+
+- **Autólogo**: hueso del propio paciente, considerado el "estándar de oro" por su excelente integración.
+- **Heterólogo (de origen bovino o porcino tratado)**: ampliamente estudiado, con muy buen comportamiento clínico y disponible en cantidades suficientes.
+- **Aloinjertos** (de origen humano procesados en bancos certificados).
+- **Sintético** (fosfato tricálcico, hidroxiapatita): biocompatible y reabsorbible.
+
+En la mayoría de casos se usa una **combinación** que aprovecha lo mejor de cada material. La decisión la toma el cirujano en función del defecto y del tipo de regeneración planificada.
+
+## Tiempos de cicatrización
+
+Una de las cosas que conviene asumir desde el principio es que **la regeneración ósea no se puede acelerar**. El cuerpo necesita su tiempo para formar hueso nuevo de calidad.
+
+Como referencia general:
+
+- **ROG sencilla**: 4–6 meses antes de cargar el implante.
+- **Elevación de seno atraumática**: 4–6 meses.
+- **Elevación de seno lateral**: 6–9 meses.
+- **Injertos en bloque**: 6–9 meses antes de colocar el implante.
+
+Forzar los tiempos es una de las causas más frecuentes de fracaso. Por eso desconfía siempre de tratamientos que prometen "todo en pocas semanas" en casos con falta importante de hueso.
+
+## Cuidados postoperatorios
+
+Tras una cirugía de injerto óseo, los cuidados son determinantes:
+
+- **Frío local** las primeras horas para reducir la inflamación.
+- **Dieta blanda y fría** durante los primeros días.
+- **Higiene cuidadosa**, evitando cepillar directamente la zona intervenida hasta que el cirujano lo indique.
+- **No fumar**: el tabaco compromete seriamente la regeneración ósea y multiplica el riesgo de fracaso.
+- **Evitar esfuerzos físicos** intensos durante la primera semana.
+- **Acudir a las revisiones** programadas para vigilar la cicatrización.
+
+Bien cuidado, el postoperatorio de la mayoría de injertos es **bastante más llevadero** de lo que la mayoría de pacientes anticipa.
+
+## Preguntas frecuentes
+
+### ¿El injerto óseo duele?
+Durante la cirugía no, gracias a la anestesia local. En el postoperatorio puede haber molestias e inflamación moderadas durante unos días, controlables con analgésicos habituales.
+
+### ¿Se puede hacer un injerto a cualquier edad?
+Sí. La edad por sí sola no es una contraindicación. Lo que valoramos es el estado de salud general del paciente y, sobre todo, factores como la diabetes, el tabaquismo o ciertas medicaciones que pueden condicionar la cicatrización.
+
+### ¿Qué pasa si decido no hacerme el injerto?
+En muchos casos, simplemente no será posible colocar el implante con garantías. Las alternativas suelen ser implantes más cortos cuando el caso lo permite, prótesis sobre menos implantes (como [All-on-4](/noticias/all-on-4-solucion-pacientes-sin-dientes)) o, en su defecto, prótesis removibles. Cada opción tiene ventajas e inconvenientes que valoramos contigo.
+
+### ¿Se puede poner el implante el mismo día del injerto?
+A veces sí. En defectos pequeños se puede combinar regeneración e implante en una sola cirugía. En defectos mayores, lo más prudente es hacerlo en dos fases.
+
+---
+
+Si te han dicho que no tienes hueso suficiente para implantes, no te quedes con esa primera respuesta. [Pide una segunda valoración](/contacto) con escáner 3D incluido y te explicaremos, con la imagen real de tu caso, qué opciones tienes. Sobre [nuestro equipo y trayectoria](/sobre-nosotros) puedes conocernos mejor antes de venir.
+`,
+    date: '2026-05-01',
+    dateFormatted: '1 de Mayo, 2026',
+    image: newsInjertoOseo,
+    author: 'Dr. Alfonso Moreno Sánchez',
+    readTime: '8 min',
+  },
   {
     slug: 'periimplantitis-sintomas-prevencion-malaga',
     title: 'Periimplantitis: síntomas, causas y cómo prevenirla en Málaga',
