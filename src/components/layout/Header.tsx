@@ -128,16 +128,46 @@ const Header = () => {
           <div className="lg:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-in">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`font-medium py-2 ${
-                    isActive(link.href) ? 'text-primary' : 'text-foreground'
-                  }`}
-                >
-                  {link.label}
-                </Link>
+                <div key={link.href}>
+                  <div className="flex items-center justify-between">
+                    <Link
+                      to={link.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={`font-medium py-2 flex-1 ${
+                        isActive(link.href) ? 'text-primary' : 'text-foreground'
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                    {link.subLinks && (
+                      <button
+                        onClick={() => setIsImplantesOpen(!isImplantesOpen)}
+                        className="p-2 text-foreground"
+                        aria-label="Toggle submenu"
+                      >
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform ${isImplantesOpen ? 'rotate-180' : ''}`}
+                        />
+                      </button>
+                    )}
+                  </div>
+                  {link.subLinks && isImplantesOpen && (
+                    <div className="pl-4 flex flex-col gap-2 mt-1 mb-2 border-l-2 border-border">
+                      {link.subLinks.map((sub) => (
+                        <Link
+                          key={sub.href}
+                          to={sub.href}
+                          onClick={() => setIsMenuOpen(false)}
+                          className={`text-sm py-1 ${
+                            isActive(sub.href) ? 'text-primary font-medium' : 'text-muted-foreground'
+                          }`}
+                        >
+                          {sub.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
               <Button asChild className="cta-primary rounded-full mt-2">
                 <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>
