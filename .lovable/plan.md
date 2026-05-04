@@ -1,117 +1,108 @@
-## Análisis de noticias existentes
 
-Las 8 noticias actuales cubren:
+# Plan: Nuevas subpáginas de tratamientos de implantes
 
-1. Periimplantitis (síntomas y prevención)
-2. Duración de los implantes
-3. Prótesis fijas vs removibles
-4. Mantenimiento de implantes
-5. Avances tecnológicos (3D y cirugía guiada)
-6. All-on-4
-7. Guía completa de cuidados
-8. Implantes vs dentadura postiza
+## Objetivo
+Crear tres páginas especializadas de alto valor SEO bajo la sección de Implantes Dentales, con contenido original, rigor clínico y enlazado interno coherente — sin alterar el diseño actual de la web.
 
-**Huecos detectados** sin solapamiento, con búsqueda real en Málaga y rigor clínico:
+## 1. Nuevas rutas y páginas
 
-- Nada sobre **regeneración / injerto óseo** (búsqueda muy frecuente: pacientes con poco hueso).
-- Nada sobre **proceso completo paso a paso** desde la primera consulta hasta la corona definitiva (informacional puro, alta intención).
-- Nada sobre **diabetes / tabaco y otros factores médicos** que condicionan el éxito.
-- Nada sobre **carga inmediata real** (qué es y cuándo se puede).
+Se añaden 3 rutas en `src/App.tsx` y 3 nuevos archivos de página:
 
-## Propuesta: 2 nuevos artículos
+| Ruta | Archivo | H1 |
+|------|---------|----|
+| `/implantes-all-on-4` | `src/pages/ImplantesAllOn4.tsx` | All-on-4™: dientes fijos en un día con 4 implantes |
+| `/implantes-cigomaticos` | `src/pages/ImplantesCigomaticos.tsx` | Implantes cigomáticos: solución para maxilares con poco hueso |
+| `/mallas-subperiosticas` | `src/pages/MallasSubperiosticas.tsx` | Mallas subperiósticas: alternativa a injertos óseos complejos |
 
-### Artículo 1: Injerto óseo dental: cuándo se necesita antes de un implante
+Cada página reutiliza `Layout`, `SEOHead`, `Accordion`, `Button` y los estilos existentes (mismas clases `hero-section`, `section-padding`, `container-wide`, `cta-gold`, etc.) para mantener el diseño 1:1 con `ImplantesDentales.tsx`.
 
-- **Slug:** `injerto-oseo-dental-cuando-necesario-malaga`
-- **Por qué:** Tema clínico serio y muy buscado. Resuelve la duda real de pacientes a los que les han dicho "no tienes hueso suficiente". Sin precios, sin promesas comerciales.
-- **Keywords:** injerto óseo dental Málaga, regeneración ósea implantes, no tengo hueso para implante, elevación de seno maxilar Málaga.
-- **Estructura (~1.100 palabras):**
-  - Introducción: por qué a veces no se puede colocar el implante directamente.
-  - Por qué se pierde hueso (extracciones antiguas, periodontitis, prótesis removible mal ajustada, traumatismos).
-  - Cuándo es necesario un injerto (criterios clínicos reales: volumen, altura, calidad ósea).
-  - Tipos de regeneración ósea: ROG, elevación de seno maxilar (lateral y atraumática), injertos en bloque. Explicados en lenguaje claro.
-  - Materiales utilizados (autólogo, heterólogo, sintético) con base científica, sin marcas comerciales.
-  - Tiempos reales de cicatrización (3–9 meses según técnica) y por qué la prisa es mala consejera.
-  - Cuidados postoperatorios (sin inventar protocolos: pautas estándar).
-  - FAQ corta (¿duele? ¿se puede hacer a cualquier edad? ¿qué pasa si no me hago el injerto?).
-  - Cierre con CTA suave a primera valoración.
-- **Enlaces internos naturales:**
-  - `/implantes-dentales`
-  - `/sobre-nosotros`
-  - `/contacto`
-  - Noticia relacionada: `avances-implantes-dentales-2024` (cirugía guiada)
-  - Noticia relacionada: `periimplantitis-sintomas-prevencion-malaga`
+## 2. Estructura de contenido (cada página)
 
-### Artículo 2: Implantes dentales paso a paso: todas las fases del tratamiento
+- **Hero** con H1 + intro + 2 CTAs (Solicitar Cita / Llamar 951 178 110).
+- **Banner de cifras** (años de experiencia, casos, tasa de éxito) — reutiliza estilos del banner de `ImplantesDentales`.
+- **H2: ¿Qué es el tratamiento?** — definición clínica clara.
+- **H2: ¿Cuándo está indicado?** — perfiles de paciente, criterios clínicos, contraindicaciones.
+- **H2: Ventajas y beneficios** — grid de 4 tarjetas con iconos.
+- **H2: Procedimiento paso a paso** — 4–5 fases (diagnóstico 3D, planificación, cirugía, provisional, definitivo).
+- **H2: Recuperación y cuidados** — tiempos, dieta, higiene, revisiones.
+- **H2: Preguntas frecuentes** — 6–8 FAQ específicas del tratamiento (no genéricas).
+- **CTA final** + enlaces internos contextuales.
 
-- **Slug:** `implantes-dentales-paso-a-paso-fases-tratamiento-malaga`
-- **Por qué:** Búsqueda muy alta de pacientes en fase de investigación ("cómo se pone un implante", "cuántas fases tiene un implante"). Cero solapamiento con los artículos existentes (que hablan de cuidados, duración, comparativas). Aporta utilidad pura.
-- **Keywords:** implantes dentales paso a paso, fases implante dental, cómo se coloca un implante, primera consulta implantes Málaga.
-- **Estructura (~1.100 palabras):**
-  - Introducción: por qué entender el proceso reduce el miedo y mejora el resultado.
-  - Fase 1 — Diagnóstico: exploración, escáner CBCT 3D, planificación digital. Importancia de no saltarse esta fase.
-  - Fase 2 — Plan de tratamiento individualizado: por qué cada caso es distinto.
-  - Fase 3 — Preparación previa (limpieza profesional, tratamiento de caries o periodontitis, injerto óseo si procede).
-  - Fase 4 — Cirugía de colocación del implante: cómo es realmente, anestesia local, duración, sensaciones del paciente.
-  - Fase 5 — Osteointegración: el periodo de espera (2–6 meses) y por qué es clave.
-  - Fase 6 — Colocación del pilar y toma de medidas digitales.
-  - Fase 7 — Colocación de la corona/prótesis definitiva.
-  - Fase 8 — Revisiones y mantenimiento de por vida.
-  - Cuándo es posible la **carga inmediata** (sin prometerla como norma; explicando requisitos clínicos reales).
-  - FAQ corta (¿cuánto tiempo en total? ¿me quedaré sin dientes durante el proceso? ¿duele la cirugía?).
-  - Cierre con CTA a consulta.
-- **Enlaces internos naturales:**
-  - `/implantes-dentales`
-  - `/protesis-dentales`
-  - `/sobre-nosotros`
-  - `/contacto`
-  - Noticia relacionada: `avances-implantes-dentales-2024`
-  - Noticia relacionada: `cuidado-implantes-dentales-guia-completa`
+Contenido redactado de cero, tono profesional-cercano, sin claims de precio, sin "All-on-6", sin inventar profesionales. Densidad de keyword natural; "Málaga" aparece en lugares lógicos (intro, CTA, FAQ local) sin saturar.
 
-## Imágenes realistas (sin "sello IA")
+### Enlazado interno (en prosa, no bloques de "ver también")
+Cada página enlaza de forma natural a:
+- `/` (home), `/contacto`, `/implantes-dentales` (página madre)
+- `/protesis-dentales`, `/sobre-nosotros`
+- Enlaces cruzados entre las 3 nuevas páginas (ej. en cigomáticos → mallas subperiósticas como alternativa)
+- 1–2 enlaces a noticias relevantes (`/noticias/injerto-oseo-dental-cuando-necesario-malaga`, `/noticias/implantes-dentales-paso-a-paso-fases-tratamiento-malaga`)
 
-Para que **no parezcan generadas por IA** y **sin inventar dentistas**:
+## 3. SEO por página
 
-- Modelo: **Nano Banana Pro** (`google/gemini-3-pro-image-preview`) por mayor realismo.
-- **Sin personas con caras visibles**, sin batas con "doctor falso", sin manos en primer plano (donde la IA suele fallar).
-- Encuadres documentales tipo stock editorial:
-  - **Artículo 1 (injerto óseo):** primer plano de un **escáner CBCT 3D en pantalla** mostrando un maxilar con planificación de implantes. Luz tenue de consulta, fondo desenfocado, lente 50mm. Sin texto legible, sin logos, sin marcas.
-  - **Artículo 2 (paso a paso):** **mesa de planificación dental** con modelo dental físico, radiografía panorámica sobre negatoscopio iluminado y herramientas de medición. Estética editorial, luz natural lateral, paleta neutra coherente con la marca.
-- **QA obligatorio** antes de aceptar: revisar que no haya manos deformadas, instrumental imposible o textos absurdos. Si se detecta, regenerar.
-- Guardado en:
-  - `src/assets/news-injerto-oseo-malaga.jpg`
-  - `src/assets/news-implantes-paso-a-paso-malaga.jpg`
+| Página | Title (≤60c) | Meta description (≤155c) |
+|--------|-------------|--------------------------|
+| All-on-4 | `All-on-4™ en Málaga: dientes fijos en un día \| Bocaboca` | `Rehabilitación completa con la técnica All-on-4™ en Málaga. Dientes fijos en 24h sobre 4 implantes. Primera consulta gratuita.` |
+| Cigomáticos | `Implantes cigomáticos en Málaga \| Sin injerto óseo \| Bocaboca` | `Implantes cigomáticos en Málaga para pacientes con atrofia maxilar severa. Solución avanzada sin injertos. Pide valoración gratuita.` |
+| Mallas subperiósticas | `Mallas subperiósticas dentales en Málaga \| Bocaboca` | `Mallas subperiósticas a medida en Málaga: alternativa a injertos óseos complejos para rehabilitar maxilares atróficos. Consulta sin compromiso.` |
 
-## SEO técnico (ya soportado)
+### Schema markup (JSON-LD via `SEOHead.structuredData`)
+Cada página inyecta dos bloques:
+- `MedicalProcedure` (name, procedureType, bodyLocation, description)
+- `FAQPage` con sus FAQs propias
 
-- `NoticiaDetalle.tsx` ya inyecta JSON-LD `Article`, canonical y OG → cero cambios.
-- `title` ≤ 60 caracteres, `excerpt` ≤ 160 caracteres.
-- Títulos H2/H3 jerárquicos, FAQ al final para favorecer rich snippets.
-- Tono natural (no robótico), frases variadas, sin keyword stuffing.
-- **Enlaces internos** integrados en el flujo del texto (no en bloques aislados).
+### Página madre `ImplantesDentales`
+Añadir `BreadcrumbList` schema y enlaces visibles a las 3 nuevas subpáginas dentro de la sección "Soluciones" existente (sin cambiar diseño, solo añadir 3 tarjetas que enlazan).
 
-## Sitemap
+## 4. Imágenes
 
-Tras tu OK, añadir las 2 nuevas URLs a `public/sitemap.xml` con `lastmod` actualizado, `changefreq=monthly` y `priority=0.6`:
+Generar 3 imágenes en `src/assets/` con estilo documental clínico realista (sin retratos de dentistas inventados, sin caras reconocibles), tamaño ~1600×1000:
 
-- `/noticias/injerto-oseo-dental-cuando-necesario-malaga`
-- `/noticias/implantes-dentales-paso-a-paso-fases-tratamiento-malaga`
+- `implantes-all-on-4-malaga.jpg` — modelo dental sobre 4 implantes / planificación 3D
+- `implantes-cigomaticos-malaga.jpg` — TAC 3D de maxilar superior mostrando trayectoria cigomática
+- `mallas-subperiosticas-malaga.jpg` — modelo anatómico con malla de titanio impresa a medida
 
-## Sin cambios de diseño
+ALT descriptivos y naturales (no keyword-stuffed). Importadas como módulos de Vite (optimización automática).
 
-No se toca ningún componente visual, layout, header, footer ni home. Solo se añaden datos y assets.
+## 5. Sitemap
 
-## Archivos afectados
+Añadir a `public/sitemap.xml` (priority 0.8, changefreq monthly):
+- `/implantes-all-on-4`
+- `/implantes-cigomaticos`
+- `/mallas-subperiosticas`
 
-- `src/data/newsPosts.ts` (editado — 2 nuevas entradas al inicio del array)
-- `src/assets/news-injerto-oseo-malaga.jpg` (creado)
-- `src/assets/news-implantes-paso-a-paso-malaga.jpg` (creado)
-- `public/sitemap.xml` (editado — 2 URLs nuevas + lastmod)
+## 6. Cambios menores en navegación
 
-## ¿Confirmas?
+- **Footer** (`src/components/layout/Footer.tsx`): añadir las 3 nuevas entradas bajo "Tratamientos" (sin tocar diseño).
+- **Header**: NO se añade al menú principal para no saturar (se accede desde la página madre y desde el footer). Confirmamos esta decisión en build si quieres que también aparezcan en el menú.
 
-¿Te parecen bien estos **2 temas** (injerto óseo + implantes paso a paso) o prefieres sustituir alguno por:
+## 7. Optimización SEO global (revisión ligera, sin rediseño)
 
-- **A.** Implantes dentales en pacientes diabéticos: lo que dice la evidencia.
-- **B.** Implantes y tabaco: cómo afecta realmente al éxito del tratamiento.
-- **C.** Carga inmediata: qué es y cuándo es posible (artículo dedicado).
+- Verificar que cada página existente tiene H1 único — auditar y corregir si hay duplicados.
+- Revisar `SEOHead` de páginas internas para asegurar titles/descriptions únicos.
+- Añadir `BreadcrumbList` schema en las páginas de tratamiento.
+- Asegurar `loading="lazy"` en imágenes no-hero.
+
+## Archivos a crear/editar
+
+**Crear:**
+- `src/pages/ImplantesAllOn4.tsx`
+- `src/pages/ImplantesCigomaticos.tsx`
+- `src/pages/MallasSubperiosticas.tsx`
+- `src/assets/implantes-all-on-4-malaga.jpg`
+- `src/assets/implantes-cigomaticos-malaga.jpg`
+- `src/assets/mallas-subperiosticas-malaga.jpg`
+
+**Editar:**
+- `src/App.tsx` (3 rutas nuevas)
+- `src/pages/ImplantesDentales.tsx` (3 tarjetas con enlaces + breadcrumb schema)
+- `src/components/layout/Footer.tsx` (3 entradas en Tratamientos)
+- `public/sitemap.xml` (3 URLs)
+
+## Lo que NO se hará
+- No se cambia el diseño general ni la paleta.
+- No se mencionan precios.
+- No se inventan dentistas ni testimonios.
+- No se usa "All-on-6".
+- No se añaden las nuevas páginas al menú principal del Header (mantenemos el menú compacto actual).
+
+¿Apruebas el plan para que lo implemente?
