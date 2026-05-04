@@ -1,16 +1,28 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, Menu, X, MapPin } from 'lucide-react';
+import { Phone, Menu, X, MapPin, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import logo from '@/assets/logo-bocaboca.svg';
 
+type SubLink = { href: string; label: string };
+type NavLink = { href: string; label: string; subLinks?: SubLink[] };
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isImplantesOpen, setIsImplantesOpen] = useState(false);
   const location = useLocation();
 
-  const navLinks = [
+  const navLinks: NavLink[] = [
     { href: '/', label: 'Inicio' },
-    { href: '/implantes-dentales', label: 'Implantes Dentales' },
+    {
+      href: '/implantes-dentales',
+      label: 'Implantes Dentales',
+      subLinks: [
+        { href: '/implantes-all-on-4', label: 'Implantes All-on-4™' },
+        { href: '/implantes-cigomaticos', label: 'Implantes Cigomáticos' },
+        { href: '/mallas-subperiosticas', label: 'Mallas Subperiósticas' },
+      ],
+    },
     { href: '/protesis-dentales', label: 'Prótesis Dentales' },
     { href: '/sobre-nosotros', label: 'Sobre Nosotros' },
     { href: '/noticias', label: 'Noticias' },
