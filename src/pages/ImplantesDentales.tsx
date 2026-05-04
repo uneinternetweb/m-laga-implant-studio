@@ -626,34 +626,76 @@ const ImplantesDentales = () => {
         </div>
       </section>
 
-      {/* Related Treatments */}
+      {/* Specialized Treatments */}
       <section className="section-padding bg-muted">
-        <div className="container-narrow text-center">
-          <h2 className="font-display text-2xl font-bold text-foreground mb-6">
-            Otros Tratamientos Relacionados
-          </h2>
-          <p className="text-muted-foreground mb-8">
-            Otras informaciones sobre tratamientos dentales que también le puede interesar:
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link 
-              to="/protesis-dentales" 
-              className="bg-card px-6 py-3 rounded-full text-foreground hover:bg-accent transition-colors"
-            >
-              Prótesis Dentales Málaga
-            </Link>
-            <Link 
-              to="/sobre-nosotros" 
-              className="bg-card px-6 py-3 rounded-full text-foreground hover:bg-accent transition-colors"
-            >
-              Implantólogo en Málaga
-            </Link>
-            <Link 
-              to="/contacto" 
-              className="bg-card px-6 py-3 rounded-full text-foreground hover:bg-accent transition-colors"
-            >
-              Odontología Málaga
-            </Link>
+        <div className="container-wide">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
+              Tratamientos Especializados
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
+              Soluciones avanzadas de implantología
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Para casos complejos disponemos de técnicas de implantología avanzada en nuestras clínicas de Málaga.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                to: '/implantes-all-on-4',
+                title: 'Implantes All-on-4™',
+                text: 'Rehabilitación de arcada completa con 4 implantes y dientes fijos en el día.',
+              },
+              {
+                to: '/implantes-cigomaticos',
+                title: 'Implantes cigomáticos',
+                text: 'Solución para pacientes con atrofia ósea severa, sin necesidad de injertos.',
+              },
+              {
+                to: '/mallas-subperiosticas',
+                title: 'Mallas subperiósticas',
+                text: 'Estructuras de titanio impresas en 3D a medida para casos óseos complejos.',
+              },
+            ].map((c) => (
+              <Link
+                key={c.to}
+                to={c.to}
+                className="bg-card rounded-2xl p-6 card-hover block group"
+              >
+                <h3 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  {c.title}
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4">{c.text}</p>
+                <span className="inline-flex items-center gap-2 text-primary font-semibold text-sm">
+                  Ver tratamiento
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-6">Otras informaciones que también te pueden interesar:</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                to="/protesis-dentales"
+                className="bg-card px-6 py-3 rounded-full text-foreground hover:bg-accent transition-colors"
+              >
+                Prótesis Dentales
+              </Link>
+              <Link
+                to="/sobre-nosotros"
+                className="bg-card px-6 py-3 rounded-full text-foreground hover:bg-accent transition-colors"
+              >
+                Nuestro equipo
+              </Link>
+              <Link
+                to="/contacto"
+                className="bg-card px-6 py-3 rounded-full text-foreground hover:bg-accent transition-colors"
+              >
+                Contacto
+              </Link>
+            </div>
           </div>
         </div>
       </section>
