@@ -64,17 +64,46 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-3 xl:gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`nav-link font-medium text-sm xl:text-base ${
-                  isActive(link.href) ? 'text-primary' : ''
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.subLinks ? (
+                <div key={link.href} className="relative group">
+                  <Link
+                    to={link.href}
+                    className={`nav-link font-medium text-sm xl:text-base inline-flex items-center gap-1 ${
+                      isActive(link.href) ? 'text-primary' : ''
+                    }`}
+                  >
+                    {link.label}
+                    <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
+                  </Link>
+                  <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+                    <div className="bg-card border border-border rounded-lg shadow-lg py-2 min-w-[260px]">
+                      {link.subLinks.map((sub) => (
+                        <Link
+                          key={sub.href}
+                          to={sub.href}
+                          className={`block px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors ${
+                            isActive(sub.href) ? 'text-primary font-medium' : 'text-foreground'
+                          }`}
+                        >
+                          {sub.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className={`nav-link font-medium text-sm xl:text-base ${
+                    isActive(link.href) ? 'text-primary' : ''
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </div>
 
           {/* CTA Button */}
