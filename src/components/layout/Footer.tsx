@@ -93,6 +93,21 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/implantes-all-on-4" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    All-on-4™
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/implantes-cigomaticos" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Implantes Cigomáticos
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/mallas-subperiosticas" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Mallas Subperiósticas
+                  </Link>
+                </li>
+                <li>
                   <Link to="/protesis-dentales" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                     Prótesis Dentales
                   </Link>

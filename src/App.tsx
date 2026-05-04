@@ -6,6 +6,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import ImplantesDentales from "./pages/ImplantesDentales";
+import ImplantesAllOn4 from "./pages/ImplantesAllOn4";
+import ImplantesCigomaticos from "./pages/ImplantesCigomaticos";
+import MallasSubperiosticas from "./pages/MallasSubperiosticas";
 import ProtesisDentales from "./pages/ProtesisDentales";
 import SobreNosotros from "./pages/SobreNosotros";
 import Contacto from "./pages/Contacto";
@@ -41,6 +44,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/implantes-dentales" element={<ImplantesDentales />} />
+          <Route path="/implantes-all-on-4" element={<ImplantesAllOn4 />} />
+          <Route path="/implantes-cigomaticos" element={<ImplantesCigomaticos />} />
+          <Route path="/mallas-subperiosticas" element={<MallasSubperiosticas />} />
           <Route path="/protesis-dentales" element={<ProtesisDentales />} />
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
           <Route path="/contacto" element={<Contacto />} />
