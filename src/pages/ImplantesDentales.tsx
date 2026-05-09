@@ -105,8 +105,26 @@ const ImplantesDentales = () => {
             '@type': 'MedicalWebPage',
             name: 'Implantes Dentales en Málaga',
             description: 'Información completa sobre implantes dentales en Clínica Dental Bocaboca, Málaga.',
-            url: 'https://clinicadentalbocaboca.com/implantes-dentales',
+            url: 'https://www.implantesdentalesenmalaga.com/implantes-dentales',
             specialty: 'Implantology',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'MedicalProcedure',
+            name: 'Implantes Dentales',
+            procedureType: 'https://schema.org/SurgicalProcedure',
+            bodyLocation: 'Maxilar y mandíbula',
+            howPerformed: 'Colocación quirúrgica de un tornillo de titanio en el hueso maxilar que actúa como raíz artificial sobre la que se fija una corona, puente o prótesis.',
+            preparation: 'Estudio radiológico 3D, análisis de salud bucodental y planificación digital previa.',
+            followup: 'Revisiones periódicas, higiene profesional y mantenimiento del implante.',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.implantesdentalesenmalaga.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Implantes Dentales', item: 'https://www.implantesdentalesenmalaga.com/implantes-dentales' },
+            ],
           },
           {
             '@context': 'https://schema.org',

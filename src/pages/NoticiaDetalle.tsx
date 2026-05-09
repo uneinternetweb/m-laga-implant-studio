@@ -132,22 +132,43 @@ const NoticiaDetalle = () => {
         description={post.excerpt}
         canonical={`/noticias/${post.slug}`}
         ogType="article"
-        structuredData={{
-          '@context': 'https://schema.org',
-          '@type': 'Article',
-          headline: post.title,
-          description: post.excerpt,
-          datePublished: post.date,
-          author: {
-            '@type': 'Organization',
-            name: 'Clínica Dental Bocaboca',
+        structuredData={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: post.title,
+            description: post.excerpt,
+            image: post.image,
+            datePublished: post.date,
+            dateModified: post.date,
+            author: {
+              '@type': 'Organization',
+              name: 'Clínica Dental Bocaboca',
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Clínica Dental Bocaboca',
+              url: 'https://www.implantesdentalesenmalaga.com',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://clinicadentalbocaboca.com/wp-content/uploads/2026/04/Logo_bocaboca.jpg',
+              },
+            },
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': `https://www.implantesdentalesenmalaga.com/noticias/${post.slug}`,
+            },
           },
-          publisher: {
-            '@type': 'Organization',
-            name: 'Clínica Dental Bocaboca',
-            url: 'https://clinicadentalbocaboca.com',
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.implantesdentalesenmalaga.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Noticias', item: 'https://www.implantesdentalesenmalaga.com/noticias' },
+              { '@type': 'ListItem', position: 3, name: post.title, item: `https://www.implantesdentalesenmalaga.com/noticias/${post.slug}` },
+            ],
           },
-        }}
+        ]}
       />
       <section className="hero-section py-16 md:py-24">
         <div className="container-narrow">

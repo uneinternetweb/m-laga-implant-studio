@@ -109,18 +109,37 @@ const ProtesisDentales = () => {
         title="Prótesis Dentales en Málaga | Bocaboca Clínicas Dentales"
         description="Prótesis dentales fijas y removibles en Málaga. Soluciones personalizadas para recuperar tu sonrisa. Primera consulta gratis."
         canonical="/protesis-dentales"
-        structuredData={{
-          '@context': 'https://schema.org',
-          '@type': 'FAQPage',
-          mainEntity: faqs.map((faq) => ({
-            '@type': 'Question',
-            name: faq.question,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: faq.answer,
-            },
-          })),
-        }}
+        structuredData={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'MedicalProcedure',
+            name: 'Prótesis Dentales',
+            procedureType: 'https://schema.org/TherapeuticProcedure',
+            bodyLocation: 'Cavidad oral',
+            howPerformed: 'Diseño y colocación de prótesis fijas, removibles, mixtas o sobre implantes para reemplazar dientes ausentes.',
+            preparation: 'Toma de impresiones, estudio oclusal y planificación estética.',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.implantesdentalesenmalaga.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Prótesis Dentales', item: 'https://www.implantesdentalesenmalaga.com/protesis-dentales' },
+            ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((faq) => ({
+              '@type': 'Question',
+              name: faq.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer,
+              },
+            })),
+          },
+        ]}
       />
       <section className="hero-section py-20 md:py-28">
         <div className="container-wide">

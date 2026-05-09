@@ -86,9 +86,58 @@ const Services = () => {
               to="/implantes-dentales"
               className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
             >
-              Conocer más sobre implantes
+              Conocer más sobre implantes dentales
               <ArrowRight className="w-5 h-5" />
             </Link>
+          </div>
+        </div>
+
+        {/* Tratamientos especializados (enlazado interno SEO) */}
+        <div className="mt-20">
+          <div className="text-center mb-10">
+            <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
+              Tratamientos Especializados
+            </span>
+            <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mt-3">
+              Soluciones avanzadas para casos complejos
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                href: '/implantes-all-on-4',
+                title: 'Implantes All-on-4™',
+                description: 'Rehabilitación completa con solo 4 implantes y dientes fijos en el día.',
+                anchor: 'Ver tratamiento All-on-4 en Málaga',
+              },
+              {
+                href: '/implantes-cigomaticos',
+                title: 'Implantes Cigomáticos',
+                description: 'Solución para pacientes con atrofia ósea severa sin necesidad de injertos.',
+                anchor: 'Ver implantes cigomáticos en Málaga',
+              },
+              {
+                href: '/mallas-subperiosticas',
+                title: 'Mallas Subperiósticas',
+                description: 'Estructuras personalizadas en titanio para reabsorciones óseas extremas.',
+                anchor: 'Ver mallas subperiósticas en Málaga',
+              },
+            ].map((t) => (
+              <Link
+                key={t.href}
+                to={t.href}
+                className="group bg-card border border-border rounded-2xl p-6 hover:border-primary hover:shadow-md transition-all"
+              >
+                <h4 className="font-display text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  {t.title}
+                </h4>
+                <p className="text-sm text-muted-foreground mb-4">{t.description}</p>
+                <span className="inline-flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all">
+                  {t.anchor}
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
