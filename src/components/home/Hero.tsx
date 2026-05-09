@@ -12,12 +12,19 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-[90vh] flex items-center">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 hero-overlay" />
+      {/* Background Image (LCP-optimized: real <img> with fetchpriority) */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Fachada de Clínica Dental Bocaboca en Málaga, especialistas en implantes dentales"
+          className="w-full h-full object-cover"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
+          width={1920}
+          height={1080}
+        />
+        <div className="absolute inset-0 hero-overlay" aria-hidden="true" />
       </div>
 
       {/* Content */}
