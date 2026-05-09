@@ -136,9 +136,10 @@ const ProtesisDentales = () => {
               acceptedAnswer: {
                 '@type': 'Answer',
                 text: faq.answer,
-            },
-          })),
-        }}
+              },
+            })),
+          },
+        ]}
       />
       <section className="hero-section py-20 md:py-28">
         <div className="container-wide">
