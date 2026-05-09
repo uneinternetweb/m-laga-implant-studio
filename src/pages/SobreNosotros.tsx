@@ -46,6 +46,34 @@ const SobreNosotros = () => {
         title="Sobre Nosotros | Bocaboca Clínicas Dentales Málaga | +20 Años de Experiencia"
         description="Conoce a nuestro equipo de especialistas en implantología dental en Málaga. Dr. Alfonso Moreno, 3 clínicas, tecnología 3D y más de 13.000 pacientes atendidos."
         canonical="/sobre-nosotros"
+        structuredData={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Dr. Alfonso Moreno',
+            jobTitle: 'Director Médico y Cirujano Implantólogo',
+            worksFor: {
+              '@type': 'Dentist',
+              name: 'Bocaboca Clínicas Dentales',
+              url: 'https://www.implantesdentalesenmalaga.com',
+            },
+            alumniOf: ['Universidad de Granada', 'Universidad de Málaga'],
+            knowsAbout: ['Implantología dental', 'Cirugía oral', 'Periodoncia', 'Osteointegración'],
+            memberOf: [
+              { '@type': 'Organization', name: 'Sociedad Española de Cirugía Bucal (SECIB)' },
+              { '@type': 'Organization', name: 'Sociedad Española de Periodoncia y Osteointegración (SEPA)' },
+              { '@type': 'Organization', name: 'Sociedad Española de Implantes (SEI)' },
+            ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.implantesdentalesenmalaga.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Sobre Nosotros', item: 'https://www.implantesdentalesenmalaga.com/sobre-nosotros' },
+            ],
+          },
+        ]}
       />
       <section className="hero-section py-20 md:py-28">
         <div className="container-wide">

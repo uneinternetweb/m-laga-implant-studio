@@ -37,6 +37,58 @@ const Contacto = () => {
         title="Contacto | Bocaboca Clínicas Dentales en Málaga | Cómo Llegar"
         description="Encuentra nuestras 3 clínicas dentales en Málaga: Ayala, Martínez Maldonado y Velázquez. Horarios, direcciones y cómo llegar. Primera consulta gratuita."
         canonical="/contacto"
+        structuredData={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.implantesdentalesenmalaga.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Contacto', item: 'https://www.implantesdentalesenmalaga.com/contacto' },
+            ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Dentist',
+            name: 'Bocaboca Clínica Ayala',
+            telephone: '+34951178110',
+            email: 'info@clinicadentalbocaboca.com',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Calle Ayala, 80',
+              addressLocality: 'Málaga',
+              postalCode: '29002',
+              addressCountry: 'ES',
+            },
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Dentist',
+            name: 'Bocaboca Clínica Martínez Maldonado',
+            telephone: '+34951178110',
+            email: 'info@clinicadentalbocaboca.com',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'C/ Martínez Maldonado, 65',
+              addressLocality: 'Málaga',
+              postalCode: '29007',
+              addressCountry: 'ES',
+            },
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Dentist',
+            name: 'Bocaboca Clínica Velázquez',
+            telephone: '+34951178110',
+            email: 'info@clinicadentalbocaboca.com',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Avda. de Velázquez, 73',
+              addressLocality: 'Málaga',
+              postalCode: '29004',
+              addressCountry: 'ES',
+            },
+          },
+        ]}
       />
       <section className="hero-section py-20">
         <div className="container-wide">

@@ -11,6 +11,33 @@ const Noticias = () => {
         title="Noticias sobre Implantes Dentales en Málaga | Blog Bocaboca"
         description="Artículos y noticias sobre implantes dentales, prótesis, cuidados bucales y últimos avances en implantología. Información útil de nuestros especialistas en Málaga."
         canonical="/noticias"
+        structuredData={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Blog',
+            name: 'Blog de Bocaboca Clínicas Dentales',
+            url: 'https://www.implantesdentalesenmalaga.com/noticias',
+            description: 'Noticias y consejos sobre implantes dentales en Málaga.',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            itemListElement: newsPosts.map((p, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              url: `https://www.implantesdentalesenmalaga.com/noticias/${p.slug}`,
+              name: p.title,
+            })),
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.implantesdentalesenmalaga.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Noticias', item: 'https://www.implantesdentalesenmalaga.com/noticias' },
+            ],
+          },
+        ]}
       />
       <section className="hero-section py-20">
         <div className="container-wide">
