@@ -573,7 +573,7 @@ const ImplantesDentales = () => {
                 </div>
                 {index < process.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="w-6 h-6 text-muted-foreground/30" />
+                    <ArrowRight className="w-6 h-6 text-muted-foreground" />
                   </div>
                 )}
               </div>
