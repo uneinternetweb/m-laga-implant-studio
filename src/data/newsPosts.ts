@@ -8,6 +8,8 @@ import newsProtesisFijaRemovible from '@/assets/news-protesis-fija-removible-mal
 import newsPeriimplantitis from '@/assets/news-periimplantitis-malaga.jpg';
 import newsInjertoOseo from '@/assets/news-injerto-oseo-malaga.jpg';
 import newsImplantesPasoAPaso from '@/assets/news-implantes-paso-a-paso-malaga.jpg';
+import newsTabacoImplantes from '@/assets/news-tabaco-implantes-malaga.jpg';
+import newsDiabetesImplantes from '@/assets/news-diabetes-implantes-malaga.jpg';
 
 export interface NewsPost {
   slug: string;
@@ -22,6 +24,169 @@ export interface NewsPost {
 }
 
 export const newsPosts: NewsPost[] = [
+  {
+    slug: 'tabaco-implantes-dentales-riesgo-fracaso-malaga',
+    title: 'Tabaco e implantes dentales: ¿afecta realmente al éxito del tratamiento?',
+    excerpt: 'Fumar duplica el riesgo de fracaso de un implante y favorece la periimplantitis. Te contamos qué dice la evidencia y cómo lo gestionamos en Málaga.',
+    content: `
+Hay una pregunta que sale antes o después en casi todas las primeras visitas de pacientes fumadores: *"¿de verdad pasa algo si me pongo implantes y sigo fumando?"*. La respuesta honesta no es un sí o un no rotundo, pero la evidencia científica acumulada en los últimos veinte años es bastante clara: el tabaco es uno de los factores que más influye en que un [implante dental en Málaga](/implantes-dentales) dure muchos años o empiece a dar problemas antes de tiempo.
+
+Este artículo no pretende moralizar a nadie. Pretende explicar, con datos y sin alarmismo, qué le hace el tabaco a un implante, qué dicen los estudios serios y cómo lo manejamos en consulta cuando un paciente fuma.
+
+## Por qué el tabaco compromete al implante
+
+Un implante funciona porque el hueso crece pegado al titanio. Ese proceso, la **osteointegración**, depende de algo muy básico: que la zona reciba suficiente oxígeno y nutrientes mientras cicatriza. El humo del tabaco interfiere ahí de varias formas a la vez:
+
+- **Vasoconstricción** por la nicotina: los vasos sanguíneos pequeños de la encía se cierran y llega menos sangre al lecho del implante.
+- **Hipoxia local**: el monóxido de carbono se une a la hemoglobina y reduce el oxígeno disponible para los tejidos en cicatrización.
+- **Alteración de fibroblastos y osteoblastos**: las células encargadas de fabricar tejido nuevo trabajan peor.
+- **Respuesta inmune modificada**: la encía del fumador se defiende peor frente a la placa bacteriana, lo que aumenta el riesgo de inflamación crónica alrededor del implante.
+
+El resultado no es un drama inmediato, pero sí un terreno más frágil. Y los implantes dependen, precisamente, de tener un terreno estable.
+
+## Qué dicen los estudios
+
+No hablamos de impresiones de consulta. Hay varias revisiones sistemáticas y meta-análisis publicados en revistas como *Journal of Dental Research* o *International Journal of Oral & Maxillofacial Surgery* que apuntan en la misma dirección:
+
+- Los fumadores presentan **aproximadamente el doble de riesgo de fracaso del implante** comparados con no fumadores.
+- La pérdida ósea marginal alrededor del implante es **mayor y más rápida** en fumadores.
+- La incidencia de **[periimplantitis](/noticias/periimplantitis-sintomas-prevencion-malaga)** —la inflamación que destruye el hueso de soporte— es significativamente más alta.
+- El riesgo es **dosis-dependiente**: fumar más de 10 cigarrillos al día empeora claramente el pronóstico.
+
+Esto no significa que un implante en un fumador esté condenado. Significa que el margen para que algo salga mal es más pequeño. En una clínica con muchos años de experiencia, como en nuestro caso con más de 13.000 casos tratados, esa diferencia se nota a medio y largo plazo.
+
+## Las fases más sensibles
+
+No todas las etapas se ven afectadas por igual. Estas son las que más nos preocupan en un paciente fumador:
+
+### Cicatrización inmediata tras la cirugía
+
+Las primeras dos semanas son críticas. Es cuando se forma el coágulo, llega el primer hueso nuevo y la encía cierra la herida. Fumar en este periodo retrasa la cicatrización, aumenta el riesgo de dehiscencia (que se abra la sutura) y de infección postoperatoria.
+
+### Osteointegración (primeros 2-3 meses)
+
+El hueso debe abrazar al titanio. En fumadores este proceso es más lento y, en algunos casos, incompleto. Es la fase en la que más fracasos precoces vemos.
+
+### Mantenimiento a largo plazo
+
+Pasados los meses, el implante puede estar perfectamente integrado y aun así perderse años después por periimplantitis. La combinación tabaco + mala higiene es, con diferencia, la receta más habitual para que esto ocurra.
+
+## Qué recomendamos en consulta
+
+El consenso de las principales sociedades de implantología (entre ellas la *International Team for Implantology*) apunta a una idea muy concreta: **dejar de fumar alrededor de la cirugía mejora claramente el pronóstico**, aunque sea de forma temporal.
+
+Nuestra recomendación práctica, adaptada a cada paciente, suele ir en esta línea:
+
+- **Idealmente, dejar de fumar al menos 1-2 semanas antes** de la cirugía y mantenerse sin fumar entre **6 y 8 semanas después**, mientras se produce la osteointegración inicial.
+- Si dejarlo no es realista, **reducir el consumo de forma significativa** durante todo el postoperatorio.
+- Reforzar la **higiene en casa** (cepillado eléctrico, cepillos interproximales, irrigador) desde el primer día.
+- Programar **revisiones de mantenimiento más frecuentes**, normalmente cada 4-6 meses en lugar de cada año, para detectar a tiempo cualquier signo de inflamación. Más detalle sobre por qué importa tanto este punto aquí: [importancia del mantenimiento de los implantes dentales](/noticias/importancia-mantenimiento-implantes-dentales-malaga).
+- Coordinarnos con el médico de cabecera si el paciente quiere apoyo farmacológico para dejar de fumar.
+
+## ¿Y si no puedo dejarlo?
+
+Es una situación habitual. No rechazamos pacientes fumadores: lo que hacemos es **explicar el escenario con honestidad** y adaptar el plan. En algunos casos puede tener sentido elegir implantes con superficies más favorables, ser especialmente conservadores con los injertos óseos, o plantear un calendario de mantenimiento más estricto.
+
+Lo que no hacemos es prometer los mismos resultados que en un paciente no fumador. Sería faltar a la verdad y, además, restar al paciente la posibilidad de tomar una decisión informada.
+
+## Conclusión
+
+El tabaco no es una contraindicación absoluta para los implantes, pero sí es el factor de riesgo modificable más importante que existe. Si estás valorando un tratamiento de [implantes dentales en Málaga](/implantes-dentales) y eres fumador, lo mejor es hablarlo abiertamente en la primera visita: cuanto antes sepamos en qué punto estás, mejor podremos planificar.
+
+Si quieres una valoración personalizada, puedes [pedir cita en nuestra clínica](/contacto) o llamarnos al 951 178 110. Te explicaremos sin prisa qué opciones tienes en tu caso concreto.
+`,
+    date: '2026-06-02',
+    dateFormatted: '2 de junio de 2026',
+    image: newsTabacoImplantes,
+    author: 'Equipo Bocaboca',
+    readTime: '7 min',
+  },
+  {
+    slug: 'diabetes-implantes-dentales-seguridad-malaga',
+    title: 'Diabetes e implantes dentales: ¿se pueden colocar de forma segura?',
+    excerpt: 'La diabetes no contraindica los implantes si está bien controlada. Te explicamos qué dice la evidencia sobre HbA1c, osteointegración y mantenimiento.',
+    content: `
+"Soy diabético, ¿puedo ponerme implantes?" Es, probablemente, una de las dudas que más se repite en consulta. Y se entiende: durante años circuló la idea de que la diabetes era casi una contraindicación absoluta para la implantología. Hoy la evidencia científica permite afinar mucho más esa respuesta: **sí se pueden colocar [implantes dentales en Málaga](/implantes-dentales) en pacientes diabéticos**, siempre que se cumplan unas condiciones que vamos a desgranar a lo largo de este artículo.
+
+La clave no es tanto "tener diabetes" como **cómo está controlada esa diabetes**. Y ahí entran en juego conceptos como la HbA1c, la salud periodontal previa y un protocolo de seguimiento bien planteado.
+
+## Diabetes y boca: una relación de doble sentido
+
+Antes de hablar de implantes conviene entender por qué la diabetes y la salud bucal están tan ligadas. Un paciente con diabetes mal controlada tiende a presentar:
+
+- Mayor cantidad de **glucosa en la saliva y en el fluido gingival**, lo que favorece el crecimiento bacteriano.
+- Una **respuesta inflamatoria exagerada** frente a la placa.
+- **Cicatrización más lenta** de los tejidos blandos.
+- Microalteraciones vasculares que dificultan el aporte de sangre y oxígeno a la encía y al hueso.
+
+Por eso la **enfermedad periodontal** es más frecuente y más agresiva en personas con diabetes. Y por eso, cuando hablamos de implantes, no podemos ignorar este contexto: el implante se coloca en un terreno que tiene unas particularidades.
+
+## Qué dice la evidencia sobre implantes y diabetes
+
+Las revisiones sistemáticas publicadas en los últimos años (entre otras, en *International Journal of Implant Dentistry* y *Journal of Clinical Periodontology*) han ido marcando una línea bastante consistente:
+
+- En pacientes con **diabetes bien controlada** (con HbA1c en rangos cercanos a los objetivos terapéuticos), las **tasas de éxito de los implantes son comparables a las de pacientes no diabéticos** a medio y largo plazo.
+- En pacientes con **mal control glucémico** (HbA1c claramente elevada), aumenta el riesgo de:
+  - **Retraso en la osteointegración** durante los primeros meses.
+  - **Pérdida ósea marginal** alrededor del implante.
+  - **Periimplantitis** y complicaciones inflamatorias tardías.
+- La **diabetes tipo 1 y tipo 2** no presentan diferencias clínicas relevantes en cuanto al éxito implantario cuando ambas están bien controladas.
+
+Traducido a consulta: el problema no es la enfermedad en sí, sino el grado de control metabólico en el momento del tratamiento y en los años siguientes.
+
+## El papel de la HbA1c
+
+La **hemoglobina glicosilada (HbA1c)** refleja la media de glucosa en sangre de los últimos 2-3 meses. Es el parámetro de referencia para decidir si el momento es bueno para operar:
+
+- **HbA1c en torno o por debajo del 7%**: el escenario es muy favorable. Planteamos el tratamiento con un protocolo prácticamente estándar.
+- **HbA1c entre 7% y 8%**: es una zona intermedia. Suele ser viable, pero reforzamos el seguimiento y la coordinación con el endocrino del paciente.
+- **HbA1c por encima del 8-8,5%**: en general preferimos **posponer la cirugía** y trabajar primero el control glucémico junto con el médico que lleva la diabetes. No es decir "no", es decir "ahora no".
+
+Estos rangos no son una norma cerrada; cada caso se valora de forma individual. Pero dan una idea clara de por qué pedimos analíticas recientes antes de planificar el tratamiento.
+
+## Nuestro protocolo en pacientes diabéticos
+
+Cuando un paciente con diabetes acude a valorar implantes, el camino que seguimos suele ser este:
+
+### 1. Valoración inicial completa
+
+Revisamos no solo la boca, sino también el estado general: tipo de diabetes, tiempo de evolución, medicación, último valor de HbA1c y posibles complicaciones asociadas. Si es necesario, pedimos al paciente la última analítica o nos coordinamos con su médico.
+
+### 2. Salud periodontal antes que implantes
+
+No colocamos un implante en una boca con encías inflamadas o periodontitis activa, y menos en un paciente diabético. Antes hacemos una **fase higiénica y periodontal**, porque sin esa base estable el riesgo de [periimplantitis](/noticias/periimplantitis-sintomas-prevencion-malaga) se multiplica.
+
+### 3. Planificación quirúrgica conservadora
+
+En diabéticos solemos:
+
+- Programar las cirugías a primera hora de la mañana, para minimizar el ayuno y el estrés.
+- Valorar **profilaxis antibiótica** según el caso, siguiendo guías clínicas.
+- Ser especialmente cuidadosos con la técnica quirúrgica y la estabilidad primaria del implante.
+- Plantear con criterio la necesidad de [injerto óseo](/noticias/injerto-oseo-dental-cuando-necesario-malaga) cuando falta hueso, sabiendo que la cicatrización puede ser algo más lenta.
+
+### 4. Mantenimiento reforzado
+
+Una vez colocados los implantes, el seguimiento es más frecuente que en un paciente no diabético: normalmente revisiones cada 4-6 meses, con higiene profesional y control radiográfico cuando procede. La idea es detectar **cualquier signo precoz de inflamación** antes de que se traduzca en pérdida ósea.
+
+## Lo que no hacemos
+
+- No tratamos a un paciente diabético "como si nada", saltándonos analíticas o controles.
+- No colocamos implantes con descompensaciones agudas, infecciones activas o picos importantes de glucemia.
+- No prometemos resultados sin contexto: explicamos el escenario realista, con sus ventajas y sus riesgos.
+
+## Conclusión
+
+La diabetes ha dejado de ser una barrera para la implantología moderna, pero **sigue exigiendo respeto y método**. Con un buen control metabólico, una boca sana antes de empezar y un mantenimiento serio después, los pacientes diabéticos pueden disfrutar de los mismos beneficios que cualquier otro paciente: recuperar la función al masticar, hablar y sonreír con seguridad.
+
+Si tienes diabetes y estás valorando un tratamiento de [implantes dentales en Málaga](/implantes-dentales), lo mejor es una primera visita tranquila en la que podamos ver tu caso con calma. Puedes [contactar con la clínica aquí](/contacto) o llamarnos al 951 178 110.
+`,
+    date: '2026-05-26',
+    dateFormatted: '26 de mayo de 2026',
+    image: newsDiabetesImplantes,
+    author: 'Equipo Bocaboca',
+    readTime: '8 min',
+  },
   {
     slug: 'implantes-dentales-paso-a-paso-fases-tratamiento-malaga',
     title: 'Implantes dentales paso a paso: todas las fases del tratamiento',

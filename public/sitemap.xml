@@ -55,8 +55,20 @@
   </url>
   <url>
     <loc>https://www.implantesdentalesenmalaga.com/noticias</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.implantesdentalesenmalaga.com/noticias/tabaco-implantes-dentales-riesgo-fracaso-malaga</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.implantesdentalesenmalaga.com/noticias/diabetes-implantes-dentales-seguridad-malaga</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
