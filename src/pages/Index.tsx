@@ -1,6 +1,7 @@
 import Layout from '@/components/layout/Layout';
 import Hero from '@/components/home/Hero';
 import Services from '@/components/home/Services';
+import ImplantesHighlights from '@/components/home/ImplantesHighlights';
 import WhyChooseUs from '@/components/home/WhyChooseUs';
 import Team from '@/components/home/Team';
 import Testimonials from '@/components/home/Testimonials';
@@ -101,6 +102,7 @@ const Index = () => {
       />
       <Hero />
       <Services />
+      <ImplantesHighlights />
       <WhyChooseUs />
       <Team />
       <Testimonials />

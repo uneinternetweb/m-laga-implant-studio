@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import WhatsAppButton from "./components/WhatsAppButton";
 import MobileBottomBar from "./components/MobileBottomBar";
@@ -60,6 +60,10 @@ const App = () => (
             <Route path="/noticias/:slug" element={<NoticiaDetalle />} />
             <Route path="/privacidad" element={<Privacidad />} />
             <Route path="/politica-de-cookies" element={<PoliticaCookies />} />
+            {/* Legacy WordPress URL redirects (301-equivalent client-side) */}
+            <Route path="/index.php/implantes-dentales-malaga.html" element={<Navigate to="/implantes-dentales" replace />} />
+            <Route path="/index.php/protesis-dentales-malaga.html" element={<Navigate to="/protesis-dentales" replace />} />
+            <Route path="/index.php/presupuestos-implantes-dentales-malaga.html" element={<Navigate to="/contacto" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

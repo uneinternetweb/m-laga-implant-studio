@@ -718,6 +718,73 @@ const ImplantesDentales = () => {
         </div>
       </section>
 
+      {/* Pricing factors (no closed prices, no clinical guarantees) */}
+      <section className="section-padding bg-background" id="precio">
+        <div className="container-narrow">
+          <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
+            Precio y financiación
+          </span>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-6">
+            ¿De qué depende el precio de un implante dental en Málaga?
+          </h2>
+          <p className="text-muted-foreground text-lg mb-8">
+            No existe un precio único para un implante dental. Cada tratamiento se valora de forma
+            individual tras la primera consulta y el estudio radiológico 3D. Estos son los factores
+            principales que influyen en el presupuesto final:
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: 'Número de implantes y dientes a reponer',
+                text: 'No es lo mismo reponer un solo diente que rehabilitar una arcada completa con técnicas como All-on-4. A más implantes y coronas, mayor coste total.',
+              },
+              {
+                title: 'Marca y tipo de implante',
+                text: 'Trabajamos con implantes de fabricantes de primer nivel con garantía del fabricante. La marca, el diseño del implante y la superficie del titanio influyen en el precio.',
+              },
+              {
+                title: 'Tipo de prótesis sobre el implante',
+                text: 'Una corona unitaria, un puente, una sobredentadura o una prótesis híbrida fija tienen materiales y procesos de laboratorio distintos. Esto se refleja en el presupuesto.',
+              },
+              {
+                title: 'Necesidad de injerto óseo o elevación de seno',
+                text: 'Si el hueso es insuficiente puede ser necesario un injerto o una elevación de seno maxilar previa. Estos procedimientos suman al coste y al tiempo total del tratamiento.',
+              },
+              {
+                title: 'Carga inmediata o protocolo estándar',
+                text: 'Salir con dientes provisionales fijos el mismo día requiere planificación y prótesis adicionales que pueden incrementar el coste respecto a un protocolo en varias fases.',
+              },
+              {
+                title: 'Estudios diagnósticos y pruebas previas',
+                text: 'TAC 3D, escáner intraoral, planificación digital y, en algunos casos, cirugía guiada por ordenador. Forman parte del precio del tratamiento completo.',
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-card rounded-2xl p-6 card-hover">
+                <h3 className="font-display text-lg font-bold text-foreground mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm">{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="bg-muted rounded-2xl p-6 mt-8">
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              <strong className="text-foreground">Importante:</strong> en la primera consulta,
+              gratuita y sin compromiso, valoramos tu caso, te explicamos las opciones de tratamiento
+              y te entregamos un presupuesto detallado por escrito. Los resultados clínicos dependen
+              de cada caso y no se garantizan de forma absoluta; la información de esta página tiene
+              carácter divulgativo y no sustituye a la valoración profesional.
+            </p>
+          </div>
+          <div className="mt-8 text-center">
+            <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
+              <Link to="/contacto">
+                Solicitar presupuesto personalizado
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="hero-section py-20">
         <div className="container-wide text-center">
