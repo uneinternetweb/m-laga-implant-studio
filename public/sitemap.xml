@@ -55,8 +55,20 @@
   </url>
   <url>
     <loc>https://www.implantesdentalesenmalaga.com/noticias</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.implantesdentalesenmalaga.com/noticias/osteoporosis-bisfosfonatos-denosumab-implantes-dentales-malaga</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.implantesdentalesenmalaga.com/noticias/implantes-dentales-personas-mayores-edad-malaga</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
