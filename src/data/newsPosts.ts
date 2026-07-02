@@ -25,6 +25,136 @@ export interface NewsPost {
 
 export const newsPosts: NewsPost[] = [
   {
+    slug: 'osteoporosis-bisfosfonatos-denosumab-implantes-dentales-malaga',
+    title: 'Osteoporosis, bisfosfonatos y denosumab: ¿son compatibles con los implantes dentales?',
+    excerpt: 'Tener osteoporosis o tomar medicación antirresortiva no descarta automáticamente los implantes. Explicamos qué debe valorar el equipo médico y dental antes de decidir.',
+    content: `
+Cuando una persona con osteoporosis consulta por [implantes dentales en Málaga](/implantes-dentales), es frecuente que la primera preocupación no sea la cirugía, sino su medicación: *«Tomo bisfosfonatos o denosumab, ¿puedo ponerme implantes?»*. La respuesta responsable no cabe en un sí o un no. **La osteoporosis por sí sola no suele impedir el tratamiento**, pero el fármaco, la vía de administración, el tiempo de uso y la situación clínica de cada paciente cambian la valoración.
+
+Este artículo ofrece orientación general. No sustituye la revisión de la historia médica ni autoriza a suspender un medicamento. Cualquier cambio debe decidirlo el profesional que trata la osteoporosis.
+
+## Qué relación tienen estos medicamentos con la boca
+
+Los bisfosfonatos y el denosumab reducen la reabsorción ósea. Se emplean para disminuir el riesgo de fracturas por osteoporosis y, en dosis y pautas diferentes, para algunas enfermedades oncológicas. Su beneficio médico puede ser importante.
+
+La precaución odontológica se debe a una complicación poco frecuente llamada **osteonecrosis de los maxilares asociada a medicamentos**. Puede aparecer cuando una zona de hueso queda expuesta o no cicatriza correctamente, sobre todo después de procedimientos que afectan al hueso. El riesgo no es igual para todas las personas: suele ser mayor con tratamientos oncológicos a dosis altas y administración intravenosa o subcutánea que con las pautas habituales para osteoporosis.
+
+La [Asociación Americana de Cirujanos Orales y Maxilofaciales](https://aaoms.org/wp-content/uploads/2024/03/mronj_position_paper.pdf) y la [Sociedad Española de Cirugía Bucal](https://secibonline.com/) insisten en valorar el riesgo de forma individual, equilibrando la salud oral con el beneficio de prevenir fracturas.
+
+## Datos que necesitamos antes de plantear un implante
+
+No basta con anotar «medicación para los huesos». En la primera visita conviene aportar un informe o una lista actualizada que permita confirmar:
+
+- El nombre exacto del medicamento.
+- Por qué se indicó: osteoporosis, prevención de fracturas u otra enfermedad.
+- La vía de administración y la pauta.
+- Cuándo comenzó el tratamiento y cuándo fue la última dosis.
+- Otros factores relevantes, como corticoides, diabetes, tabaco, enfermedad periodontal o una cirugía oral previa con mala cicatrización.
+
+Después se estudian las encías, los dientes y el volumen de hueso. Si falta soporte, una técnica como el injerto no se propone de forma automática: se sopesa su necesidad y sus riesgos. En pérdidas óseas complejas existen soluciones específicas, como los [implantes cigomáticos](/implantes-cigomaticos) o las [mallas subperiósticas](/mallas-subperiosticas), pero solo un diagnóstico individual permite saber si tienen sentido.
+
+## ¿Se puede colocar un implante si se toman bisfosfonatos?
+
+En pacientes tratados por osteoporosis, la medicación oral **no constituye por sí misma una prohibición absoluta**. El profesional debe explicar el riesgo, revisar la salud periodontal y planificar una cirugía lo menos traumática posible. El escenario cambia si el tratamiento se administra en pautas oncológicas, si existen varios factores de riesgo o si ya hubo osteonecrosis; en esos casos puede ser necesario evitar una intervención electiva o coordinarla estrechamente con el especialista médico.
+
+Una analítica aislada no predice con certeza quién desarrollará la complicación. Por eso la decisión se apoya principalmente en la historia clínica, la exploración y el tipo de tratamiento, tal como señala la [American Dental Association](https://www.ada.org/resources/ada-library/oral-health-topics/osteoporosis-medications).
+
+## ¿Y con denosumab?
+
+El denosumab no se acumula en el hueso del mismo modo que los bisfosfonatos, pero interrumpirlo o retrasarlo sin una estrategia médica puede producir un **aumento de fracturas vertebrales**. La [Agencia Española de Medicamentos y Productos Sanitarios](https://cima.aemps.es/cima/publico/home.html) mantiene en sus fichas técnicas las advertencias y precauciones que deben revisarse para cada medicamento.
+
+Por eso no es prudente recomendar una «pausa» genérica desde una web. Si se considera necesario ajustar el momento de la cirugía, el dentista y el médico prescriptor deben coordinarse. **Nunca debe omitirse o retrasarse una dosis por iniciativa propia.**
+
+## Preparar la boca reduce problemas evitables
+
+Antes de una cirugía conviene controlar la placa, tratar infecciones y estabilizar las encías. Después son esenciales las revisiones y una higiene meticulosa. Estos cuidados también ayudan a prevenir la [periimplantitis](/noticias/periimplantitis-sintomas-prevencion-malaga), una enfermedad distinta de la osteonecrosis que afecta a los tejidos alrededor del implante.
+
+Si la cirugía no ofrece un balance favorable, pueden estudiarse alternativas de [prótesis dentales](/protesis-dentales). No son una solución de segunda categoría: en determinados casos permiten recuperar función y estética evitando una intervención ósea.
+
+## Una decisión compartida, no una respuesta automática
+
+La pregunta correcta no es solo si el medicamento «permite» implantes, sino **qué opción aporta más beneficio con menos riesgo para esa persona**. Con información médica completa, exploración oral y coordinación entre profesionales, muchos pacientes tratados por osteoporosis pueden recibir una solución adecuada; otros estarán mejor con un planteamiento diferente.
+
+Si tomas bisfosfonatos o denosumab, puedes [solicitar una valoración](/contacto). Trae el nombre y la pauta de tu medicación: esa información es el punto de partida para orientarte con prudencia.
+`,
+    date: '2026-07-02',
+    dateFormatted: '2 de julio de 2026',
+    image: '/images/osteoporosis-medicacion-implantes-dentales-malaga.jpg',
+    author: 'Equipo Bocaboca',
+    readTime: '7 min',
+  },
+  {
+    slug: 'implantes-dentales-personas-mayores-edad-malaga',
+    title: 'Implantes dentales en personas mayores: qué importa más que la edad',
+    excerpt: 'La edad cronológica no decide por sí sola si una persona puede llevar implantes. Salud general, autonomía, higiene, hueso y expectativas pesan mucho más.',
+    content: `
+¿Hay una edad máxima para ponerse implantes? Es una duda lógica cuando se busca una solución estable para volver a masticar. Sin embargo, **el DNI no determina por sí solo el resultado de un tratamiento con [implantes dentales](/implantes-dentales)**. Importan mucho más el estado general, la salud de la boca, la capacidad de mantener la prótesis y los objetivos de la persona.
+
+Cumplir años tampoco obliga a pasar por una cirugía. A veces el implante es una buena opción; otras, una prótesis convencional ofrece una solución más sencilla y proporcionada. La clave está en estudiar beneficios, riesgos y carga de cuidados sin aplicar recetas por edad.
+
+## La edad cronológica no es el diagnóstico
+
+La evidencia disponible no establece una edad máxima universal para colocar implantes. Una [revisión sistemática y metaanálisis sobre implantes en personas mayores](https://pubmed.ncbi.nlm.nih.gov/27273468/) concluye que la edad, de forma aislada, no justifica excluir este tratamiento, aunque las diferencias entre pacientes obligan a interpretar los resultados con prudencia.
+
+Dos personas de 75 años pueden tener situaciones completamente distintas. Una puede ser autónoma, mantener una higiene excelente y tener enfermedades bien controladas; otra puede presentar fragilidad, dificultades manuales o medicación compleja. El plan debe responder a esa realidad, no a una cifra.
+
+## Qué se valora antes de decidir
+
+Una evaluación útil incluye aspectos que a veces quedan fuera de la radiografía:
+
+- **Salud general y medicación:** diabetes, cardiopatías, anticoagulantes, osteoporosis y tratamientos que afectan a la cicatrización requieren valoración y, en ocasiones, coordinación médica.
+- **Encías e higiene:** una periodontitis activa debe tratarse antes. También hay que prever si la persona podrá limpiar la futura prótesis por sí misma o con ayuda.
+- **Hueso disponible:** se estudian su volumen y anatomía. Tener poco hueso no conduce siempre a la misma solución.
+- **Capacidad funcional:** abrir la boca, acudir a revisiones y seguir las indicaciones también forman parte del pronóstico.
+- **Expectativas reales:** recuperar una pieza aislada no exige el mismo planteamiento que rehabilitar una boca sin dientes.
+
+Las recomendaciones de consenso sobre salud oral en mayores de la [FDI World Dental Federation](https://www.fdiworlddental.org/oral-health-older-adults) subrayan precisamente la necesidad de conservar función, comodidad y calidad de vida mediante cuidados adaptados a cada persona.
+
+## Cuando faltan todos o casi todos los dientes
+
+En una persona desdentada, los implantes pueden ayudar a estabilizar una prótesis que se mueve o a sostener una rehabilitación fija. Una posibilidad es el tratamiento [All-on-4](/implantes-all-on-4), que utiliza varios implantes para soportar una arcada completa. No es adecuado para todo el mundo: requiere estudiar hueso, mordida, hábitos, higiene y capacidad para asumir el mantenimiento.
+
+Cuando existe una pérdida ósea importante, la planificación puede incluir alternativas como [implantes cigomáticos](/implantes-cigomaticos) o [mallas subperiósticas](/mallas-subperiosticas). Son tratamientos de mayor complejidad y no deben presentarse como atajos universales. Solo tienen sentido tras pruebas de imagen y una valoración clínica completa.
+
+También conviene comparar estas opciones con las [prótesis dentales fijas y removibles](/protesis-dentales). Para algunas personas, una sobredentadura retenida por implantes facilita la limpieza y mejora la estabilidad; para otras, una prótesis removible bien ajustada evita una cirugía innecesaria.
+
+## Fragilidad, autonomía y mantenimiento
+
+El éxito no termina el día en que se coloca la prótesis. Los implantes necesitan higiene diaria y controles periódicos. Si hay temblor, artritis, deterioro cognitivo o dependencia, el diseño debe permitir que el paciente o su cuidador limpien alrededor de los implantes.
+
+Una rehabilitación muy sofisticada que no puede mantenerse puede ser peor elección que otra más sencilla. Cepillos adaptados, irrigadores cuando estén indicados y un calendario de mantenimiento ayudan, pero no sustituyen un diseño accesible. La prevención es especialmente importante porque la inflamación inicial puede avanzar hasta una [periimplantitis](/noticias/periimplantitis-sintomas-prevencion-malaga).
+
+## ¿La cirugía y la recuperación son diferentes?
+
+No necesariamente por la edad, aunque las enfermedades y la medicación pueden modificar el proceso. La cirugía se planifica para reducir el trauma y asegurar que la alimentación, la analgesia y los cuidados posteriores sean viables. Si el paciente necesita apoyo en casa, conviene organizarlo antes.
+
+El equipo debe conocer todos los fármacos, incluidos anticoagulantes y medicamentos para la osteoporosis. **No se debe suspender ninguno por cuenta propia.** Si hace falta ajustar una pauta, la decisión corresponde al profesional que la prescribió en coordinación con el dentista.
+
+## Preguntas útiles para elegir bien
+
+Antes de aceptar un tratamiento, merece la pena preguntar:
+
+- ¿Qué mejora concreta se espera en la masticación y la comodidad?
+- ¿Existen alternativas menos invasivas?
+- ¿Cómo se limpiará la prótesis y quién ayudará si cambia la autonomía?
+- ¿Qué revisiones serán necesarias?
+- ¿Qué ocurrirá si en el futuro no puede mantenerse el mismo nivel de cuidados?
+
+Estas preguntas convierten la decisión en un plan de salud a largo plazo y no solo en una intervención.
+
+## En resumen
+
+Una persona mayor puede ser candidata a implantes si el balance entre beneficio, riesgo y mantenimiento es favorable. **La salud, la autonomía y el diseño de una solución fácil de cuidar pesan más que la edad.** Y cuando la cirugía no es la mejor opción, una prótesis bien planificada puede mejorar de manera notable la función y el bienestar.
+
+Para saber qué alternativas encajan en tu situación, puedes [pedir una valoración individual](/contacto). Acudir con una lista actualizada de medicación y, si corresponde, acompañado por la persona que ayudará con los cuidados facilita una decisión más segura.
+`,
+    date: '2026-06-25',
+    dateFormatted: '25 de junio de 2026',
+    image: '/images/implantes-dentales-personas-mayores-malaga.jpg',
+    author: 'Equipo Bocaboca',
+    readTime: '7 min',
+  },
+  {
     slug: 'tabaco-implantes-dentales-riesgo-fracaso-malaga',
     title: 'Tabaco e implantes dentales: ¿afecta realmente al éxito del tratamiento?',
     excerpt: 'Fumar duplica el riesgo de fracaso de un implante y favorece la periimplantitis. Te contamos qué dice la evidencia y cómo lo gestionamos en Málaga.',
