@@ -96,8 +96,8 @@ const ImplantesDentales = () => {
   return (
     <Layout>
       <SEOHead
-        title="Implantes Dentales en Málaga | Precio y Garantía | Bocaboca"
-        description="Implantes dentales en Málaga desde diagnóstico hasta colocación. Técnicas sin dolor, materiales de primera. Pide presupuesto sin compromiso."
+        title="Implantes Dentales en Málaga | Clínica Dental Bocaboca"
+        description="Implantes dentales en Málaga con estudio 3D y plan personalizado. Conoce las opciones, fases y factores del precio. Solicita una valoración en Bocaboca."
         canonical="/implantes-dentales"
         structuredData={[
           {
@@ -151,11 +151,12 @@ const ImplantesDentales = () => {
                 Implantes Dentales en Málaga
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-                Recupera la funcionalidad y estética de tu sonrisa con implantes dentales de máxima 
-                calidad. Más de 20 años de experiencia y miles de pacientes satisfechos nos avalan.
+                Recupera dientes perdidos con un plan de implantes adaptado a tu caso. Estudiamos el
+                hueso disponible, la salud bucodental y las opciones de prótesis antes de recomendar
+                el tratamiento.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                {['Garantía de por vida', 'Primera consulta gratis', 'Más de 13.000 casos de éxito'].map((item) => (
+                {['Estudio y plan personalizado', 'Primera consulta sin compromiso', 'Planificación digital 3D'].map((item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-secondary" />
                     <span>{item}</span>
@@ -202,22 +203,22 @@ const ImplantesDentales = () => {
             <div className="flex items-center gap-3">
               <Award className="w-8 h-8" />
               <div>
-                <p className="font-display text-2xl md:text-3xl font-bold">13.000+</p>
-                <p className="text-sm opacity-90">Casos de Éxito</p>
+                <p className="font-display text-xl md:text-2xl font-bold">Diagnóstico digital 3D</p>
+                <p className="text-sm opacity-90">Estudio previo del caso</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Users className="w-8 h-8" />
               <div>
-                <p className="font-display text-2xl md:text-3xl font-bold">20+</p>
-                <p className="text-sm opacity-90">Años de Experiencia</p>
+                <p className="font-display text-xl md:text-2xl font-bold">Tratamiento personalizado</p>
+                <p className="text-sm opacity-90">Opciones según tus necesidades</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Shield className="w-8 h-8" />
               <div>
-                <p className="font-display text-2xl md:text-3xl font-bold">98%</p>
-                <p className="text-sm opacity-90">Tasa de Éxito</p>
+                <p className="font-display text-xl md:text-2xl font-bold">Seguimiento periódico</p>
+                <p className="text-sm opacity-90">Mantenimiento a largo plazo</p>
               </div>
             </div>
           </div>
