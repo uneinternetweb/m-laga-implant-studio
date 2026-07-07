@@ -64,6 +64,8 @@ const App = () => (
             <Route path="/index.php/implantes-dentales-malaga.html" element={<Navigate to="/implantes-dentales" replace />} />
             <Route path="/index.php/protesis-dentales-malaga.html" element={<Navigate to="/protesis-dentales" replace />} />
             <Route path="/index.php/presupuestos-implantes-dentales-malaga.html" element={<Navigate to="/contacto" replace />} />
+            <Route path="/index.php/clinicas-en-malaga.html" element={<Navigate to="/contacto" replace />} />
+            <Route path="/index.php/politica-de-cookies.html" element={<Navigate to="/politica-de-cookies" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
