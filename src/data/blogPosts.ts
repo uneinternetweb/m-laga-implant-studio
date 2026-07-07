@@ -29,7 +29,7 @@ Los implantes dentales son raíces artificiales de titanio que se colocan en el 
 El titanio es el material más utilizado en implantología debido a su excelente biocompatibilidad. El hueso se fusiona naturalmente con el titanio en un proceso llamado osteointegración, proporcionando una base sólida y duradera.
 
 **Ventajas:**
-- Tasa de éxito superior al 98%
+- Resultados condicionados por el diagnóstico, la planificación y el mantenimiento
 - Durabilidad comprobada de décadas
 - Excelente relación calidad-precio
 
@@ -62,9 +62,9 @@ La elección del tipo de implante depende de varios factores:
 - **Expectativas** estéticas y funcionales
 - **Presupuesto** disponible
 
-## Primera Consulta Gratuita en Málaga
+## Valoración de Implantes en Málaga
 
-En nuestra clínica dental en Málaga Centro, realizamos un estudio completo con TAC 3D para determinar el tipo de implante más adecuado para tu caso. Solicita tu primera consulta gratuita y sin compromiso.
+En nuestra clínica dental en Málaga Centro, realizamos un estudio con TAC 3D para valorar las opciones adecuadas para tu caso. Solicita información y conoce el proceso de valoración.
     `,
     date: '2024-01-15',
     dateFormatted: '15 Enero 2024',
@@ -104,11 +104,11 @@ La parte visible del implante también influye en el precio:
 
 | Tratamiento | Precio Orientativo |
 |-------------|-------------------|
-| Implante unitario completo | 900€ - 2.500€ |
-| Corona sobre implante | 400€ - 1.200€ |
-| All-on-4 (arcada completa) | 8.000€ - 15.000€ |
-| Elevación de seno maxilar | 800€ - 2.000€ |
-| Regeneración ósea | 400€ - 1.500€ |
+| Implante unitario completo | Depende del estudio y la prótesis |
+| Corona sobre implante | Depende del material y el laboratorio |
+| All-on-4 (arcada completa) | Requiere presupuesto personalizado |
+| Elevación de seno maxilar | Depende de la complejidad del caso |
+| Regeneración ósea | Depende del procedimiento necesario |
 
 ## ¿Por Qué Hay Tanta Diferencia de Precios?
 
@@ -117,15 +117,15 @@ Es normal encontrar grandes diferencias de precio entre clínicas. Factores clav
 1. **Marca del implante**: Los fabricantes premium tienen costes más elevados
 2. **Experiencia del implantólogo**: Profesionales especializados vs. generalistas
 3. **Tecnología disponible**: Cirugía guiada, TAC 3D, escáner intraoral
-4. **Garantías ofrecidas**: Algunas clínicas ofrecen garantía de por vida
+4. **Condiciones de garantía**: Conviene revisar por escrito qué componentes cubre el fabricante y durante cuánto tiempo
 
 ## Financiación Sin Intereses en Nuestra Clínica de Málaga
 
 Entendemos que el coste de los implantes puede ser una barrera. Por eso ofrecemos:
 
-- **Financiación hasta 24 meses sin intereses**
+- **Opciones de financiación sujetas a condiciones**
 - **Planes de pago personalizados**
-- **Primera consulta y diagnóstico gratuito**
+- **Valoración y presupuesto según las condiciones de la clínica**
 
 ## No Te Dejes Llevar Solo por el Precio
 
@@ -277,9 +277,9 @@ Los implantes dentales pueden colocarse a cualquier paciente adulto con desarrol
 
 Los implantes requieren una inversión inicial importante, pero hay que considerar:
 
-- **Duración**: Un implante bien cuidado puede durar toda la vida
+- **Duración**: Un implante bien cuidado puede mantenerse durante muchos años
 - **Coste-beneficio**: Evitas tratamientos repetitivos de otras alternativas
-- **Financiación**: En nuestra clínica de Málaga ofrecemos hasta 24 meses sin intereses
+- **Financiación**: Consulta las modalidades disponibles y sus condiciones
 - **Alternativas**: Existen opciones para diferentes presupuestos
 
 ## Mito 4: "El Cuerpo Puede Rechazar el Implante"
@@ -294,7 +294,7 @@ El titanio es un material biocompatible que el cuerpo acepta como propio. No exi
 - Mala higiene oral
 - Enfermedades no controladas (diabetes grave)
 
-La tasa de éxito en clínicas especializadas supera el 98%.
+El resultado depende del diagnóstico, la planificación, la salud general, la higiene y el seguimiento profesional.
 
 ## Mito 5: "Necesito un Implante por Cada Diente Perdido"
 

@@ -43,8 +43,8 @@ const SobreNosotros = () => {
   return (
     <Layout>
       <SEOHead
-        title="Sobre Nosotros | Bocaboca Clínicas Dentales Málaga | +20 Años de Experiencia"
-        description="Conoce a nuestro equipo de especialistas en implantología dental en Málaga. Dr. Alfonso Moreno, 3 clínicas, tecnología 3D y más de 13.000 pacientes atendidos."
+        title="Sobre Nosotros | Bocaboca Clínicas Dentales Málaga"
+        description="Conoce al equipo de Bocaboca Clínicas Dentales en Málaga, sus centros, especialidades y tecnología de planificación digital 3D."
         canonical="/sobre-nosotros"
         structuredData={[
           {
@@ -85,8 +85,8 @@ const SobreNosotros = () => {
               Tu Clínica de Confianza en Málaga
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed">
-              Más de 20 años dedicados a la salud bucodental de Málaga y la Costa del Sol. 
-              3 clínicas con un equipo de más de 10 especialistas comprometidos con tu sonrisa.
+              Un equipo multidisciplinar dedicado a la salud bucodental de Málaga y la Costa del Sol.
+              Conoce nuestras clínicas, especialidades y forma de trabajar.
             </p>
           </div>
         </div>
@@ -109,14 +109,13 @@ const SobreNosotros = () => {
                 clínica dental se ha convertido en un referente en Málaga con 3 centros.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Hoy contamos con instalaciones de última generación, tecnología 3D y un equipo 
-                multidisciplinar que ha devuelto la sonrisa a más de 13.000 pacientes de Málaga, 
-                la Costa del Sol y más allá.
+                Contamos con tecnología de diagnóstico 3D y un equipo multidisciplinar que estudia
+                cada caso antes de proponer las opciones de tratamiento.
               </p>
               <div className="grid grid-cols-3 gap-6">
                 {[
-                  { number: '+20', label: 'Años' },
-                  { number: '13.000+', label: 'Pacientes' },
+                  { number: '3D', label: 'Diagnóstico' },
+                  { number: 'Equipo', label: 'Multidisciplinar' },
                   { number: '3', label: 'Clínicas' },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
@@ -331,7 +330,7 @@ const SobreNosotros = () => {
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
             Visita cualquiera de nuestras 3 clínicas en Málaga y conoce a nuestro equipo. 
-            Primera consulta gratuita y sin compromiso.
+            Solicita una valoración para conocer al equipo y las opciones disponibles.
           </p>
           <Button asChild size="lg" className="cta-accent rounded-full px-8 h-14 text-lg">
             <Link to="/contacto">

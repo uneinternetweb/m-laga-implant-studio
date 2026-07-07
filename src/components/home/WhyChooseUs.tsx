@@ -6,15 +6,15 @@ const WhyChooseUs = () => {
   const reasons = [
     {
       icon: Users,
-      number: '+20',
-      label: 'Años de Experiencia',
-      description: 'Clínica dental consolidada en Málaga',
+      number: 'Equipo',
+      label: 'Multidisciplinar',
+      description: 'Valoración coordinada según las necesidades del caso',
     },
     {
       icon: Award,
-      number: '13.000+',
-      label: 'Casos de Éxito',
-      description: 'Implantes realizados con éxito',
+      number: '3D',
+      label: 'Planificación Digital',
+      description: 'Estudio personalizado antes del tratamiento',
     },
     {
       icon: GraduationCap,
@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
     },
     {
       icon: Microscope,
-      number: '100%',
+      number: '3D',
       label: 'Digital',
       description: 'Tecnología 3D y escáner intraoral',
     },

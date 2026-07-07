@@ -5,8 +5,8 @@ import heroImage from '@/assets/hero-bocaboca-fachada.jpg';
 
 const Hero = () => {
   const benefits = [
-    'Primera consulta gratuita',
-    'Financiación sin intereses',
+    'Valoración personalizada',
+    'Opciones de financiación',
     'Tecnología de última generación',
   ];
 
@@ -39,13 +39,13 @@ const Hero = () => {
           {/* Heading */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
             Implantes Dentales en Málaga{' '}
-            <span className="text-gradient">con garantía de por vida</span>
+            <span className="text-gradient">con planificación personalizada</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl leading-relaxed">
-            Recupera tu sonrisa y calidad de vida con nuestros implantes dentales de máxima calidad. 
-            Más de 20 años de experiencia y más de 13.000 pacientes satisfechos en Málaga y la Costa del Sol.
+            Recupera dientes perdidos con un estudio adaptado a tu caso. Valoramos el hueso disponible,
+            la salud bucodental y las distintas opciones de prótesis antes de recomendar el tratamiento.
           </p>
 
           {/* Benefits */}
@@ -65,7 +65,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="cta-gold rounded-full px-8 text-lg h-14">
               <Link to="/contacto" className="flex items-center gap-2">
-                Solicitar Cita Gratuita
+                Solicitar Cita
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>

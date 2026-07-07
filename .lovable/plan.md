@@ -26,7 +26,7 @@ Se insertan en `src/data/newsPosts.ts` al principio del array (orden ya configur
 - Cada artículo ~1.100-1.400 palabras, H2/H3 con keywords locales ("implantes dentales en Málaga"), bullets justos, sin tablas inventadas.
 - `excerpt` 150-160 caracteres con keyword principal.
 - Enlaces internos en formato markdown existente `[texto](/ruta)` — ya soportado por el parser de `NoticiaDetalle.tsx`.
-- Datos sin inventar: citamos solo lo respaldado por las revisiones mencionadas; no se inventan estadísticas propias de la clínica más allá del dato ya validado de "+13.000 casos".
+- Datos sin inventar: no se publican estadísticas, porcentajes de éxito, años de experiencia ni garantías sin una fuente documental revisada y aprobada.
 - Sin fechas/autor/readTime visibles (regla activa de `estrategia-noticias-seo`). Los campos seguirán existiendo en la interfaz `NewsPost` para no romper tipos, pero no se renderizan (ya es el comportamiento actual).
 
 ## Imágenes

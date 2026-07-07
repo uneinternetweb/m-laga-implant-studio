@@ -32,7 +32,7 @@ const Footer = () => {
             ¿Listo para recuperar tu sonrisa?
           </h2>
           <p className="text-secondary-foreground/90 mb-6 text-lg">
-            Solicita tu primera consulta gratuita con nuestros especialistas en implantes dentales
+            Solicita una valoración con nuestro equipo de implantología dental
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -66,8 +66,8 @@ const Footer = () => {
                 />
               </div>
               <p className="text-primary-foreground/80 leading-relaxed">
-                Clínica dental especializada en implantes dentales en Málaga. Más de 20 años 
-                devolviendo sonrisas con la última tecnología y los mejores profesionales.
+                Clínica dental especializada en implantes dentales en Málaga, con planificación
+                digital 3D, valoración personalizada y seguimiento periódico.
               </p>
               {/* Social */}
               <div className="flex gap-4 mt-6">

@@ -44,7 +44,7 @@ const ImplantesAllOn4 = () => {
     <Layout>
       <SEOHead
         title="All-on-4™ en Málaga: dientes fijos en un día | Bocaboca"
-        description="Rehabilitación completa con la técnica All-on-4™ en Málaga. Dientes fijos sobre 4 implantes en una sola jornada. Primera consulta gratuita."
+        description="All-on-4 en Málaga con estudio 3D y valoración personalizada. Conoce el proceso y cuándo puede plantearse una prótesis provisional fija."
         canonical="/implantes-all-on-4"
         structuredData={[
           {
@@ -104,7 +104,7 @@ const ImplantesAllOn4 = () => {
                 atornillada en la misma jornada quirúrgica.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                {['Sin injertos en la mayoría de casos', 'Provisional fija el mismo día', 'Planificación 3D guiada'].map(
+                {['Valoración del hueso disponible', 'Carga inmediata en casos seleccionados', 'Planificación 3D guiada'].map(
                   (item) => (
                     <div key={item} className="flex items-center gap-2">
                       <CheckCircle2 className="w-5 h-5 text-secondary" />
@@ -116,7 +116,7 @@ const ImplantesAllOn4 = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
                   <Link to="/contacto">
-                    Solicitar valoración gratuita
+                    Solicitar valoración
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -155,15 +155,15 @@ const ImplantesAllOn4 = () => {
             <div className="flex items-center gap-3">
               <Award className="w-8 h-8" />
               <div>
-                <p className="font-display text-2xl md:text-3xl font-bold">+20</p>
-                <p className="text-sm opacity-90">Años aplicando la técnica</p>
+                <p className="font-display text-xl md:text-2xl font-bold">Seguimiento</p>
+                <p className="text-sm opacity-90">Revisiones según cada caso</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Shield className="w-8 h-8" />
               <div>
-                <p className="font-display text-2xl md:text-3xl font-bold">98%</p>
-                <p className="text-sm opacity-90">Tasa de éxito documentada</p>
+                <p className="font-display text-xl md:text-2xl font-bold">Estudio 3D</p>
+                <p className="text-sm opacity-90">Valoración individual del caso</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -271,7 +271,7 @@ const ImplantesAllOn4 = () => {
               {
                 icon: Clock,
                 title: 'Tratamiento previsible',
-                text: 'Protocolo ampliamente estudiado en la literatura científica con tasas de supervivencia superiores al 95% a 10 años en estudios de seguimiento.',
+                text: 'El diagnóstico, la planificación, la higiene y el seguimiento influyen en la evolución del tratamiento.',
               },
             ].map((b) => (
               <div key={b.title} className="bg-card rounded-2xl p-6 card-hover">
@@ -399,13 +399,13 @@ const ImplantesAllOn4 = () => {
             ¿Quieres saber si eres candidato al All-on-4™?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-            Solicita una valoración gratuita en nuestras clínicas de Málaga. Estudiamos tu caso con TAC 3D
+            Solicita una valoración en nuestras clínicas de Málaga. Estudiamos tu caso con TAC 3D
             y te explicamos las opciones reales para tu situación.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
               <Link to="/contacto">
-                Pedir cita gratuita
+                Pedir cita
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

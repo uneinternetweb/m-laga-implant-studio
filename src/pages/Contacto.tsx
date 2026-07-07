@@ -35,7 +35,7 @@ const Contacto = () => {
     <Layout>
       <SEOHead
         title="Contacto | Bocaboca Clínicas Dentales en Málaga | Cómo Llegar"
-        description="Encuentra nuestras 3 clínicas dentales en Málaga: Ayala, Martínez Maldonado y Velázquez. Horarios, direcciones y cómo llegar. Primera consulta gratuita."
+        description="Encuentra nuestras clínicas dentales en Málaga: Ayala, Martínez Maldonado y Velázquez. Consulta horarios, direcciones y cómo llegar."
         canonical="/contacto"
         structuredData={[
           {
@@ -101,7 +101,7 @@ const Contacto = () => {
             </h1>
             <p className="text-lg text-primary-foreground/90 leading-relaxed">
               Disponemos de tres clínicas en Málaga para estar siempre cerca de ti. 
-              Primera consulta gratuita y sin compromiso.
+              Solicita una valoración y te explicaremos las opciones disponibles.
             </p>
           </div>
         </div>
@@ -189,7 +189,7 @@ const Contacto = () => {
               >
                 951 178 110
               </a>
-              <p className="text-sm text-muted-foreground mt-1">Llamada gratuita</p>
+              <p className="text-sm text-muted-foreground mt-1">Llámanos para pedir cita</p>
             </div>
 
             <div className="bg-card rounded-2xl p-8 text-center card-hover">
@@ -232,8 +232,8 @@ const Contacto = () => {
           <div className="space-y-6">
             {[
               {
-                q: '¿La primera consulta es realmente gratuita?',
-                a: 'Sí, la primera consulta de valoración es completamente gratuita y sin compromiso. Incluye revisión, diagnóstico inicial y presupuesto detallado.',
+                q: '¿Qué puedo consultar antes de pedir cita?',
+                a: 'Puedes contactar con la clínica para explicar tu caso, conocer la disponibilidad y preguntar por el proceso de valoración y presupuesto.',
               },
               {
                 q: '¿Cuánto tiempo debo esperar para una cita?',

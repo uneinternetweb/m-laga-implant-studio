@@ -6,8 +6,8 @@ const Services = () => {
   const features = [
     {
       icon: Shield,
-      title: 'Garantía de Por Vida',
-      description: 'Utilizamos implantes de las mejores marcas mundiales con garantía vitalicia.',
+      title: 'Implantes con Trazabilidad',
+      description: 'Trabajamos con fabricantes reconocidos y explicamos por escrito las condiciones aplicables.',
     },
     {
       icon: Zap,
@@ -16,13 +16,13 @@ const Services = () => {
     },
     {
       icon: Heart,
-      title: 'Sin Dolor',
-      description: 'Sedación consciente y anestesia local para un tratamiento 100% indoloro.',
+      title: 'Confort Durante el Tratamiento',
+      description: 'Utilizamos anestesia local y valoramos sedación consciente cuando el caso lo requiere.',
     },
     {
       icon: Award,
-      title: '+5.000 Implantes',
-      description: 'Experiencia avalada por miles de casos de éxito en Málaga.',
+      title: 'Planificación Digital 3D',
+      description: 'Estudiamos la anatomía y las opciones de tratamiento antes de la intervención.',
     },
   ];
 
@@ -43,10 +43,10 @@ const Services = () => {
             <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-2xl shadow-lg max-w-xs hidden md:block">
               <div className="flex items-center gap-4">
                 <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center">
-                  <span className="font-display text-2xl font-bold text-secondary">98%</span>
+                  <span className="font-display text-lg font-bold text-secondary">3D</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Tasa de Éxito</p>
+                  <p className="font-semibold text-foreground">Planificación digital</p>
                   <p className="text-sm text-muted-foreground">en implantes dentales</p>
                 </div>
               </div>
