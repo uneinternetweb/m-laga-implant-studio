@@ -11,7 +11,7 @@ const Contacto = () => {
       zip: '29002 Málaga',
       mapsUrl: 'https://maps.app.goo.gl/8BCNqbJZ8gSE3FSEA',
       directionsUrl: 'https://www.google.com/maps/dir//Calle+Ayala,+80,+29002+M%C3%A1laga',
-      image: 'https://maps.googleapis.com/maps/api/staticmap?center=Calle+Ayala+80+Malaga&zoom=16&size=600x300&maptype=roadmap',
+      embedUrl: 'https://www.google.com/maps?q=Calle+Ayala+80,+29002+Malaga&output=embed',
     },
     {
       name: 'Clínica Martínez Maldonado',
@@ -19,7 +19,7 @@ const Contacto = () => {
       zip: '29007 Málaga',
       mapsUrl: 'https://maps.app.goo.gl/uCqWqoewm4MH5jrA9',
       directionsUrl: 'https://www.google.com/maps/dir//C/+Mart%C3%ADnez+Maldonado,+65,+29007+M%C3%A1laga',
-      image: 'https://maps.googleapis.com/maps/api/staticmap?center=Martinez+Maldonado+65+Malaga&zoom=16&size=600x300&maptype=roadmap',
+      embedUrl: 'https://www.google.com/maps?q=Martinez+Maldonado+65,+29007+Malaga&output=embed',
     },
     {
       name: 'Clínica Velázquez',
@@ -27,7 +27,7 @@ const Contacto = () => {
       zip: '29004 Málaga',
       mapsUrl: 'https://maps.app.goo.gl/Pv5b9hQgAKEfyCD77',
       directionsUrl: 'https://www.google.com/maps/dir//Avda.+de+Vel%C3%A1zquez,+73,+29004+M%C3%A1laga',
-      image: 'https://maps.googleapis.com/maps/api/staticmap?center=Avenida+Velazquez+73+Malaga&zoom=16&size=600x300&maptype=roadmap',
+      embedUrl: 'https://www.google.com/maps?q=Avenida+Velazquez+73,+29004+Malaga&output=embed',
     },
   ];
 
@@ -125,10 +125,15 @@ const Contacto = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {clinics.map((clinic) => (
               <article key={clinic.name} className="bg-card rounded-3xl overflow-hidden card-hover flex flex-col">
-                {/* Map placeholder */}
-                <div className="bg-muted h-48 flex items-center justify-center relative">
-                  <MapPin className="w-12 h-12 text-primary/30" />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-card/10" />
+                <div className="bg-muted h-48 overflow-hidden">
+                  <iframe
+                    src={clinic.embedUrl}
+                    title={`Mapa de ${clinic.name}`}
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    allowFullScreen
+                  />
                 </div>
 
                 <div className="p-6 md:p-8 flex flex-col flex-1">
