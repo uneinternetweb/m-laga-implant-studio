@@ -73,7 +73,7 @@ const ImplantesDentales = () => {
     },
     {
       question: '¿Cuánto dura un implante dental?',
-      answer: 'Con los cuidados adecuados y revisiones periódicas, los implantes dentales pueden durar toda la vida. En Bocaboca trabajamos exclusivamente con implantes Nobel Biocare, que ofrecen garantía de por vida.',
+      answer: 'La duración depende de la higiene, el tabaco, la salud de las encías, la carga de la prótesis y las revisiones periódicas. El equipo explica las condiciones del fabricante y el mantenimiento recomendado antes del tratamiento.',
     },
     {
       question: '¿Qué pasa si no tengo suficiente hueso?',
@@ -81,11 +81,11 @@ const ImplantesDentales = () => {
     },
     {
       question: '¿Cuánto tiempo estaré sin dientes?',
-      answer: 'Con la técnica de carga inmediata y All-on-4™, sales de la clínica el mismo día con dientes provisionales fijos. Nunca estarás sin dientes durante el proceso.',
+      answer: 'En casos seleccionados puede colocarse una prótesis provisional fija el mismo día mediante carga inmediata. No todos los pacientes son candidatos y la decisión se toma después del estudio clínico y radiológico.',
     },
     {
       question: '¿Es doloroso el tratamiento con implantes dentales?',
-      answer: 'En ningún caso, ya que siempre se realiza con anestesia local y en ocasiones con sedación o anestesia general. Para la mayoría de los pacientes es suficiente con aplicar anestesia local para evitar cualquier tipo de molestia.',
+      answer: 'La intervención se realiza con anestesia para reducir las molestias durante el procedimiento. La experiencia posterior varía según la cirugía y cada paciente; pueden aparecer inflamación o molestias temporales.',
     },
     {
       question: '¿En caso de enfermedad periodontal, es aconsejable reponer los dientes mediante implantes dentales?',
@@ -166,7 +166,7 @@ const ImplantesDentales = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
                   <Link to="/contacto">
-                    Solicitar Cita Gratuita
+                    Solicitar Cita
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -768,8 +768,8 @@ const ImplantesDentales = () => {
           </div>
           <div className="bg-muted rounded-2xl p-6 mt-8">
             <p className="text-muted-foreground text-sm leading-relaxed">
-              <strong className="text-foreground">Importante:</strong> en la primera consulta,
-              gratuita y sin compromiso, valoramos tu caso, te explicamos las opciones de tratamiento
+              <strong className="text-foreground">Importante:</strong> en la valoración inicial
+              estudiamos tu caso, te explicamos las opciones de tratamiento
               y te entregamos un presupuesto detallado por escrito. Los resultados clínicos dependen
               de cada caso y no se garantizan de forma absoluta; la información de esta página tiene
               carácter divulgativo y no sustituye a la valoración profesional.
@@ -793,13 +793,13 @@ const ImplantesDentales = () => {
             ¿Preparado para Recuperar tu Sonrisa?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-            Solicita tu primera consulta gratuita en nuestras clínicas de Málaga. 
-            Estudiaremos tu caso y te ofreceremos la mejor solución personalizada.
+            Solicita una valoración en nuestras clínicas de Málaga.
+            Estudiaremos tu caso y te explicaremos las opciones disponibles.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
               <Link to="/contacto">
-                Pedir Cita Gratuita
+                Pedir Cita
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

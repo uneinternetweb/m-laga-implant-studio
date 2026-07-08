@@ -30,7 +30,7 @@ const faqs = [
   {
     question: '¿Qué riesgos tiene la técnica?',
     answer:
-      'Como cualquier cirugía, presenta riesgos: comunicación con el seno maxilar, infecciones o, raramente, alteraciones sinusales. Una planificación con CBCT y la experiencia del equipo quirúrgico reducen significativamente estas complicaciones. La tasa de supervivencia publicada supera el 95% a 5 años.',
+      'Como cualquier cirugía, presenta riesgos: comunicación con el seno maxilar, infecciones o alteraciones sinusales. La planificación con CBCT permite estudiar la anatomía y valorar estos riesgos antes de la intervención.',
   },
   {
     question: '¿Cuándo se considera mejor opción que un injerto óseo?',
@@ -43,8 +43,8 @@ const ImplantesCigomaticos = () => {
   return (
     <Layout>
       <SEOHead
-        title="Implantes cigomáticos en Málaga | Sin injerto óseo | Bocaboca"
-        description="Implantes cigomáticos en Málaga para pacientes con atrofia maxilar severa. Solución avanzada sin injertos óseos. Pide tu valoración gratuita."
+        title="Implantes Cigomáticos en Málaga | Bocaboca"
+        description="Implantes cigomáticos en Málaga para casos seleccionados de atrofia maxilar severa. Conoce el estudio 3D, el proceso y las alternativas."
         canonical="/implantes-cigomaticos"
         structuredData={[
           {
@@ -104,7 +104,7 @@ const ImplantesCigomaticos = () => {
                 clínicas de Málaga con un equipo especializado en cirugía maxilofacial.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                {['Sin injertos óseos', 'Dientes fijos en 24–48 h', 'Solución en una sola cirugía'].map((item) => (
+                {['Alternativa en casos seleccionados', 'Plan protésico personalizado', 'Estudio anatómico 3D'].map((item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-secondary" />
                     <span>{item}</span>
@@ -114,7 +114,7 @@ const ImplantesCigomaticos = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
                   <Link to="/contacto">
-                    Solicitar valoración gratuita
+                    Solicitar valoración
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -153,8 +153,8 @@ const ImplantesCigomaticos = () => {
             <div className="flex items-center gap-3">
               <Award className="w-8 h-8" />
               <div>
-                <p className="font-display text-2xl md:text-3xl font-bold">+95%</p>
-                <p className="text-sm opacity-90">Supervivencia a 5 años</p>
+                <p className="font-display text-xl md:text-2xl font-bold">Estudio 3D</p>
+                <p className="text-sm opacity-90">Valoración anatómica previa</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -249,9 +249,9 @@ const ImplantesCigomaticos = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { icon: Zap, title: 'Una sola intervención', text: 'Resuelven el caso sin necesidad de múltiples cirugías de injerto y largos meses de espera.' },
-              { icon: Clock, title: 'Tiempos muy reducidos', text: 'Frente a los 6–12 meses de un injerto, el paciente puede llevar dientes fijos en 24–48 horas.' },
+              { icon: Clock, title: 'Plan por fases', text: 'El calendario depende de la anatomía, la estabilidad conseguida y el tipo de prótesis previsto.' },
               { icon: Shield, title: 'Anclaje en hueso denso', text: 'El hueso cigomático es muy denso y estable, ofreciendo una fijación excelente y duradera.' },
-              { icon: Award, title: 'Alta predictibilidad', text: 'Supervivencia documentada superior al 95% a 5 años en estudios clínicos.' },
+              { icon: Award, title: 'Valoración especializada', text: 'La indicación se decide tras estudiar la anatomía, los riesgos y las alternativas disponibles.' },
             ].map((b) => (
               <div key={b.title} className="bg-card rounded-2xl p-6 card-hover">
                 <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center mb-4">
@@ -351,12 +351,12 @@ const ImplantesCigomaticos = () => {
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
             Si te han dicho que no tienes hueso suficiente para implantes, los implantes cigomáticos
-            pueden ser la solución. Solicita una valoración gratuita en nuestras clínicas de Málaga.
+            pueden ser una alternativa en casos seleccionados. Solicita una valoración en nuestras clínicas de Málaga.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
               <Link to="/contacto">
-                Pedir cita gratuita
+                Pedir cita
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

@@ -183,7 +183,7 @@ No hablamos de impresiones de consulta. Hay varias revisiones sistemáticas y me
 - La incidencia de **[periimplantitis](/noticias/periimplantitis-sintomas-prevencion-malaga)** —la inflamación que destruye el hueso de soporte— es significativamente más alta.
 - El riesgo es **dosis-dependiente**: fumar más de 10 cigarrillos al día empeora claramente el pronóstico.
 
-Esto no significa que un implante en un fumador esté condenado. Significa que el margen para que algo salga mal es más pequeño. En una clínica con muchos años de experiencia, como en nuestro caso con más de 13.000 casos tratados, esa diferencia se nota a medio y largo plazo.
+Esto no significa que un implante en un fumador esté condenado. Significa que el margen para que algo salga mal es más pequeño, por lo que el diagnóstico, la prevención y el seguimiento cobran todavía más importancia.
 
 ## Las fases más sensibles
 
@@ -400,7 +400,7 @@ Es el momento que más esperan nuestros pacientes: ese día sales con tu nuevo d
 
 ## Fase 8 — Revisiones y mantenimiento de por vida
 
-Aquí es donde muchos tratamientos se ganan… o se pierden. Un implante necesita **revisiones periódicas** (normalmente una o dos al año) y una **higiene diaria meticulosa**. Es la mejor forma de prevenir problemas y de que el implante dure realmente toda la vida.
+Aquí es donde muchos tratamientos se ganan… o se pierden. Un implante necesita **revisiones periódicas** y una **higiene diaria meticulosa**. Es la mejor forma de prevenir problemas y favorecer su mantenimiento a largo plazo.
 
 Si quieres profundizar, tenemos una [guía completa de cuidado de implantes](/noticias/cuidado-implantes-dentales-guia-completa) con rutinas y errores frecuentes que conviene evitar.
 
@@ -431,7 +431,7 @@ Lo entendemos perfectamente. En estos casos planificamos sesiones más pausadas 
 
 ---
 
-Si estás valorando ponerte implantes y quieres saber exactamente qué pasos seguiríamos en tu caso, [pide una primera valoración gratuita](/contacto). Te explicaremos tu situación con honestidad y sin compromiso.
+Si estás valorando ponerte implantes y quieres saber qué pasos podrían plantearse en tu caso, [solicita una valoración](/contacto). Te explicaremos las opciones disponibles.
 `,
     date: '2026-05-01',
     dateFormatted: '1 de Mayo, 2026',
@@ -557,7 +557,7 @@ Si te han dicho que no tienes hueso suficiente para implantes, no te quedes con 
     title: 'Periimplantitis: síntomas, causas y cómo prevenirla en Málaga',
     excerpt: 'Qué es la periimplantitis, cómo detectarla a tiempo y qué hábitos te ayudan a evitar perder un implante dental. Guía clara desde nuestras clínicas en Málaga.',
     content: `
-La mayoría de los pacientes que se ponen un implante dental piensan, con razón, que ya tienen el problema resuelto para muchos años. Y en gran medida es así: hoy un implante bien colocado tiene tasas de éxito superiores al 95%. Pero hay una complicación que conviene conocer porque es silenciosa, lenta y, si no se detecta a tiempo, puede llevar a perder el implante. Se llama **periimplantitis**.
+La mayoría de los pacientes que se ponen un implante dental esperan mantenerlo durante muchos años. Sin embargo, existe una complicación que conviene conocer porque puede avanzar sin síntomas claros y afectar al soporte del implante: la **periimplantitis**.
 
 En este artículo te explicamos, sin tecnicismos innecesarios, qué es la periimplantitis, por qué aparece, qué síntomas debes vigilar y, sobre todo, qué puedes hacer para prevenirla. Toda la información está pensada desde nuestra experiencia diaria en [implantes dentales en Málaga](/implantes-dentales).
 
@@ -650,7 +650,7 @@ Puede aparecer en cualquier momento, pero es más frecuente a partir de los **5 
 
 En nuestras [clínicas de implantes dentales en Málaga](/contacto), el seguimiento posterior al tratamiento es tan importante para nosotros como la propia cirugía. El equipo dirigido por el [Dr. Alfonso Moreno Sánchez](/sobre-nosotros) realiza protocolos específicos de mantenimiento de implantes, con revisiones periódicas, higienes profesionales adaptadas y diagnóstico precoz de cualquier signo de periimplantitis.
 
-Si llevas implantes y notas algún síntoma, o simplemente hace tiempo que no haces una revisión, **pide una primera valoración gratuita**. Detectar a tiempo es, casi siempre, la diferencia entre solucionar y lamentar.
+Si llevas implantes y notas algún síntoma, o hace tiempo que no haces una revisión, **solicita una valoración profesional**. La detección temprana permite estudiar las opciones de tratamiento.
 `,
     date: '2026-04-27',
     dateFormatted: '27 de Abril, 2026',
@@ -661,7 +661,7 @@ Si llevas implantes y notas algún síntoma, o simplemente hace tiempo que no ha
   {
     slug: 'cuanto-duran-implantes-dentales-malaga',
     title: '¿Cuánto duran los implantes dentales? Consejos para cuidarlos en Málaga',
-    excerpt: 'Descubre cuántos años duran realmente los implantes dentales y qué hábitos diarios marcan la diferencia para conservarlos toda la vida. Guía práctica desde Málaga.',
+    excerpt: 'Descubre qué factores influyen en la duración de los implantes y qué hábitos ayudan a mantenerlos. Guía práctica desde Málaga.',
     content: `
 Cuando un paciente entra por primera vez en nuestra clínica preguntando por implantes, casi siempre aparece la misma duda: *"¿y esto cuánto me va a durar?"*. Es una pregunta totalmente lógica. Un implante dental es una inversión importante, tanto en salud como en dinero, y querer saber qué esperar a 10, 20 o 30 años vista no es ser desconfiado, es ser sensato.
 
@@ -669,14 +669,14 @@ En este artículo vamos a contarte, sin medias verdades, cuánto duran los impla
 
 ## ¿Cuánto duran los implantes dentales realmente?
 
-La respuesta corta es que **un implante dental bien colocado y bien cuidado puede durar toda la vida**. La respuesta larga es algo más matizada y conviene entenderla bien.
+La respuesta corta es que **un implante dental bien colocado y bien cuidado puede mantenerse durante muchos años**. La duración real depende de varios factores y conviene entenderlos bien.
 
 Un implante tiene dos partes diferenciadas:
 
 - El **tornillo de titanio**, que se integra al hueso (osteointegración) y hace de raíz artificial.
 - La **corona o prótesis**, que es la parte visible, la que mastica y se ve al sonreír.
 
-El tornillo, si se integra correctamente y se mantiene la salud de la encía y el hueso, suele durar **más de 25 años en el 90-95% de los casos**, y en muchos pacientes acompaña al paciente el resto de su vida. La corona, en cambio, está sometida a la fuerza diaria de la masticación y a un cierto desgaste, por lo que su vida útil habitual está entre **10 y 20 años**, dependiendo del material y de los hábitos.
+El tornillo puede mantenerse durante muchos años si se integra correctamente y se conserva la salud de la encía y el hueso. La corona, en cambio, está sometida a la fuerza diaria de la masticación y al desgaste, por lo que puede necesitar mantenimiento o sustitución antes que el implante.
 
 Es importante entender esta diferencia porque, cuando alguien dice "se me ha roto el implante", muchas veces lo que se ha desgastado o fracturado es la corona, no el implante en sí. Y eso casi siempre tiene solución sin necesidad de retirar la raíz.
 
@@ -715,7 +715,7 @@ La buena noticia es que gran parte de la durabilidad está en tus manos. Estos s
 - Si rechinas los dientes por la noche, consulta por una **férula de descarga**. El bruxismo es uno de los grandes enemigos de las coronas sobre implantes.
 - **Deja de fumar o reduce el consumo**. El tabaco multiplica el riesgo de periimplantitis.
 
-Estos pequeños gestos, mantenidos en el tiempo, pueden suponer la diferencia entre un implante que dura 10 años y uno que te acompaña toda la vida.
+Estos pequeños gestos, mantenidos en el tiempo, influyen directamente en la salud de los tejidos y en la duración del tratamiento.
 
 ## La importancia de las revisiones periódicas
 
@@ -748,8 +748,8 @@ En nuestra [página de implantes dentales](/implantes-dentales) explicamos con d
 
 ## Preguntas frecuentes sobre la duración de los implantes
 
-### ¿Los implantes dentales duran toda la vida?
-En condiciones óptimas, el implante (la parte de titanio) puede durar toda la vida. La corona suele renovarse cada 10-20 años por desgaste natural.
+### ¿Cuánto pueden durar los implantes dentales?
+La duración del implante y de la corona varía según la salud de los tejidos, la higiene, el tabaco, la carga y las revisiones. La corona puede necesitar mantenimiento o sustitución por desgaste.
 
 ### ¿Qué es lo que más reduce la vida de un implante?
 La periimplantitis, es decir, la infección crónica del tejido alrededor del implante. Está muy ligada a la higiene insuficiente y al tabaco.
@@ -761,7 +761,7 @@ Lo habitual es revisar a los pocos días tras la cirugía, al colocar la corona 
 Sí. Los implantes de titanio son compatibles con resonancia y no suponen ningún riesgo.
 
 ### ¿Influye la marca del implante en su duración?
-Sí, y mucho. Trabajar con marcas con estudios clínicos a largo plazo y garantía del fabricante es una garantía añadida para el paciente.
+La trazabilidad del fabricante y los estudios clínicos disponibles ayudan a evaluar el producto. Las condiciones de garantía deben explicarse por escrito y no sustituyen al mantenimiento.
 
 Cuidar un implante no es complicado, pero sí requiere constancia. Si tienes dudas sobre tu caso o quieres una valoración personalizada en Málaga, en [Bocaboca Clínicas Dentales](/) estaremos encantados de ayudarte.
 `,
@@ -876,7 +876,7 @@ En ambos casos, las **revisiones periódicas** son la mejor garantía de que tu 
 
 Elegir entre prótesis fija y prótesis removible no es solo una cuestión técnica, también lo es de estilo de vida, expectativas y presupuesto. Lo importante es que **alguien con experiencia te explique todas las opciones**, te enseñe casos similares al tuyo y te ayude a decidir con calma.
 
-Si quieres conocer más sobre los distintos tipos de [prótesis dentales](/protesis-dentales) que ofrecemos en Málaga o sobre nuestros tratamientos de [implantes dentales](/implantes-dentales), puedes consultar nuestras páginas específicas o [pedir una primera valoración gratuita](/contacto) en cualquiera de nuestras tres clínicas.
+Si quieres conocer más sobre los distintos tipos de [prótesis dentales](/protesis-dentales) o sobre nuestros tratamientos de [implantes dentales](/implantes-dentales), consulta las páginas específicas o [solicita una valoración](/contacto) en una de nuestras clínicas.
 
 ## Preguntas frecuentes sobre prótesis dentales en Málaga
 
@@ -914,7 +914,7 @@ Los implantes dentales son una de las mejores inversiones que puedes hacer para 
 
 ## ¿Pueden Fallar los Implantes Dentales?
 
-Aunque los implantes dentales tienen una tasa de éxito superior al 95%, la falta de mantenimiento puede provocar problemas como:
+Aunque los implantes son tratamientos habituales, la falta de mantenimiento puede provocar problemas como:
 
 - **Periimplantitis**: Infección de los tejidos alrededor del implante
 - **Pérdida ósea**: Reabsorción del hueso que sostiene el implante
@@ -985,9 +985,9 @@ Contacta con tu implantólogo en Málaga si experimentas:
 - Enfermedades autoinmunes
 - Tratamientos de quimioterapia o radioterapia
 
-## Más de 13.000 Casos de Éxito en Málaga
+## Seguimiento de los Tratamientos en Málaga
 
-En Clínicas Bocaboca, con más de 20 años de experiencia en implantología dental en Málaga, hemos tratado más de 13.000 casos con éxito. El Dr. Alfonso Moreno y su equipo están comprometidos con el seguimiento a largo plazo de todos nuestros pacientes.
+En Clínicas Bocaboca, el Dr. Alfonso Moreno y su equipo estudian cada caso y plantean un seguimiento adaptado al tratamiento y a la salud periodontal de cada paciente.
 
 ## Programa de Mantenimiento en Clínicas Bocaboca
 
@@ -999,9 +999,9 @@ Ofrecemos un programa de mantenimiento personalizado que incluye:
 - Asesoramiento personalizado de higiene
 - Precio especial para pacientes de la clínica
 
-## Tu Primera Consulta Gratuita
+## Solicita una Valoración
 
-Si tienes implantes dentales y quieres asegurar su durabilidad, o si estás considerando ponerte implantes en Málaga, te invitamos a una **consulta gratuita** en nuestras clínicas del centro de Málaga. Evaluaremos tu caso y te daremos las recomendaciones personalizadas que necesitas.
+Si tienes implantes dentales o estás considerando este tratamiento en Málaga, puedes **solicitar una valoración**. Estudiaremos tu caso y te explicaremos las recomendaciones aplicables.
 
 **Llámanos al 951 178 110** o escríbenos por WhatsApp al 679 49 02 16 para pedir tu cita.
     `,
@@ -1060,15 +1060,15 @@ Los implantes actuales están fabricados con titanio de grado médico de la más
 - Superficies bioactivas que aceleran la cicatrización
 - Diseños optimizados para mayor estabilidad primaria
 - Conexiones internas precisas que evitan micromovimientos
-- Garantía de por vida del fabricante
+- Trazabilidad del fabricante y condiciones de garantía explicadas por escrito
 
 ## Nuestra Experiencia en Málaga
 
-En Clínicas Bocaboca llevamos más de 20 años aplicando estas tecnologías. El Dr. Alfonso Moreno y su equipo están constantemente formándose en las últimas técnicas para ofrecer los mejores resultados a nuestros pacientes.
+En Clínicas Bocaboca, el Dr. Alfonso Moreno y su equipo utilizan planificación digital y mantienen formación continuada en técnicas de implantología.
 
-## Consulta Gratuita
+## Valoración Personalizada
 
-Si estás considerando implantes dentales, te invitamos a una primera consulta gratuita donde realizaremos un estudio completo con tecnología 3D y te explicaremos todas las opciones de tratamiento.
+Si estás considerando implantes dentales, solicita una valoración para estudiar el caso con tecnología 3D y conocer las opciones de tratamiento.
     `,
     date: '2024-01-20',
     dateFormatted: '20 Enero 2024',
@@ -1131,7 +1131,7 @@ Los pacientes que reciben All-on-4 experimentan una transformación completa:
 
 ## Experiencia Bocaboca
 
-En nuestras clínicas de Málaga hemos realizado cientos de tratamientos All-on-4 con una tasa de éxito superior al 98%. Nuestro equipo está especialmente formado en esta técnica avanzada.
+En nuestras clínicas de Málaga, cada tratamiento All-on-4 se valora mediante estudio clínico y radiológico para confirmar si esta técnica es adecuada para el paciente.
 
 ## Financiación a Tu Medida
 
@@ -1150,11 +1150,11 @@ Sabemos que es una inversión importante. Por eso ofrecemos financiación hasta 
   {
     slug: 'cuidado-implantes-dentales-guia-completa',
     title: 'Cómo Cuidar tus Implantes Dentales: Guía Completa de Mantenimiento',
-    excerpt: 'Los implantes dentales pueden durar toda la vida si se cuidan correctamente. Descubre las claves para mantener tus implantes en perfecto estado.',
+    excerpt: 'El mantenimiento influye en la duración de los implantes dentales. Descubre las claves de higiene, revisiones y prevención.',
     content: `
 ## La Importancia del Mantenimiento
 
-Los implantes dentales representan una inversión importante en tu salud y calidad de vida. Con los cuidados adecuados, pueden durar décadas e incluso toda la vida.
+Los implantes dentales representan una inversión importante en tu salud y calidad de vida. Su duración depende del diagnóstico, la higiene, los hábitos y el seguimiento.
 
 ## Higiene Diaria: La Base del Éxito
 
@@ -1239,7 +1239,7 @@ Una dieta equilibrada favorece la salud de tus implantes:
 
 ## Conclusión
 
-Cuidar tus implantes es sencillo si mantienes buenos hábitos de higiene y acudes a las revisiones periódicas. En Clínicas Bocaboca te acompañamos durante toda la vida de tus implantes.
+Cuidar tus implantes requiere buenos hábitos de higiene y revisiones periódicas. En Clínicas Bocaboca planteamos un seguimiento adaptado a cada tratamiento.
 
 ## Programa de Mantenimiento
 
@@ -1284,7 +1284,7 @@ Cuando se pierden todos o la mayoría de los dientes, surge una pregunta fundame
 - **Preservan el hueso**: Estimulan el maxilar
 - **Como dientes naturales**: Misma función y estética
 - **Sin limitaciones alimentarias**: Come lo que quieras
-- **Durabilidad**: Pueden durar toda la vida
+- **Durabilidad**: Depende de la salud, la higiene, los hábitos y el seguimiento
 - **Comodidad**: No hay que quitarlos
 - **Mejoran la calidad de vida**: Mayor confianza y bienestar
 
@@ -1298,12 +1298,12 @@ Cuando se pierden todos o la mayoría de los dientes, surge una pregunta fundame
 
 | Aspecto | Dentadura | Implantes |
 |---------|-----------|-----------|
-| Masticación | 30-40% | 95-100% |
+| Masticación | Puede estar limitada | Depende de la adaptación y del caso |
 | Estética | Buena | Excelente |
 | Confort | Limitado | Total |
-| Durabilidad | 5-7 años | Toda la vida |
+| Durabilidad | Variable según uso y mantenimiento | Variable según salud, higiene y seguimiento |
 | Mantenimiento | Alto | Normal |
-| Coste a 20 años | Similar | Similar |
+| Coste a largo plazo | Depende del mantenimiento y las renovaciones | Depende del tratamiento y el mantenimiento |
 
 ## La Perspectiva Económica
 
@@ -1336,7 +1336,7 @@ Sin embargo, entendemos que cada caso es único. Por eso realizamos un estudio c
 
 ## Consulta Sin Compromiso
 
-¿Tienes dudas sobre qué opción es mejor para ti? Solicita una consulta gratuita. Estudiaremos tu caso y te presentaremos todas las alternativas con sus pros y contras.
+¿Tienes dudas sobre qué opción puede encajar en tu caso? Solicita una valoración. Estudiaremos la situación y te explicaremos las alternativas con sus ventajas y limitaciones.
     `,
     date: '2024-01-05',
     dateFormatted: '5 Enero 2024',

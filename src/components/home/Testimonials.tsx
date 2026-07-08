@@ -41,7 +41,7 @@ const Testimonials = () => {
           </h2>
           <p className="text-primary-foreground/80 text-lg">
             Historias reales de pacientes que han recuperado su sonrisa en Clínicas Bocaboca.
-            Más de 20 años cuidando sonrisas en Málaga.
+            Atención personalizada y seguimiento en nuestras clínicas de Málaga.
           </p>
         </div>
 

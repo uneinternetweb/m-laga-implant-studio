@@ -13,7 +13,7 @@ const websiteSchema = {
   '@type': 'WebSite',
   name: 'Bocaboca Clínicas Dentales',
   url: 'https://www.implantesdentalesenmalaga.com',
-  description: 'Clínicas dentales especializadas en implantes dentales en Málaga. Primera consulta gratis.',
+  description: 'Clínicas dentales especializadas en implantes dentales en Málaga con planificación digital 3D y valoración personalizada.',
 };
 
 const dentistSchema = {
@@ -22,7 +22,7 @@ const dentistSchema = {
   name: 'Bocaboca Clínicas Dentales',
   url: 'https://www.implantesdentalesenmalaga.com',
   logo: 'https://clinicadentalbocaboca.com/wp-content/uploads/2026/04/Logo_bocaboca.jpg',
-  description: 'Clínicas dentales especializadas en implantes dentales en Málaga. Primera consulta gratis.',
+  description: 'Clínicas dentales especializadas en implantes dentales en Málaga con planificación digital 3D y valoración personalizada.',
   priceRange: '€€',
   telephone: '+34951178110',
   openingHoursSpecification: [
@@ -96,7 +96,7 @@ const Index = () => {
     <Layout>
       <SEOHead
         title="Implantes Dentales en Málaga | Bocaboca Clínicas Dentales"
-        description="Especialistas en implantes dentales en Málaga. 3 clínicas en Málaga, más de 1.000 reseñas verificadas. Primera consulta gratuita. Llama al 951 178 110."
+        description="Especialistas en implantes dentales en Málaga con planificación digital 3D y valoración personalizada. Conoce nuestras clínicas o llama al 951 178 110."
         canonical="/"
         structuredData={[websiteSchema, dentistSchema]}
       />

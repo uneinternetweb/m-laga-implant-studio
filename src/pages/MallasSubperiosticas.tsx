@@ -104,7 +104,7 @@ const MallasSubperiosticas = () => {
                 buscan evitar largos procesos de injerto. Disponible en nuestras clínicas de Málaga.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                {['Diseño 100% personalizado', 'Sin injertos óseos', 'Carga prácticamente inmediata'].map((item) => (
+                {['Diseño adaptado a la anatomía', 'Alternativa en casos seleccionados', 'Plan protésico personalizado'].map((item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-secondary" />
                     <span>{item}</span>
@@ -114,7 +114,7 @@ const MallasSubperiosticas = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
                   <Link to="/contacto">
-                    Solicitar valoración gratuita
+                    Solicitar valoración
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -153,7 +153,7 @@ const MallasSubperiosticas = () => {
             <div className="flex items-center gap-3">
               <Award className="w-8 h-8" />
               <div>
-                <p className="font-display text-2xl md:text-3xl font-bold">100%</p>
+                <p className="font-display text-xl md:text-2xl font-bold">Diseño 3D</p>
                 <p className="text-sm opacity-90">Diseño personalizado</p>
               </div>
             </div>
@@ -241,9 +241,9 @@ const MallasSubperiosticas = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: Zap, title: 'Sin injertos óseos', text: 'Evita largas fases de regeneración ósea y permite resolver el caso con una sola intervención.' },
+              { icon: Zap, title: 'Alternativa individualizada', text: 'Puede valorarse en determinados casos de atrofia ósea después del estudio anatómico.' },
               { icon: Shield, title: 'Encaje milimétrico', text: 'Diseñada digitalmente sobre el TAC del paciente: cada malla es única y se ajusta a la anatomía exacta.' },
-              { icon: Clock, title: 'Carga inmediata', text: 'En la mayoría de casos permite atornillar una prótesis provisional fija en las primeras 24–72 horas.' },
+              { icon: Clock, title: 'Plan protésico', text: 'El momento de colocar una prótesis provisional depende de la estabilidad y del diagnóstico.' },
               { icon: Award, title: 'Distribución óptima de cargas', text: 'La estructura reparte las fuerzas masticatorias sobre una amplia superficie ósea, reduciendo zonas de sobrecarga.' },
             ].map((b) => (
               <div key={b.title} className="bg-card rounded-2xl p-6 card-hover">
@@ -353,7 +353,7 @@ const MallasSubperiosticas = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
               <Link to="/contacto">
-                Pedir cita gratuita
+                Pedir cita
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

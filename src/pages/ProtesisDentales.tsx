@@ -107,7 +107,7 @@ const ProtesisDentales = () => {
     <Layout>
       <SEOHead
         title="Prótesis Dentales en Málaga | Bocaboca Clínicas Dentales"
-        description="Prótesis dentales fijas y removibles en Málaga. Soluciones personalizadas para recuperar tu sonrisa. Primera consulta gratis."
+        description="Prótesis dentales fijas y removibles en Málaga. Conoce las opciones y solicita una valoración personalizada para tu caso."
         canonical="/protesis-dentales"
         structuredData={[
           {
@@ -166,7 +166,7 @@ const ProtesisDentales = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
                   <Link to="/contacto">
-                    Solicitar Cita Gratuita
+                    Solicitar Cita
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
@@ -447,13 +447,13 @@ const ProtesisDentales = () => {
             ¿Necesitas una Prótesis Dental?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-            Solicita tu primera consulta gratuita. Estudiaremos tu caso y te recomendaremos 
+            Solicita una valoración. Estudiaremos tu caso y te explicaremos
             la mejor solución protésica para ti.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="cta-gold rounded-full px-8 h-14 text-lg">
               <Link to="/contacto">
-                Pedir Cita Gratuita
+                Pedir Cita
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
