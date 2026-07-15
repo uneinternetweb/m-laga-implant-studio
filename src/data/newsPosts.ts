@@ -25,6 +25,90 @@ export interface NewsPost {
 
 export const newsPosts: NewsPost[] = [
   {
+    slug: 'implantes-cigomaticos-vs-mallas-subperiosticas-atrofia-maxilar-malaga',
+    title: 'Implantes cigomáticos o mallas subperiósticas: opciones ante una atrofia maxilar severa',
+    excerpt: 'Comparamos dos alternativas para maxilares con pérdida ósea avanzada, sus diferencias clínicas y los límites actuales de la evidencia.',
+    content: `
+Cuando el maxilar superior presenta una atrofia avanzada, puede no existir volumen suficiente para colocar implantes convencionales en una posición protésicamente adecuada. Esto no conduce de forma automática a una técnica concreta. El diagnóstico debe estudiar el hueso residual, los senos maxilares, los tejidos blandos, la relación entre los maxilares y la prótesis que se pretende construir.
+
+En casos complejos pueden valorarse injertos, implantes angulados, [implantes cigomáticos](/implantes-cigomaticos), [mallas subperiósticas](/mallas-subperiosticas) o incluso una solución removible. Cada alternativa tiene indicaciones, limitaciones y riesgos distintos. Este artículo compara dos opciones sin presentar ninguna como un atajo universal.
+
+## Qué es un implante cigomático
+
+El implante cigomático es más largo que un implante dental convencional y obtiene anclaje en el hueso cigomático. Se utiliza principalmente en maxilares superiores con atrofia severa y requiere una planificación tridimensional precisa y un equipo con formación específica.
+
+Su principal ventaja es que puede evitar injertos extensos en determinados pacientes. Sin embargo, la intervención está relacionada anatómicamente con el seno maxilar. Las revisiones científicas describen complicaciones como rinosinusitis, problemas de tejidos blandos y complicaciones protésicas, por lo que el seguimiento debe incluir tanto la salud periimplantaria como la situación sinusal. Una revisión sistemática con seguimiento prolongado confirma que existe una base clínica amplia, pero también que los resultados dependen de la técnica y de la selección del caso ([PubMed](https://pubmed.ncbi.nlm.nih.gov/36005249/)).
+
+## Qué es una malla o implante subperióstico digital
+
+Las mallas subperiósticas actuales son estructuras personalizadas de titanio que se diseñan a partir de un CBCT y un flujo CAD/CAM. En lugar de introducirse como una raíz dentro del hueso, la estructura se adapta a su superficie y se fija en zonas planificadas. Los pilares atraviesan la encía para sostener la prótesis.
+
+La tecnología digital ha recuperado este concepto con materiales y métodos diferentes de los implantes subperiósticos históricos. Aun así, la evidencia disponible procede sobre todo de series de casos y estudios con seguimiento más corto. Una revisión sistemática señala resultados prometedores, pero identifica la dehiscencia de tejidos y la exposición de la estructura entre las complicaciones más habituales ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38642167/)).
+
+## No son dos tratamientos equivalentes
+
+Una revisión que compara soluciones sin injerto concluye que los implantes cigomáticos disponen de evidencia a largo plazo más consolidada, mientras que los dispositivos subperiósticos digitales son una alternativa emergente que necesita más estudios comparativos y seguimiento prolongado ([PubMed](https://pubmed.ncbi.nlm.nih.gov/40511161/)). Por tanto, no sería riguroso afirmar que ofrecen el mismo nivel de evidencia ni elegir solo por el tiempo de tratamiento.
+
+La anatomía del seno, el patrón de reabsorción, el estado de la mucosa, los antecedentes médicos, la higiene posible y el diseño protésico pueden inclinar la decisión hacia una opción u otra, o hacer preferible un enfoque diferente.
+
+## Qué pruebas se necesitan
+
+La valoración suele incluir exploración clínica, fotografías, escaneado dental y CBCT. Estas pruebas permiten estudiar el hueso y planificar la posición de los pilares en relación con la futura prótesis. También deben revisarse el tabaco, la diabetes, los antecedentes de periodontitis, la medicación y cualquier enfermedad sinusal relevante.
+
+En Bocaboca estudiamos primero si todavía es posible una solución convencional de [implantes dentales](/implantes-dentales) y explicamos las alternativas con sus incertidumbres. Si te han dicho que existe poco hueso, puedes [solicitar una valoración](/contacto) para revisar las pruebas y conocer qué opciones son clínicamente razonables en tu caso.
+`,
+    date: '2026-07-15',
+    dateFormatted: '15 de julio de 2026',
+    image: '/images/implantes-cigomaticos-mallas-subperiosticas-malaga.jpg',
+    author: 'Equipo Bocaboca Clínicas Dentales',
+    readTime: '8 min',
+  },
+  {
+    slug: 'como-limpiar-protesis-fija-completa-implantes-malaga',
+    title: 'Cómo limpiar una prótesis fija completa sobre implantes',
+    excerpt: 'Guía basada en la evidencia para limpiar bajo una prótesis fija de arcada completa y organizar su mantenimiento profesional.',
+    content: `
+Una prótesis fija completa sobre implantes no se retira en casa. Precisamente por eso, la zona situada entre la prótesis y la encía necesita una técnica de limpieza específica. Los dientes protésicos pueden parecer limpios por fuera mientras se acumulan biofilm y restos en su superficie interna o alrededor de los pilares.
+
+El objetivo no es solo evitar el mal olor. Mantener accesibles y limpios los tejidos que rodean a los implantes ayuda a prevenir mucositis periimplantaria y reduce factores asociados con la periimplantitis. La Federación Europea de Periodoncia considera esenciales la higiene domiciliaria y las visitas profesionales regulares para prevenir estas enfermedades ([EFP](https://www.efp.org/for-patients/dental-implants/peri-implant-disease-prevention/)).
+
+## Cepillar la parte visible no es suficiente
+
+La prótesis debe cepillarse por sus caras externa, interna y oclusal con un cepillo que permita alcanzar el borde entre la prótesis y la encía. La presión no necesita ser agresiva. Lo importante es desorganizar el biofilm de forma sistemática y poder repetir la técnica cada día.
+
+Para pasar por debajo de la estructura pueden emplearse cepillos interdentales del tamaño adecuado o sedas específicas con un extremo rígido. El recurso depende del espacio disponible y del diseño de la prótesis. Forzar un cepillo demasiado grande puede traumatizar la zona; uno demasiado pequeño puede no limpiar de forma eficaz.
+
+## El irrigador es un complemento
+
+El irrigador puede ayudar a retirar restos y facilitar la limpieza en zonas de acceso complejo, pero no reemplaza el cepillo ni la limpieza interdental. Una revisión sobre mantenimiento de prótesis implantosoportadas encontró que las recomendaciones publicadas combinan el cepillado con recursos interproximales y, en algunos protocolos, irrigación. También subraya que las instrucciones deben adaptarse a la destreza y eficacia real de cada paciente ([PubMed](https://pubmed.ncbi.nlm.nih.gov/36535881/)).
+
+Después de la colocación de una [prótesis dental](/protesis-dentales), la técnica debería comprobarse en clínica. No basta con entregar una lista de instrumentos: el paciente debe poder demostrar que alcanza la zona bajo la prótesis sin dañarse.
+
+## Qué se revisa en el mantenimiento profesional
+
+En las revisiones se valoran el sangrado, la supuración, la profundidad alrededor de los implantes, el nivel óseo cuando procede, la oclusión, los tornillos y el estado de la prótesis. También se comprueba si el diseño sigue permitiendo una higiene adecuada.
+
+No existe una frecuencia universal de desmontaje válida para todas las rehabilitaciones. Una revisión sistemática sobre prótesis fijas de arcada completa encontró evidencia limitada y heterogénea, por lo que propone individualizar el mantenimiento según el riesgo y los hallazgos clínicos ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38501398/)). Retirar una prótesis atornillada es una decisión profesional, no una tarea de limpieza doméstica.
+
+## Señales que justifican una revisión
+
+- Sangrado repetido al limpiar alrededor de un implante.
+- Inflamación, supuración o mal sabor localizado.
+- Mal olor persistente pese a una higiene cuidadosa.
+- Dolor al masticar o sensación de movilidad.
+- Fractura, desgaste o dificultad nueva para pasar los elementos de limpieza.
+
+Una movilidad no siempre significa que el implante haya fracasado; también puede corresponder a un tornillo o componente protésico. En cualquier caso, debe revisarse sin manipularlo en casa.
+
+Si llevas una rehabilitación [All-on-4](/implantes-all-on-4) o una prótesis fija completa y no consigues limpiar por debajo, [pide una cita de mantenimiento](/contacto). La pauta correcta es la que se adapta a la forma real de tu prótesis y puede mantenerse a diario.
+`,
+    date: '2026-07-15',
+    dateFormatted: '15 de julio de 2026',
+    image: '/images/limpieza-protesis-fija-implantes-malaga.jpg',
+    author: 'Equipo Bocaboca Clínicas Dentales',
+    readTime: '7 min',
+  },
+  {
     slug: 'osteoporosis-bisfosfonatos-denosumab-implantes-dentales-malaga',
     title: 'Osteoporosis, bisfosfonatos y denosumab: ¿son compatibles con los implantes dentales?',
     excerpt: 'Tener osteoporosis o tomar medicación antirresortiva no descarta automáticamente los implantes. Explicamos qué debe valorar el equipo médico y dental antes de decidir.',
