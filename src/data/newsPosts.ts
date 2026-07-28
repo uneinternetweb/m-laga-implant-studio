@@ -25,6 +25,100 @@ export interface NewsPost {
 
 export const newsPosts: NewsPost[] = [
   {
+    slug: 'implantes-cortos-poco-hueso-evitar-injerto-malaga',
+    title: 'Implantes cortos cuando hay poco hueso: ¿pueden evitar siempre un injerto?',
+    excerpt: 'Los implantes cortos pueden reducir la necesidad de aumentar hueso en algunos sectores posteriores, pero no sustituyen los injertos en todos los casos.',
+    content: `
+Cuando falta altura ósea en un sector posterior, el plan no se reduce a elegir entre colocar un implante convencional o renunciar al tratamiento. En determinados pacientes puede estudiarse un implante corto; en otros es preferible aumentar el hueso o emplear una solución protésica diferente. La anatomía, la mordida y la futura prótesis pesan tanto como la longitud del implante.
+
+## Qué se considera un implante corto
+
+La literatura no ha utilizado siempre la misma definición. Muchas revisiones actuales estudian dispositivos de 6 milímetros o menos y los comparan con implantes de 10 milímetros o más. Esto es importante: no se pueden trasladar automáticamente los resultados obtenidos con una longitud, diámetro o superficie concretos a cualquier implante denominado «corto».
+
+Su posible utilidad se concentra especialmente en zonas posteriores con altura limitada por el seno maxilar o por el nervio dentario inferior. Reducir la longitud puede evitar determinadas cirugías de aumento vertical, pero exige que la anchura ósea permita colocar el implante en una posición restauradora adecuada.
+
+## Qué dice la evidencia comparativa
+
+Una revisión sistemática de ensayos clínicos aleatorizados comparó implantes de 6 milímetros o menos con implantes de al menos 10 milímetros en distintos escenarios, incluidos casos en los que el grupo de implantes largos necesitó elevación de seno o aumento vertical. Sus resultados permiten considerar los implantes cortos una alternativa en indicaciones seleccionadas, pero la certeza cambia según el escenario y el tiempo de seguimiento ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38764386/)).
+
+Otro metaanálisis de ensayos en áreas posteriores atróficas tampoco encontró una diferencia estadísticamente significativa en el fracaso entre implantes cortos y largos colocados después de aumentar hueso. Los estudios incluidos tenían seguimientos y protocolos distintos, por lo que la conclusión no equivale a afirmar que ambas opciones sean intercambiables para todos ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29875888/)).
+
+## Qué factores deciden si son razonables
+
+- **Altura y anchura disponibles:** se estudian con exploración e imagen cuando está indicada.
+- **Posición del implante:** debe permitir una prótesis limpiable y biomecánicamente estable.
+- **Número y distribución:** un diente aislado no plantea el mismo reparto de fuerzas que varios implantes.
+- **Mordida y hábitos:** el apretamiento y las cargas laterales condicionan el diseño.
+- **Estado periodontal y tabaco:** modifican el riesgo biológico y deben abordarse antes.
+- **Mantenimiento posible:** la restauración debe permitir higiene y controles.
+
+La relación entre longitud de corona e implante por sí sola no decide el pronóstico, pero una corona muy alta puede aumentar el brazo de palanca y obliga a planificar cuidadosamente la oclusión y la prótesis.
+
+## Cuándo puede seguir siendo necesario aumentar hueso
+
+Un implante corto no resuelve una cresta demasiado estrecha, una posición tridimensional desfavorable ni una pérdida de tejidos que comprometa el soporte de la prótesis. Tampoco sustituye las soluciones específicas para una atrofia maxilar extrema. En esos casos pueden valorarse regeneración, [implantes cigomáticos](/implantes-cigomaticos), [mallas subperiósticas](/mallas-subperiosticas) u otras alternativas, cada una con indicaciones y riesgos distintos.
+
+## La decisión se toma desde la futura prótesis
+
+El objetivo no es colocar el implante más corto posible, sino construir una rehabilitación que pueda funcionar y mantenerse. El estudio debe empezar por la posición de los dientes que se quieren reponer y comprobar después si el hueso permite colocar los implantes necesarios.
+
+En Bocaboca estudiamos cada caso de [implantes dentales](/implantes-dentales) desde el diagnóstico y la prótesis prevista. Si te han dicho que existe poco hueso, puedes [solicitar una valoración](/contacto) para comparar opciones sin asumir que el injerto siempre es obligatorio ni que un implante corto siempre lo evita.
+`,
+    date: '2026-07-27',
+    dateFormatted: '27 de julio de 2026',
+    image: '/images/implantes-cortos-poco-hueso-malaga.jpg',
+    author: 'Equipo Bocaboca Clínicas Dentales',
+    readTime: '8 min',
+  },
+  {
+    slug: 'protesis-fija-implantes-zirconio-metal-resina-malaga',
+    title: 'Zirconio o metal-resina en una prótesis fija completa sobre implantes',
+    excerpt: 'Comparamos dos familias de materiales para una prótesis fija de arcada completa: comportamiento, reparaciones, espacio y mantenimiento.',
+    content: `
+Después de planificar los implantes queda una decisión distinta: con qué material se construirá la prótesis definitiva. En una rehabilitación fija de arcada completa se emplean, entre otras posibilidades, estructuras con dientes y encía de resina o diseños de zirconio. No existe un material universalmente mejor; la elección depende del espacio, la mordida, el soporte, la higiene y la posibilidad de reparar.
+
+## Qué significa metal-resina
+
+Una prótesis híbrida metal-resina combina una estructura metálica con dientes y una parte gingival de material acrílico o composite. La estructura aporta rigidez y la parte resinosa permite reproducir dientes y volumen de encía cuando se han perdido tejidos.
+
+Entre sus características prácticas está la posibilidad de sustituir o reparar algunos componentes. A cambio, la superficie y los dientes pueden desgastarse, pigmentarse o fracturarse con el uso. Estos cambios no implican necesariamente el fracaso de los implantes, pero sí pueden requerir mantenimiento protésico.
+
+## Qué aporta el zirconio
+
+El zirconio se fabrica mediante flujo CAD/CAM y puede emplearse en diseños monolíticos o combinado con otros materiales. Presenta una superficie dura y resistente al desgaste, buena estabilidad de color y una estética que puede ser adecuada en rehabilitaciones completas.
+
+La dureza no elimina las complicaciones. Deben controlarse el diseño, el ajuste pasivo, el espesor, el contacto con la dentición antagonista y el acceso a los tornillos. También es importante prever cómo se intervendrá si aparece una fractura o si la prótesis necesita modificarse.
+
+## Qué muestran las revisiones recientes
+
+Una revisión sistemática y metaanálisis de 2026 encontró una proporción elevada de prótesis monolíticas de zirconio que seguían en función durante los seguimientos estudiados. Sin embargo, los trabajos eran heterogéneos, mayoritariamente no aleatorizados y con una certeza de evidencia baja. Los autores advierten que todavía faltan datos sólidos a largo plazo ([PubMed](https://pubmed.ncbi.nlm.nih.gov/41813561/)).
+
+Otra revisión comparó prótesis completas atornilladas metal-zirconio y metal-acrílico. Detectó diferencias en desgaste y algunas complicaciones, pero partió de estudios no aleatorizados y no convierte una opción en ganadora para cualquier paciente ([PubMed](https://pubmed.ncbi.nlm.nih.gov/42434215/)).
+
+## Criterios que importan más que el nombre
+
+- **Espacio protésico disponible:** cada diseño necesita un espesor y un volumen concretos.
+- **Dentición antagonista:** no es igual ocluir contra dientes naturales que contra otra prótesis.
+- **Fuerza y hábitos:** el bruxismo modifica el riesgo y el esquema oclusal.
+- **Pérdida de encía y hueso:** puede ser necesario reponer volumen rosa además de dientes.
+- **Higiene:** la cara inferior debe permitir limpiar alrededor de los implantes.
+- **Reparabilidad:** conviene conocer de antemano qué intervenciones admite el diseño.
+
+El material no compensa una mala posición de los implantes ni un diseño inaccesible para la higiene. También debe distinguirse la prótesis provisional, pensada para acompañar la cicatrización, de la restauración definitiva.
+
+## Cómo participar en la decisión
+
+Antes de elegir es razonable preguntar qué material se propone, por qué se adapta a la anatomía y la mordida, qué mantenimiento necesita y cómo se resolvería una eventual reparación. El presupuesto debe describir el diseño con suficiente claridad, no limitarse a la expresión «dientes fijos».
+
+En nuestra página de [prótesis dentales](/protesis-dentales) puedes consultar las principales alternativas. Si estás valorando una rehabilitación [All-on-4](/implantes-all-on-4) o sobre más implantes, [solicita una cita](/contacto) para estudiar primero el diseño y después escoger el material.
+`,
+    date: '2026-07-27',
+    dateFormatted: '27 de julio de 2026',
+    image: '/images/protesis-zirconio-metal-resina-implantes-malaga.jpg',
+    author: 'Equipo Bocaboca Clínicas Dentales',
+    readTime: '8 min',
+  },
+  {
     slug: 'implantes-cigomaticos-vs-mallas-subperiosticas-atrofia-maxilar-malaga',
     title: 'Implantes cigomáticos o mallas subperiósticas: opciones ante una atrofia maxilar severa',
     excerpt: 'Comparamos dos alternativas para maxilares con pérdida ósea avanzada, sus diferencias clínicas y los límites actuales de la evidencia.',
