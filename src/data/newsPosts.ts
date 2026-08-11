@@ -10,6 +10,8 @@ import newsInjertoOseo from '@/assets/news-injerto-oseo-malaga.jpg';
 import newsImplantesPasoAPaso from '@/assets/news-implantes-paso-a-paso-malaga.jpg';
 import newsTabacoImplantes from '@/assets/news-tabaco-implantes-malaga.jpg';
 import newsDiabetesImplantes from '@/assets/news-diabetes-implantes-malaga.jpg';
+import newsBruxismoImplantes from '@/assets/news-bruxismo-implantes-malaga.jpg';
+import newsCoronaAflojada from '@/assets/news-corona-implante-aflojada-malaga.jpg';
 
 export interface NewsPost {
   slug: string;
