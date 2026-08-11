@@ -27,7 +27,6 @@ export interface NewsPost {
 
 export const newsPosts: NewsPost[] = [
   {
-  {
     slug: 'bruxismo-implantes-dentales-malaga',
     title: 'Bruxismo e implantes dentales: qué pasa cuando aprietas los dientes por la noche',
     excerpt: 'Apretar o rechinar los dientes no impide colocar implantes, pero cambia el diseño de la prótesis y el plan de revisiones. Esto es lo que conviene saber.',
