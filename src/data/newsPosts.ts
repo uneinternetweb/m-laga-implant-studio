@@ -27,6 +27,130 @@ export interface NewsPost {
 
 export const newsPosts: NewsPost[] = [
   {
+  {
+    slug: 'bruxismo-implantes-dentales-malaga',
+    title: 'Bruxismo e implantes dentales: qué pasa cuando aprietas los dientes por la noche',
+    excerpt: 'Apretar o rechinar los dientes no impide colocar implantes, pero cambia el diseño de la prótesis y el plan de revisiones. Esto es lo que conviene saber.',
+    content: `
+Quien aprieta los dientes de noche suele darse cuenta tarde: por el desgaste de los dientes, por la tensión al despertar o porque una funda se le ha fracturado sin haber mordido nada duro. Cuando en la boca hay implantes, ese hábito deja de ser un detalle. No los contraindica, pero sí condiciona cómo se planifica la prótesis y con qué frecuencia hay que revisarla.
+
+## Qué es el bruxismo y por qué importa aquí
+
+El bruxismo es una actividad repetida de la musculatura masticatoria: apretar, rechinar o mantener la mandíbula en tensión. Puede darse durante el sueño o en vigilia, y hoy se entiende más como un comportamiento que como una enfermedad en sí. Su relevancia clínica aparece cuando genera consecuencias: desgaste dentario, dolor muscular, fracturas de restauraciones o sobrecarga de una rehabilitación.
+
+La diferencia con un diente natural es mecánica. El diente está unido al hueso por el ligamento periodontal, que amortigua y detecta la presión. El implante está anquilosado directamente en el hueso: no tiene ese amortiguador ni la misma sensibilidad propioceptiva. Las fuerzas se transmiten de forma más directa a la prótesis, a los tornillos y a la interfase hueso-implante.
+
+## Qué falla primero: casi siempre la prótesis, no el implante
+
+En la práctica clínica, las consecuencias del bruxismo sobre implantes se ven sobre todo en el componente protésico. Las complicaciones descritas con más frecuencia son:
+
+- Fractura o desconchado del recubrimiento cerámico de la corona o del puente.
+- Aflojamiento del tornillo protésico, sobre todo en coronas unitarias posteriores.
+- Desgaste acelerado de los dientes antagonistas o del material de la prótesis.
+- En casos concretos, fractura del propio tornillo o de componentes.
+
+Las revisiones sobre el tema coinciden en señalar el bruxismo como un factor de riesgo mecánico relevante, aunque la evidencia disponible se apoya en estudios heterogéneos y no permite cuantificar un riesgo exacto para cada paciente ([revisión en PubMed](https://pubmed.ncbi.nlm.nih.gov/32794226/)). Traducido a consulta: no es motivo para renunciar al tratamiento, sí para diseñarlo con margen.
+
+## Cómo se adapta el plan de tratamiento
+
+Cuando detectamos bruxismo antes de la cirugía, hay decisiones que se toman de otra manera:
+
+**En la fase quirúrgica.** Se valora el número y la distribución de implantes. Repartir la carga entre más puntos de apoyo reduce la tensión sobre cada uno, especialmente en sectores posteriores, donde la fuerza de mordida es mayor. La planificación digital ayuda a colocarlos en la posición que mejor recibe las cargas, algo que ya explicamos en el artículo sobre las [fases del tratamiento con implantes](/noticias/implantes-dentales-paso-a-paso-fases-tratamiento-malaga).
+
+**En la prótesis.** Se ajusta la oclusión para evitar contactos prematuros y contactos laterales que hagan palanca. Se valora el material: una prótesis fija completa monolítica se comporta distinto frente al desgaste que una recubierta de cerámica, un asunto que tratamos al comparar [zirconio y metal-resina](/noticias/protesis-fija-implantes-zirconio-metal-resina-malaga). También se decide si atornillar en lugar de cementar, porque facilita reparar o reapretar sin destruir la restauración.
+
+**En el mantenimiento.** Un paciente bruxista necesita revisiones más frecuentes. Un tornillo que empieza a aflojarse y se detecta a tiempo se reaprieta en minutos; el mismo tornillo ignorado durante meses puede acabar fracturado dentro del implante.
+
+## La férula de descarga
+
+La férula nocturna rígida es la medida de protección más habitual. No cura el bruxismo ni hace que dejes de apretar, pero interpone un material que absorbe y reparte la carga, protegiendo la cerámica y los dientes antagonistas. Debe estar hecha a medida y ajustada: las de venta libre, termomoldeables, pueden modificar la mordida y generar problemas nuevos.
+
+Junto a la férula, se revisan factores que influyen en el hábito, como el estrés, la calidad del sueño, determinados fármacos o el consumo de estimulantes. Si se sospecha un trastorno respiratorio del sueño, corresponde derivar al especialista.
+
+## Señales para pedir una revisión
+
+Si llevas implantes y notas alguna de estas situaciones, conviene una cita:
+
+- Sensación de que la prótesis "se mueve" o hace un pequeño ruido al morder.
+- Un trozo pequeño de cerámica que se ha desprendido.
+- Molestia o cansancio mandibular al despertar, o dolor en la zona de las sienes.
+- Cambios en cómo encajan los dientes al cerrar.
+- Encía enrojecida o sangrante alrededor del implante, que puede indicar un problema distinto: la [periimplantitis](/noticias/periimplantitis-sintomas-prevencion-malaga).
+
+## Lo importante
+
+El bruxismo es un factor de riesgo mecánico gestionable, no una contraindicación. Lo que marca la diferencia es detectarlo antes de planificar, diseñar la prótesis pensando en esas fuerzas y no saltarse las revisiones.
+
+Si aprietas los dientes y estás valorando [implantes dentales en Málaga](/implantes-dentales) o ya llevas una [prótesis sobre implantes](/protesis-dentales), puedes [pedir una valoración](/contacto) para revisar tu oclusión y comprobar si necesitas una férula de descarga.
+`,
+    date: '2026-08-11',
+    dateFormatted: '11 de agosto de 2026',
+    image: newsBruxismoImplantes,
+    author: 'Equipo Bocaboca Clínicas Dentales',
+    readTime: '8 min',
+  },
+  {
+    slug: 'corona-implante-aflojada-que-hacer-malaga',
+    title: 'Se me mueve la corona del implante: qué significa y qué no debes hacer',
+    excerpt: 'Que una corona sobre implante se mueva casi nunca significa que el implante esté perdido. Te explicamos las causas reales y cómo actuar sin empeorarlo.',
+    content: `
+Es una de las llamadas más frecuentes que recibimos: "se me mueve el implante". En la mayoría de los casos, lo que se mueve no es el implante, sino la corona que va encima. Son dos cosas distintas y el pronóstico también lo es.
+
+## La estructura tiene tres piezas
+
+Entender de qué está hecha la rehabilitación ayuda a interpretar lo que notas:
+
+1. **El implante**: el tornillo de titanio integrado en el hueso. No se ve.
+2. **El pilar o aditamento**: la pieza intermedia que conecta el implante con la corona.
+3. **La corona**: la parte visible, atornillada o cementada sobre el pilar.
+
+Cuando algo se mueve, lo más habitual es que se haya aflojado el tornillo que une esos componentes. El implante sigue firme en el hueso. Es una complicación mecánica frecuente y, atendida a tiempo, sencilla de resolver.
+
+## Por qué se afloja un tornillo
+
+Las causas más habituales son:
+
+- **Sobrecarga oclusal**: contactos mal repartidos, cargas laterales o [bruxismo](/noticias/bruxismo-implantes-dentales-malaga) que someten al tornillo a fuerzas repetidas.
+- **Pérdida de precarga**: el tornillo se asienta con el uso y pierde parte de la tensión con la que se apretó.
+- **Ausencia de reapriete**: en muchas restauraciones está previsto revisar el torque en los primeros meses.
+- **Corona unitaria en zona posterior**: es la situación con más aflojamientos descritos, por la fuerza de mordida.
+- **Desajuste protésico**: una adaptación imperfecta concentra tensiones donde no debería.
+
+## Cuándo sí puede ser el implante
+
+Hay una situación distinta y más seria: que el implante se mueva en conjunto. Si al presionar se desplaza toda la unidad, o hay dolor a la presión, supuración o retracción marcada de la encía, puede tratarse de una falta de osteointegración o de una pérdida ósea avanzada por periimplantitis. Eso requiere valoración urgente, exploración clínica y, cuando esté indicado, una radiografía.
+
+La diferencia entre un tornillo flojo y un implante móvil no se puede establecer en casa. Se determina en consulta.
+
+## Qué NO hacer
+
+- **No lo muevas con la lengua ni con los dedos.** Cada movimiento aumenta la holgura y puede acabar fracturando el tornillo dentro del implante, lo que complica mucho la reparación.
+- **No intentes apretarlo tú.** Los tornillos protésicos se aprietan con una llave dinamométrica al torque exacto que indica el fabricante. Pasarse rompe; quedarse corto lo vuelve a aflojar.
+- **No lo pegues con adhesivos ni con productos de farmacia.** Impiden la reparación correcta y pueden dañar los tejidos.
+- **No mastiques por ese lado** hasta que te vean.
+- **Si la corona se desprende del todo, guárdala.** En muchos casos es reutilizable.
+
+## Qué hacemos en la consulta
+
+Primero se identifica de dónde viene la movilidad. Si es un tornillo, se retira la corona cuando el diseño lo permite, se revisan los componentes, se sustituye el tornillo si está deformado y se reaprieta al torque correcto. Después se ajusta la oclusión, porque un aflojamiento repetido casi siempre apunta a un problema de reparto de fuerzas: si no se corrige, vuelve a ocurrir.
+
+En restauraciones cementadas el abordaje es distinto y a veces obliga a seccionar la corona, motivo por el que en muchos casos se prefiere el atornillado.
+
+Si el problema es biológico —inflamación, pérdida ósea—, el plan cambia por completo y se orienta al tratamiento de la [periimplantitis](/noticias/periimplantitis-sintomas-prevencion-malaga).
+
+## Prevenirlo es más fácil que repararlo
+
+Las revisiones periódicas permiten detectar un aflojamiento incipiente antes de que dé síntomas, comprobar la oclusión y valorar el estado de la encía. Es exactamente lo que explicamos en el artículo sobre el [mantenimiento de los implantes](/noticias/importancia-mantenimiento-implantes-dentales-malaga).
+
+Si notas movilidad, un clic al morder o un cambio en cómo encaja tu mordida, no esperes a que se caiga. [Contacta con nosotros](/contacto) y lo revisamos. Puedes consultar también nuestra información sobre [implantes dentales](/implantes-dentales) y [prótesis dentales](/protesis-dentales) en Málaga.
+`,
+    date: '2026-08-04',
+    dateFormatted: '4 de agosto de 2026',
+    image: newsCoronaAflojada,
+    author: 'Equipo Bocaboca Clínicas Dentales',
+    readTime: '7 min',
+  },
+  {
     slug: 'implantes-cortos-poco-hueso-evitar-injerto-malaga',
     title: 'Implantes cortos cuando hay poco hueso: ¿pueden evitar siempre un injerto?',
     excerpt: 'Los implantes cortos pueden reducir la necesidad de aumentar hueso en algunos sectores posteriores, pero no sustituyen los injertos en todos los casos.',
