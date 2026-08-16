@@ -159,7 +159,7 @@ const ImplantesCostaDelSol = () => (
         <li>
           <strong className="text-foreground">Plan de tratamiento por escrito.</strong> Número de
           implantes, tipo de prótesis, necesidad o no de{' '}
-          <Link to="/noticias/injerto-oseo-dental-malaga" className="text-primary font-medium hover:underline">
+          <Link to="/noticias/injerto-oseo-dental-cuando-necesario-malaga" className="text-primary font-medium hover:underline">
             injerto óseo
           </Link>{' '}
           y calendario de visitas.
