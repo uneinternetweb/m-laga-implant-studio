@@ -108,6 +108,31 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/implantes-zirconio" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Implantes de Zirconio
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/implantes-sin-dolor" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Implantes sin Dolor
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/implantes-dentales-costa-del-sol" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Implantes Costa del Sol
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/implantologo-malaga" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Implantólogo en Málaga
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/protesis-sobre-implantes" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Prótesis sobre Implantes
+                  </Link>
+                </li>
+                <li>
                   <Link to="/protesis-dentales" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                     Prótesis Dentales
                   </Link>
