@@ -15,6 +15,11 @@ const ImplantesAllOn4 = lazy(() => import("./pages/ImplantesAllOn4"));
 const ImplantesCigomaticos = lazy(() => import("./pages/ImplantesCigomaticos"));
 const MallasSubperiosticas = lazy(() => import("./pages/MallasSubperiosticas"));
 const ProtesisDentales = lazy(() => import("./pages/ProtesisDentales"));
+const ImplantesCostaDelSol = lazy(() => import("./pages/ImplantesCostaDelSol"));
+const ImplantesSinDolor = lazy(() => import("./pages/ImplantesSinDolor"));
+const ImplantesZirconio = lazy(() => import("./pages/ImplantesZirconio"));
+const ImplantologoMalaga = lazy(() => import("./pages/ImplantologoMalaga"));
+const ProtesisSobreImplantes = lazy(() => import("./pages/ProtesisSobreImplantes"));
 const SobreNosotros = lazy(() => import("./pages/SobreNosotros"));
 const Contacto = lazy(() => import("./pages/Contacto"));
 const Noticias = lazy(() => import("./pages/Noticias"));
@@ -54,6 +59,11 @@ const App = () => (
             <Route path="/implantes-cigomaticos" element={<ImplantesCigomaticos />} />
             <Route path="/mallas-subperiosticas" element={<MallasSubperiosticas />} />
             <Route path="/protesis-dentales" element={<ProtesisDentales />} />
+            <Route path="/implantes-dentales-costa-del-sol" element={<ImplantesCostaDelSol />} />
+            <Route path="/implantes-sin-dolor" element={<ImplantesSinDolor />} />
+            <Route path="/implantes-zirconio" element={<ImplantesZirconio />} />
+            <Route path="/implantologo-malaga" element={<ImplantologoMalaga />} />
+            <Route path="/protesis-sobre-implantes" element={<ProtesisSobreImplantes />} />
             <Route path="/sobre-nosotros" element={<SobreNosotros />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/noticias" element={<Noticias />} />
