@@ -4,4 +4,4 @@
 - [x] Add exactly two articles with metadata, contextual links and source credits; preserve existing news.
 - [x] Update sitemap and inspect existing lastmod sources (static legacy values preserved where origin is uncertain).
 - [x] Run focused tests and verify desktop/mobile article and listing flows.
-- [ ] Publish and verify public URLs; provide the requested report.
+- [x] Publish and verify public URLs; provide the requested report (both public articles, photographs, listing and sitemap checked).
