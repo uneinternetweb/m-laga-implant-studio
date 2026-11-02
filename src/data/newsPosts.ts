@@ -12,6 +12,7 @@ import newsTabacoImplantes from '@/assets/news-tabaco-implantes-malaga.jpg';
 import newsDiabetesImplantes from '@/assets/news-diabetes-implantes-malaga.jpg';
 import newsBruxismoImplantes from '@/assets/news-bruxismo-implantes-malaga.jpg';
 import newsCoronaAflojada from '@/assets/news-corona-implante-aflojada-malaga.jpg';
+import { verifiedNewsPosts } from './verifiedNewsPosts';
 
 export interface NewsPost {
   slug: string;
@@ -23,9 +24,14 @@ export interface NewsPost {
   image: string;
   author: string;
   readTime: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  imageAlt?: string;
+  omitAuthor?: boolean;
 }
 
 export const newsPosts: NewsPost[] = [
+  ...verifiedNewsPosts,
   {
     slug: 'bruxismo-implantes-dentales-malaga',
     title: 'Bruxismo e implantes dentales: qué pasa cuando aprietas los dientes por la noche',
