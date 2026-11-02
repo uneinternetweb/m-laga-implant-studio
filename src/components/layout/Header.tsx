@@ -59,25 +59,25 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="container-wide py-4">
-        <div className="flex items-center justify-between">
+      <nav className="container-wide max-w-[1536px] py-3">
+        <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex shrink-0 items-center">
             <img 
               src={logo} 
               alt="Clínica Dental Bocaboca" 
-              className="h-12 md:h-14 w-auto"
+              className="h-11 xl:h-12 w-auto max-w-[170px] 2xl:max-w-none"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-3 xl:gap-6">
+          <div className="hidden xl:flex flex-1 items-center justify-center gap-3 2xl:gap-5 whitespace-nowrap">
             {navLinks.map((link) =>
               link.subLinks ? (
-                <div key={link.href} className="relative group">
+                <div key={link.href} className="relative group shrink-0">
                   <Link
                     to={link.href}
-                    className={`nav-link font-medium text-sm xl:text-base inline-flex items-center gap-1 ${
+                    className={`nav-link font-medium text-sm 2xl:text-base inline-flex items-center gap-1 ${
                       isActive(link.href) ? 'text-primary' : ''
                     }`}
                   >
@@ -104,7 +104,7 @@ const Header = () => {
                 <Link
                   key={link.href}
                   to={link.href}
-                  className={`nav-link font-medium text-sm xl:text-base ${
+                  className={`nav-link font-medium text-sm 2xl:text-base whitespace-nowrap ${
                     isActive(link.href) ? 'text-primary' : ''
                   }`}
                 >
@@ -115,8 +115,8 @@ const Header = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button asChild className="cta-primary rounded-full px-4 xl:px-6">
+          <div className="hidden xl:block shrink-0">
+            <Button asChild className="cta-primary rounded-full whitespace-nowrap px-4 2xl:px-6">
               <Link to="/contacto">Pedir Cita</Link>
             </Button>
           </div>
@@ -124,7 +124,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 text-foreground"
+            className="xl:hidden p-2 text-foreground"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -133,7 +133,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-in">
+          <div className="xl:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-in">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <div key={link.href}>
