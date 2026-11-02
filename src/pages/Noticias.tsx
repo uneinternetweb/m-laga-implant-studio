@@ -65,7 +65,7 @@ const Noticias = () => {
               <div className="aspect-video lg:aspect-auto overflow-hidden">
                 <img
                   src={newsPosts[0].image}
-                  alt={newsPosts[0].title}
+                  alt={newsPosts[0].imageAlt ?? newsPosts[0].title}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -100,7 +100,7 @@ const Noticias = () => {
                 <div className="aspect-video overflow-hidden">
                   <img
                     src={post.image}
-                    alt={post.title}
+                    alt={post.imageAlt ?? post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>

@@ -128,23 +128,24 @@ const NoticiaDetalle = () => {
   return (
     <Layout>
       <SEOHead
-        title={`${post.title} | Bocaboca Clínicas Dentales`}
-        description={post.excerpt}
+        title={post.seoTitle ?? `${post.title} | Bocaboca Clínicas Dentales`}
+        description={post.seoDescription ?? post.excerpt}
         canonical={`/noticias/${post.slug}`}
         ogType="article"
+        ogImage={post.omitAuthor ? `https://www.implantesdentalesenmalaga.com${post.image}` : undefined}
         structuredData={[
           {
             '@context': 'https://schema.org',
             '@type': 'Article',
             headline: post.title,
             description: post.excerpt,
-            image: post.image,
+            image: post.omitAuthor ? `https://www.implantesdentalesenmalaga.com${post.image}` : post.image,
             datePublished: post.date,
             dateModified: post.date,
-            author: {
+            ...(!post.omitAuthor ? { author: {
               '@type': 'Organization',
               name: 'Clínica Dental Bocaboca',
-            },
+            } } : {}),
             publisher: {
               '@type': 'Organization',
               name: 'Clínica Dental Bocaboca',
@@ -190,7 +191,7 @@ const NoticiaDetalle = () => {
         <div className="rounded-3xl overflow-hidden">
           <img
             src={post.image}
-            alt={post.title}
+            alt={post.imageAlt ?? post.title}
             className="w-full h-auto aspect-video object-cover"
           />
         </div>
